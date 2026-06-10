@@ -830,7 +830,7 @@ ul {
 }
 .mem-card__desc {
   margin-top: 18px;
-  font-size: 15.5px;
+  font-size: 18px;
   max-width: 38ch;
   color: rgba(255, 255, 255, 0.88);
 }
@@ -1025,7 +1025,7 @@ ul {
   gap: 20px;
 }
 .compare__list li {
-  font-size: 15.5px;
+  font-size: 18px;
   line-height: 1.7;
   color: var(--body2);
 }
@@ -1282,7 +1282,8 @@ ul {
   border-bottom: 1px solid rgba(255, 255, 255, 0.12);
 }
 .footer__top a {
-  font-size: 13.5px;
+  font-size: 14px;
+  font-weight: 600;
   transition: 0.3s;
 }
 .footer__top a:hover {
