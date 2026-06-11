@@ -596,7 +596,7 @@ ul {
 .stay__grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 10px;
+  gap: 15px;
 }
 .stay-card {
   position: relative;
@@ -974,7 +974,7 @@ ul {
 .compare {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 20px;
+  gap: 15px;
   width: 100%;
 }
 .compare__col {
@@ -1539,7 +1539,7 @@ ul {
 .hiw__grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
+  gap: 15px;
 }
 .hiw-card {
   background: var(--gray-50);
