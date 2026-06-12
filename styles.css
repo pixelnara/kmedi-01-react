@@ -1569,7 +1569,7 @@ ul {
   gap: 5px;
 }
 .acc-item {
-  background: var(--gray-800);
+  background: var(--gray-950);
   transition: background 0.3s, color 0.3s;
 }
 .acc-item.is-open {
