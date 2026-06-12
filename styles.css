@@ -1793,7 +1793,7 @@ ul {
     --header-h: 80px;
   }
   .gnb-overlay .wrap {
-    padding-top: 0;
+    padding-top: var(--space-10);
   }
   /* depth1: 아코디언 헤더 */
   .gnb-col > h4 {
