@@ -1765,6 +1765,10 @@ ul {
   /* CTA */
   .cta-dark__desc {
     font-size: 17px;
+    margin-bottom: 0;
+  }
+  .cta-dark__inner .btn--primary2 {
+    display: none;
   }
 
   /* Trust logos */
