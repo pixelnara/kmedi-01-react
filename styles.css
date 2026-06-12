@@ -2197,11 +2197,11 @@ ul {
   }
   .hero__title {
     margin-top: 0;
-    font-size: clamp(26px, 8vw, 36px);
+    font-size: clamp(24px, 5vw, 32px);
     line-height: 1.1;
     letter-spacing: -0.02em;
     text-align: center;
-    font-weight: 700;
+    font-weight: 650;
   }
   .hero__desc {
     display: block;
