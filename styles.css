@@ -1457,9 +1457,13 @@ ul {
   color: var(--text-body);
   font-size: var(--text-base);
   transition: 0.3s;
+  text-decoration: none;
 }
 .gnb-col a:hover {
   color: var(--text-caption);
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
 }
 
 /* ============================================================
