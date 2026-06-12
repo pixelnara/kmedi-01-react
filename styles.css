@@ -2090,9 +2090,17 @@ ul {
     font-size: var(--text-21);
     padding: var(--space-5) var(--space-5);
   }
+  .acc-item.is-open .acc-head {
+    background: var(--blue-700);
+    color: var(--white);
+  }
+  .acc-item.is-open {
+    background: var(--white);
+  }
   .acc-body__inner {
     font-size: var(--text-base);
     font-weight: 600;
+    padding: var(--space-6) var(--space-5) var(--space-8);
   }
 }
 @media (max-width: 600px) {
@@ -2143,8 +2151,15 @@ ul {
     padding: var(--space-5) var(--space-5);
     letter-spacing: var(--tracking-tight);
   }
+  .acc-item.is-open .acc-head {
+    background: var(--blue-700);
+    color: var(--white);
+  }
+  .acc-item.is-open {
+    background: var(--white);
+  }
   .acc-body__inner {
-    padding: 0 var(--space-5) 22px;
+    padding: var(--space-6) var(--space-5) var(--space-8);
   }
 
   /* Trust logos */
