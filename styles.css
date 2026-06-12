@@ -659,7 +659,7 @@ ul {
 .stay-card__tags {
   display: flex;
   flex-wrap: wrap;
-  gap: 5px;
+  gap: 3px;
   margin-top: 30px;
 }
 .stay-card__tags span {
