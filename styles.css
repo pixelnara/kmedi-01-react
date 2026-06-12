@@ -1777,6 +1777,9 @@ ul {
     font-size: var(--text-21);
     padding: var(--space-5) var(--space-5);
   }
+  .acc-body__inner {
+    font-size: var(--text-md);
+  }
 }
 @media (max-width: 600px) {
   .news-grid {
