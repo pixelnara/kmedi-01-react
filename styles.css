@@ -1207,9 +1207,9 @@ ul {
 .compare__list b {
   display: block;
   color: var(--text-heading);
-  font-weight: 700;
+  font-weight: 600;
   margin-bottom: var(--space-4);
-  font-size: var(--text-15);
+  font-size: var(--text-17);
 }
 .compare__list li > div > span {
   display: block;
