@@ -2474,8 +2474,8 @@ ul {
   }
   .mbar-label {
     font-size: 10px;
-    font-weight: 600;
-    letter-spacing: 0.02em;
+    font-weight: 650;
+    letter-spacing: 0.04em;
     color: inherit;
     white-space: nowrap;
   }
@@ -2523,11 +2523,11 @@ ul {
   .mbar-logo--box {
     background: var(--gray-950);
     border: none;
-    border-radius: 14px;
-    padding: 0 28px;
-    height: 58px;
+    border-radius: 6px;
+    padding: 0 20px;
+    height: 60px;
     flex: none;
-    gap: 3px;
+    gap: 6px;
   }
   /* Language bottom sheet */
   .lang-sheet.is-open {
