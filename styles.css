@@ -2502,7 +2502,7 @@ ul {
     padding: 0 8px;
   }
   .mbar-logo__name {
-    font-size: 11px;
+    font-size: 13px;
     font-weight: 800;
     letter-spacing: 0.14em;
     text-transform: uppercase;
@@ -2523,9 +2523,11 @@ ul {
   .mbar-logo--box {
     background: var(--gray-950);
     border: none;
-    border-radius: 2px;
-    padding: 6px 20px;
-    height: auto;
+    border-radius: 14px;
+    padding: 0 28px;
+    height: 58px;
+    flex: none;
+    gap: 3px;
   }
   /* Language bottom sheet */
   .lang-sheet.is-open {
