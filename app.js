@@ -257,20 +257,20 @@
   }
 
   /* ---------- Mobile bar: language sheet ---------- */
-  const mbarLang = document.querySelector(".mbar-lang");
+  const mbarLangs = document.querySelectorAll(".mbar-lang");
   const langSheet = document.getElementById("langSheet");
-  if (mbarLang && langSheet) {
+  if (mbarLangs.length && langSheet) {
     const backdrop = langSheet.querySelector(".lang-sheet__backdrop");
     const closeLang = () => {
       langSheet.classList.remove("is-open");
       langSheet.setAttribute("aria-hidden", "true");
       document.body.style.overflow = "";
     };
-    mbarLang.addEventListener("click", () => {
+    mbarLangs.forEach(btn => btn.addEventListener("click", () => {
       langSheet.classList.add("is-open");
       langSheet.setAttribute("aria-hidden", "false");
       document.body.style.overflow = "hidden";
-    });
+    }));
     backdrop.addEventListener("click", closeLang);
     langSheet.querySelectorAll(".lang-sheet__opt").forEach(btn => {
       btn.addEventListener("click", () => {
