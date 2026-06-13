@@ -400,7 +400,9 @@ ul {
 }
 
 /* 모바일 헤더 로고 아래 서브타이틀 */
-.brand-sub-mobile { display: none; }
+.brand-sub-mobile {
+  display: none;
+}
 
 .header-lang-btn {
   display: none;
@@ -425,12 +427,19 @@ ul {
   object-fit: cover;
   border-radius: 50%;
   display: block;
+  border: 1.5px solid var(--gray-950);
 }
 
 /* v1/v2 toggle — default: v1 visible, v2 hidden */
-.header-right--v2 { display: none; }
-.mobile-bar--v1 { display: flex; }
-.mobile-bar--v2 { display: none; }
+.header-right--v2 {
+  display: none;
+}
+.mobile-bar--v1 {
+  display: flex;
+}
+.mobile-bar--v2 {
+  display: none;
+}
 
 /* scrolled / solid state */
 .header.is-solid {
@@ -2204,12 +2213,25 @@ ul {
     box-shadow: 0 1px 0 var(--border);
   }
   /* 상단바 v2 활성 / v1 숨김 */
-  .header-right--v1 { display: none; }
-  .header-right--v2 { display: flex; align-items: center; gap: 5px; }
-  .header-lang-btn { display: flex; color: var(--gray-950); }
+  .header-right--v1 {
+    display: none;
+  }
+  .header-right--v2 {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  .header-lang-btn {
+    display: flex;
+    color: var(--gray-950);
+  }
   /* 하단바 v2 활성 / v1 숨김 */
-  .mobile-bar--v1 { display: none; }
-  .mobile-bar--v2 { display: flex; }
+  .mobile-bar--v1 {
+    display: none;
+  }
+  .mobile-bar--v2 {
+    display: flex;
+  }
   .header__util {
     display: none;
   }
@@ -2634,7 +2656,7 @@ ul {
     letter-spacing: 0.25em;
   }
   .header__right .btn {
-    padding: 0 14px;
+    padding: 0 10px;
     font-size: var(--text-12);
     height: 40px;
     letter-spacing: 0.05em;
