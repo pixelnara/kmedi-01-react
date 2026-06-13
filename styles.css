@@ -2421,7 +2421,7 @@ ul {
     z-index: 500;
     height: 72px;
     background: var(--white);
-    border-radius: 2px;
+    border-radius: 8px;
     box-shadow: 0 4px 24px rgba(0, 0, 0, 0.14);
     align-items: center;
     justify-content: space-between;
