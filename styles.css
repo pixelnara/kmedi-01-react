@@ -2354,6 +2354,7 @@ ul {
     letter-spacing: 0em;
     text-align: center;
     font-weight: 650;
+    padding-bottom: 0.4em;
   }
   .hero__desc {
     display: block;
@@ -2396,7 +2397,7 @@ ul {
     transform: none;
     bottom: auto;
     left: auto;
-    margin-top: 16px;
+    margin-top: 24px;
     color: rgba(255, 255, 255, 0.7);
     font-size: 10px;
     font-weight: 700;
