@@ -358,7 +358,7 @@ ul {
 .header__right {
   display: flex;
   align-items: center;
-  gap: 14px;
+  gap: 10px;
 }
 .header__right .btn {
   min-width: unset;
@@ -2516,10 +2516,15 @@ ul {
     padding-top: 1px;
     white-space: nowrap;
   }
+  .mbar-logo--box .mbar-logo__name,
+  .mbar-logo--box .mbar-logo__sub {
+    color: var(--white);
+  }
   .mbar-logo--box {
-    border: 1.5px solid var(--gray-950);
+    background: var(--gray-950);
+    border: none;
     border-radius: 2px;
-    padding: 6px 14px;
+    padding: 6px 20px;
     height: auto;
   }
   /* Language bottom sheet */
