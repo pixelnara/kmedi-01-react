@@ -99,6 +99,7 @@
   --tracking-wider: 0.22em;
 
   /* ─── Primitive: Spacing ─── */
+  --space-0: 0px;
   --space-2: 2px;
   --space-3: 3px;
   --space-4: 4px;

@@ -515,7 +515,7 @@ ul {
   position: absolute;
   inset: 0;
   z-index: 1;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.5);
 }
 .hero__inner {
   position: relative;
@@ -554,7 +554,7 @@ ul {
 .hero__desc {
   margin-top: 30px;
   font-size: var(--text-30);
-  font-weight: 300;
+  font-weight: 500;
   max-width: 80ch;
   line-height: 1.65;
   color: rgba(255, 255, 255, 0.92);
@@ -1435,7 +1435,7 @@ ul {
 .follow-grid {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  gap: var(--space-12);
+  gap: var(--space-0);
 }
 .follow-card {
   position: relative;
