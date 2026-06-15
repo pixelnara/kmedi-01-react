@@ -1397,7 +1397,7 @@ ul {
 .cta-dark {
   background: linear-gradient(135deg, #355e3b 0%, #2d7a52 40%, #3a9e72 70%, #4db88a 100%);
   color: var(--white);
-  padding: clamp(64px, 9vw, 132px) 0;
+  padding: clamp(90px, 9vw, 132px) 0;
 }
 .cta-dark__inner {
   display: flex;
