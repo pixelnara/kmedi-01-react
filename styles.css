@@ -179,7 +179,8 @@ ul {
   background: var(--btn);
 }
 .btn--primary:hover {
-  background: var(--btn);
+  background: #1d4ed8;
+  color: #fff;
 }
 .btn--primary2:hover {
   background: var(--btn-hover3);
