@@ -325,7 +325,7 @@ ul {
   font-family: var(--font-sans);
   font-size: var(--text-10);
   font-weight: 700;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.1em;
   margin-top: var(--space-5);
   opacity: 0.8;
   text-transform: uppercase;
@@ -1100,7 +1100,7 @@ ul {
   transition: background 0.3s;
 }
 .feature__dots button.is-active {
-  background: var(--accent);
+  background: var(--accent-mid);
 }
 .feature__nav {
   display: flex;
@@ -1543,7 +1543,7 @@ ul {
   font-family: var(--font-sans);
   font-weight: 700;
   font-size: var(--text-10);
-  letter-spacing: 0.4em;
+  letter-spacing: 0.1em;
   color: var(--text-subtle2);
   text-transform: uppercase;
 }
@@ -1592,6 +1592,36 @@ ul {
 .footer__social svg {
   width: 17px;
   height: 17px;
+}
+
+/* ============================================================
+   FOOTER TOP BUTTON
+   ============================================================ */
+.footer__top-wrap {
+  display: flex;
+  justify-content: flex-end;
+  padding: var(--space-32) 0 var(--space-16);
+}
+.footer__top-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--text-subtle);
+  font-size: var(--text-11);
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  transition: color 0.2s;
+}
+.footer__top-btn svg {
+  width: 20px;
+  height: 20px;
+}
+.footer__top-btn:hover {
+  color: var(--text-heading);
 }
 
 /* ============================================================
@@ -3040,7 +3070,7 @@ ul {
     font-size: 22px;
   }
   .brand small {
-    letter-spacing: 0.2em;
+    letter-spacing: 0.1em;
   }
   .header__right .btn {
     padding: 0 10px;

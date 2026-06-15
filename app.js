@@ -319,6 +319,12 @@
     });
   });
 
+  /* ---------- Footer top button ---------- */
+  const footerTopBtn = document.querySelector(".footer__top-btn");
+  if (footerTopBtn) {
+    footerTopBtn.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
+  }
+
   /* ---------- Top button ---------- */
   const topBtn = document.querySelector(".top-btn");
   if (topBtn) {
