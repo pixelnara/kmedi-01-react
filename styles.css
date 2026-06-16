@@ -1147,14 +1147,13 @@ ul {
 .compare {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 10px;
+  gap: 0px;
   width: 100%;
 }
 .compare__col {
   background: var(--gray-200);
   padding: 44px;
   border: none;
-  /* border-top: 1px solid var(--border); */
 }
 .compare__col--ours {
   background: var(--gold-700);
@@ -1367,13 +1366,8 @@ ul {
 }
 .news-card__cat {
   font-family: var(--font-sans);
-<<<<<<< HEAD
   color: var(--text-caption);
-  font-size: var(--text-11);
-=======
-  color: var(--gold-600);
   font-size: var(--text-13);
->>>>>>> d9a5ea6 (style: brown(gold-600) 컬러 시스템 적용 — violet → gold 전환)
   letter-spacing: var(--tracking-wide);
   text-transform: uppercase;
   font-weight: 700;

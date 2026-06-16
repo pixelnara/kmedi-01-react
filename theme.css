@@ -29,9 +29,6 @@
   --blue-700: #102c78; /* 딥 블루 */
   --blue-800: #0a1f58; /* 더 딥 */
   --blue-900: #061338; /* 최심 다크 */
-  --blue-950: #030a1c; /* 블랙에 근접 */
-
-  --green-blue: #18385a;
 
   /* ── Gold Scale (#b8955e 기준) ── */
   --gold-500: #b8955e; /* 웜 골드 기준색 */
@@ -120,6 +117,7 @@
   --space-8: 8px;
   --space-10: 10px;
   --space-12: 12px;
+  --space-14: 14px;
   --space-16: 16px;
   --space-18: 18px;
   --space-20: 20px;
@@ -154,9 +152,7 @@
   --bg-white: var(--white);
   --surface: var(--gray-50);
   --surface-alt: var(--gray-150); /* 아코디언·보조 서피스 */
-  --surface-alt2: var(--green-blue); /* 아코디언·보조 서피스 */
   --bg-black: var(--gray-950);
-  --bg-blue: var(--blue-700);
 
   /* ─── Semantic: Text ─── */
 
@@ -167,29 +163,18 @@
   --text-subtle: var(--gray-400);
   --text-subtle2: var(--gray-900);
   --text-caption: var(--gold-600);
-  --number: var(--gray-900);
 
   /* ─── Semantic: Border ─── */
 
   --border: var(--gray-200);
   --border-2: var(--gray-800);
-  --border-3: var(--blue-500);
-
-  /* ─── Semantic: Primary ─── */
-
-  --primary: var(--gray-900);
 
   /* ─── Semantic: Interactive ─── */
 
-  --chip: var(--gray-900);
   --btn: var(--gray-950);
-  --btn-white: var(--white);
-  --btn-hover: var(--gray-800);
-  --btn-hover2: var(--blue-600);
   --btn-hover3: var(--blue-700);
 
   /* ─── Semantic: Accent ─── */
-  --accent: var(--blue-400);
   --accent-mid: var(--blue-500); /* UI 아이콘 · 체크마크 · 숫자 원 */
   --accent-dark: var(--gold-600); /* 아코디언 배경 · 비교 제목 · 브랜드 버튼 */
 
