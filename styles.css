@@ -2005,7 +2005,7 @@ ul {
 }
 .treat__intro {
   margin-top: var(--space-16);
-  color: var(--text-body);
+  color: var(--gray-500);
   font-size: var(--text-17);
   line-height: 1.7;
 }
@@ -2013,7 +2013,7 @@ ul {
   display: block;
   margin-top: var(--space-8);
   font-size: var(--text-14);
-  color: var(--text-subtle);
+  color: var(--gray-400);
   letter-spacing: 0.02em;
 }
 .treat-grid {
@@ -2027,6 +2027,7 @@ ul {
   aspect-ratio: 3 / 4;
   display: block;
   text-decoration: none;
+  border-radius: 0px;
   z-index: 0;
   transition:
     transform 0.42s cubic-bezier(0.25, 0.46, 0.45, 0.94),
@@ -2067,7 +2068,7 @@ ul {
   flex-direction: column;
   justify-content: flex-end;
   padding: 26px 22px;
-  color: var(--white);
+  color: #fff;
   transition: transform 0.42s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 .treat-card:hover .treat-card__body {
@@ -2144,12 +2145,13 @@ ul {
 .treat-cta .btn {
   display: block;
   width: 100%;
-  padding: 32px;
+  padding: 32px 32px;
   height: auto;
   font-size: var(--text-28);
   font-weight: 500;
-  letter-spacing: var(--tracking-tight);
+  letter-spacing: -0.01em;
   text-align: center;
+  border-radius: 0px;
 }
 @media (max-width: 960px) {
   .treat-grid {
@@ -2159,6 +2161,7 @@ ul {
 }
 @media (max-width: 520px) {
   .treat-grid {
+    grid-template-columns: repeat(2, 1fr);
     gap: 2px;
   }
   .treat-card {
@@ -2183,6 +2186,37 @@ ul {
   text-align: center;
   margin-bottom: var(--space-64);
 }
+/* Desktop/Mobile 레이아웃 토글 */
+.hiw-desktop { display: grid; }
+.hiw-mobile  { display: none; }
+
+/* HIW reuses the .news-card UI — only grid columns + image-slot fill + desc differ */
+.hiw-grid {
+  grid-template-columns: repeat(4, 1fr);
+}
+/* Step label — enlarged so the sequence reads clearly */
+.hiw-grid .news-card__cat {
+  font-size: var(--text-30);
+  letter-spacing: var(--tracking-tight);
+}
+.news-card__img image-slot {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+/* HIW photos: elongated portrait ratio */
+.hiw-grid .news-card__img {
+  aspect-ratio: 3 / 4;
+}
+.news-card__desc {
+  color: var(--text-body2);
+  font-size: var(--text-15);
+  font-weight: 400;
+  line-height: 1.8;
+  margin-top: var(--space-10);
+  word-break: keep-all;
+}
+/* Mobile: icon+step list */
 .hiw__grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -2249,6 +2283,9 @@ ul {
   .hero__overlay {
     background: linear-gradient(to top, rgba(0, 0, 0, 0.88) 0%, rgba(0, 0, 0, 0.55) 38%, rgba(0, 0, 0, 0.1) 62%, rgba(0, 0, 0, 0) 75%);
   }
+  /* HIW: 860px 이하에서 모바일 레이아웃으로 전환 */
+  .hiw-desktop { display: none; }
+  .hiw-mobile  { display: grid; }
   .hiw__grid {
     grid-template-columns: 1fr;
     width: 100%;
