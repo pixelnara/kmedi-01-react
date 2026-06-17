@@ -3613,7 +3613,7 @@ body:has(.gnb-overlay.is-open) {
     background: var(--surface);
   }
   .lang-sheet__opt.is-active {
-    font-weight: 700;
+    font-weight: 500;
     color: var(--gray-900, #1a1e28);
     background: var(--surface);
   }

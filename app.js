@@ -305,10 +305,36 @@
       btn.addEventListener("click", () => {
         langSheet.querySelectorAll(".lang-sheet__opt").forEach(b => b.classList.remove("is-active"));
         btn.classList.add("is-active");
+        const code = btn.dataset.lang || "";
+        document.querySelectorAll(".header-lang-code, .lang-code").forEach(el => el.textContent = code);
+        const flagImg = btn.querySelector("img");
+        if (flagImg) {
+          document.querySelectorAll(".lang-flag img").forEach(img => {
+            img.src = flagImg.src;
+            img.alt = flagImg.alt;
+          });
+        }
         closeLang();
       });
     });
   }
+
+  /* ---------- Desktop lang-select dropdown ---------- */
+  document.querySelectorAll(".lang-option").forEach(opt => {
+    opt.addEventListener("click", () => {
+      const code = opt.textContent.trim();
+      const flagImg = opt.querySelector("img");
+      document.querySelectorAll(".lang-option").forEach(o => o.classList.remove("is-active"));
+      opt.classList.add("is-active");
+      document.querySelectorAll(".lang-code, .header-lang-code").forEach(el => el.textContent = code);
+      if (flagImg) {
+        document.querySelectorAll(".lang-flag img").forEach(img => {
+          img.src = flagImg.src;
+          img.alt = flagImg.alt;
+        });
+      }
+    });
+  });
 
   /* ---------- Mobile bottom bar: active state ---------- */
   const mbarBtns = document.querySelectorAll(".mobile-bar .mbar-btn");
