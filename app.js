@@ -87,12 +87,22 @@
   const slides = [...document.querySelectorAll(".hero__slide")];
   const counterCur = document.querySelector(".hero__counter-cur");
   const counterTot = document.querySelector(".hero__counter-tot");
+  const heroSection = document.querySelector(".hero");
+  const heroTitle = document.querySelector(".hero__title");
+  const heroDesc = document.querySelector(".hero__desc");
+  const defaultTitle = heroTitle ? heroTitle.innerHTML : "";
+  const defaultDesc = heroDesc ? heroDesc.innerHTML : "";
   let cur = 0;
   let timer = null;
   function go(i) {
     cur = (i + slides.length) % slides.length;
     slides.forEach((s, k) => s.classList.toggle("is-active", k === cur));
     if (counterCur) counterCur.textContent = String(cur + 1).padStart(2, '0');
+    const slide = slides[cur];
+    const isEvent = slide.classList.contains("hero__slide--event");
+    if (heroSection) heroSection.classList.toggle("hero--event", isEvent);
+    if (heroTitle) heroTitle.innerHTML = slide.dataset.title || defaultTitle;
+    if (heroDesc) heroDesc.innerHTML = slide.dataset.desc || defaultDesc;
   }
   function play() {
     stop();

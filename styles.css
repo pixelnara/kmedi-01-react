@@ -899,6 +899,53 @@ input[type="password"].login-modal__input {
 .hero__brand {
   display: none;
 }
+
+/* ---- Event slide overlay ---- */
+.hero__event-deco {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-sans);
+  font-size: clamp(100px, 22vw, 260px);
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  color: #fff;
+  opacity: 0;
+  pointer-events: none;
+  user-select: none;
+  transition: opacity 0.5s ease;
+}
+.hero--event .hero__event-deco {
+  opacity: 0.07;
+}
+.hero__event-badge {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  border-radius: 40px;
+  font-family: var(--font-sans);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.95);
+  margin-bottom: 16px;
+  opacity: 0;
+  transform: translateY(10px);
+  pointer-events: none;
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+.hero--event .hero__event-badge {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
 @keyframes rise {
   to {
     opacity: 1;
