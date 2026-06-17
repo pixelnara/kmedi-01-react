@@ -1889,7 +1889,7 @@ ul {
   font-size: var(--text-15);
   font-weight: 400;
   color: var(--text-heading);
-  line-height: 2;
+  line-height: 2.5;
   letter-spacing: 0;
 }
 @media (hover: hover) {
