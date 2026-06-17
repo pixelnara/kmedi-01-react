@@ -1535,6 +1535,9 @@ ul {
   text-decoration-thickness: 2px;
   text-underline-offset: 4px;
 }
+.hiw-grid .news-card:hover .news-card__title {
+  text-decoration: none;
+}
 .news-card__date {
   font-size: var(--text-12);
   font-weight: 400;
