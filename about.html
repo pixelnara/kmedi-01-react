@@ -460,59 +460,104 @@
 </header>
 
 <!-- ============================== GNB OVERLAY ============================== -->
-<div class="gnb-overlay">
+<div class="gnb-overlay gnb-overlay--dark">
   <div class="wrap">
     <div class="gnb-overlay__bar">
-      <a href="index.html" class="brand gnb-overlay__brand">KMEDITOUR<small>Premium Concierge in Seoul</small></a>
+      <a href="index.html" class="brand gnb-overlay__brand">KMEDITOUR<small>Premium Concierge in Korea</small></a>
       <button class="gnb-overlay__close" aria-label="닫기">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
       </button>
     </div>
+    <!-- 상단 5컬럼: 서비스, 라이프스타일, 소식, 소개, 안내 -->
     <div class="gnb-cols">
-      <div class="gnb-col">
-        <h4>Space<svg class="gnb-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></h4>
+      <div class="gnb-col gnb-col--mypage gnb-col--mypage-mobile">
+        <h4 data-en="My Page">마이페이지<svg class="gnb-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></h4>
         <ul>
-          <li><a href="#">휴그로센터</a></li>
+          <li><a href="#">장바구니 확인</a></li>
+          <li><a href="#">예약확인</a></li>
+          <li><a href="#">문의내역</a></li>
         </ul>
       </div>
       <div class="gnb-col">
-        <h4>Services<svg class="gnb-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></h4>
+        <h4 data-en="Our Services">서비스<svg class="gnb-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></h4>
         <ul>
-          <li><a href="#">퍼스널 스킨 솔루션</a></li>
+          <li><a href="index.html#treatments">추천 서비스 🎉</a></li>
           <li class="gnb-has-sub">
             <div class="gnb-item-row">
-              <a href="#">시술</a>
-              <button class="gnb-sub-toggle" aria-label="시술 하위 메뉴">
+              <a href="#" data-en="Beauty Concierge">뷰티</a>
+              <button class="gnb-sub-toggle" aria-label="뷰티 컨시어지 하위 메뉴">
                 <svg class="gnb-sub-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
               </button>
             </div>
             <ul class="gnb-sub-list">
-              <li><a href="#">필러</a></li>
-              <li><a href="#">보톡스</a></li>
-              <li><a href="#">실리프팅</a></li>
-              <li><a href="#">레이저</a></li>
-              <li><a href="#">스킨 부스터</a></li>
-              <li><a href="#">피부관리</a></li>
-              <li><a href="#">지방분해</a></li>
+              <li><a href="#">나의 피부 타입 찾기 🌸</a></li>
+              <li><a href="#">피부분석 시스템 🌸</a></li>
+              <li class="gnb-has-sub">
+                <div class="gnb-item-row">
+                  <a href="#" class="gnb-proc-trigger">시술 종류</a>
+                  <button class="gnb-sub-toggle" aria-label="시술 하위 메뉴">
+                    <svg class="gnb-sub-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                  </button>
+                </div>
+                <ul class="gnb-sub-list">
+                  <li><a href="#">필러</a></li>
+                  <li><a href="#">보톡스</a></li>
+                  <li><a href="#">실리프팅</a></li>
+                  <li><a href="#">레이저</a></li>
+                  <li><a href="#">스킨 부스터</a></li>
+                  <li><a href="#">피부관리</a></li>
+                  <li><a href="#">지방분해</a></li>
+                </ul>
+              </li>
+              <li><a href="#">코스메틱 제품</a></li>
             </ul>
           </li>
-          <li><a href="#">코스메틱</a></li>
+          <li><a href="#" data-en="Medical Concierge">메디컬</a></li>
+          <li><a href="#" data-en="Travel Concierge">트래블</a></li>
+          <li><a href="#" data-en="Shopping Concierge">쇼핑</a></li>
         </ul>
       </div>
       <div class="gnb-col">
-        <h4>Travel<svg class="gnb-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></h4>
+        <h4 data-en="Lifestyle">라이프스타일<svg class="gnb-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></h4>
         <ul>
-          <li><a href="#">호텔</a></li>
-          <li><a href="#">쇼핑</a></li>
+          <li><a href="#">나의 피부 타입 찾기 🌸</a></li>
+          <li><a href="#">코스메틱 제품 둘러보기 🌸</a></li>
+          <li><a href="#">피부 분석 시스템 미리보기 🌸</a></li>
+          <li><a href="#">휴그로센터 방문 🌸</a></li>
         </ul>
       </div>
       <div class="gnb-col">
-        <h4>Kmeditour<svg class="gnb-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></h4>
+        <h4 data-en="News">소식<svg class="gnb-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></h4>
+        <ul>
+          <li><a href="#" data-en="Event">이벤트</a></li>
+          <li><a href="#" data-en="Magazine">매거진</a></li>
+          <li><a href="#" data-en="Korea Guide">코리아 가이드</a></li>
+        </ul>
+      </div>
+      <div class="gnb-col">
+        <h4 data-en="About">소개<svg class="gnb-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></h4>
+        <ul>
+          <li><a href="about.html" data-en="Who We Are">KMEDITOUR</a></li>
+          <li><a href="#" data-en="Hugro Center">휴그로센터</a></li>
+        </ul>
+      </div>
+      <div class="gnb-col">
+        <h4 data-en="Information">안내<svg class="gnb-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></h4>
         <ul>
           <li><a href="index.html#how">서비스 이용 방법</a></li>
-          <li><a href="index.html#why">매거진</a></li>
           <li><a href="#" class="gnb-link--bold">FAQ</a></li>
-          <li><a href="about.html" class="gnb-link--bold">ABOUT</a></li>
+          <li><a href="#" class="gnb-link--bold" data-en="Contact">문의하기</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- 하단 행: 마이페이지 -->
+    <div class="gnb-cols gnb-cols--sub">
+      <div class="gnb-col gnb-col--mypage">
+        <h4 data-en="My Page">마이페이지<svg class="gnb-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></h4>
+        <ul>
+          <li><a href="#">장바구니 확인</a></li>
+          <li><a href="#">예약확인</a></li>
+          <li><a href="#">문의내역</a></li>
         </ul>
       </div>
     </div>
@@ -520,11 +565,38 @@
       <div class="gnb-banner__inner">
         <p class="gnb-banner__label">Premium Space</p>
         <p class="gnb-banner__title">휴그로센터</p>
-        <p class="gnb-banner__sub">의료 미용 토탈 케어 공간</p>
+        <p class="gnb-banner__sub">의료 뷰티 여행 토탈 케어 공간</p>
       </div>
       <svg class="gnb-banner__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
     </a>
   </div>
+</div>
+
+<!-- 시술 팝업 시트 (모바일) -->
+<div class="proc-sheet" id="procSheet" aria-hidden="true">
+  <div class="proc-sheet__bar">
+    <span class="proc-sheet__title">시술 종류</span>
+    <button class="proc-sheet__close" aria-label="닫기">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+    </button>
+  </div>
+  <ul class="proc-sheet__list">
+    <li><a href="#">필러</a></li>
+    <li><a href="#">보톡스</a></li>
+    <li><a href="#">실리프팅</a></li>
+    <li><a href="#">레이저</a></li>
+    <li><a href="#">스킨 부스터</a></li>
+    <li><a href="#">피부관리</a></li>
+    <li><a href="#">지방분해</a></li>
+  </ul>
+  <a href="index.html#booking" class="proc-sheet__banner">
+    <div class="proc-sheet__banner-inner">
+      <p class="proc-sheet__banner-label">Premium Beauty Concierge</p>
+      <p class="proc-sheet__banner-title">시술 상담 예약하기</p>
+      <p class="proc-sheet__banner-sub">전담 코디네이터가 맞춤 시술을 안내합니다</p>
+    </div>
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+  </a>
 </div>
 
 <!-- ============================== ABOUT HERO ============================== -->
