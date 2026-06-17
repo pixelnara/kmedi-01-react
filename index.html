@@ -22,17 +22,7 @@
       <span class="util-sep"></span>
       <a href="about.html">회사소개</a>
       <span class="util-sep"></span>
-      <div class="util-auth-btns">
-        <button class="util-user-btn js-login-open" aria-label="로그인" id="loginTrigger">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><circle cx="12" cy="8" r="4"/><path d="M4 20v-1a8 8 0 0 1 16 0v1"/></svg>
-          <span class="util-auth-label">로그인</span>
-        </button>
-        <span class="util-auth-sep"></span>
-        <a href="#" class="util-user-btn" aria-label="회원가입">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><circle cx="10" cy="8" r="4"/><path d="M2 20v-1a8 8 0 0 1 12.93-6.36"/><line x1="19" y1="13" x2="19" y2="19"/><line x1="16" y1="16" x2="22" y2="16"/></svg>
-          <span class="util-auth-label">회원가입</span>
-        </a>
-      </div>
+      <a href="#" class="util-login-box">로그인 / 회원가입</a>
       <span class="util-sep"></span>
       <div class="lang-select">
         <button class="lang-select__btn">
@@ -88,8 +78,7 @@
         <button class="gnb-notif-btn" aria-label="알림">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
         </button>
-        <a href="#" class="gnb-login-btn js-login-open">로그인</a>
-        <a href="#" class="gnb-login-btn gnb-login-btn--join">회원가입</a>
+        <a href="#" class="gnb-login-btn">로그인 / 회원가입</a>
       </div>
       <button class="gnb-overlay__close" aria-label="닫기">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
@@ -865,7 +854,7 @@
   const backdrop= document.getElementById('loginBackdrop');
   function openModal(){ modal.classList.add('is-open'); modal.setAttribute('aria-hidden','false'); document.body.style.overflow='hidden'; }
   function closeModal(){ modal.classList.remove('is-open'); modal.setAttribute('aria-hidden','true'); document.body.style.overflow=''; }
-  document.querySelectorAll('.js-login-open').forEach(function(el){ el.addEventListener('click', openModal); });
+  if (trigger) trigger.addEventListener('click', openModal);
   close.addEventListener('click', closeModal);
   backdrop.addEventListener('click', closeModal);
   document.addEventListener('keydown', function(e){ if(e.key==='Escape') closeModal(); });
