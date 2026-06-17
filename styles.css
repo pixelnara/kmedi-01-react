@@ -684,7 +684,7 @@ input[type="password"].login-modal__input {
 .header__right {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 4px;
 }
 .header__right .btn {
   min-width: unset;
@@ -2236,7 +2236,7 @@ body:has(.gnb-overlay.is-open) {
   }
   .gnb-login-btn {
     font-size: 11px;
-    padding: 5px 13px;
+    padding: 5px 10px;
     border-color: var(--gray-300);
     color: var(--text-body);
   }
