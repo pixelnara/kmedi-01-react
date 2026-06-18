@@ -776,6 +776,15 @@
 }
 
 /* Services Accordion */
+/* why-acc: SERVICES 아코디언과 동일 구조, 색상만 gold-600 */
+.why-acc {
+  width: 100%;
+  max-width: 720px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
 .why-acc__item {
   background: var(--bg-gray);
   transition: background 0.3s;
@@ -792,7 +801,7 @@
   padding: var(--space-24) 30px;
   text-align: left;
   font-family: var(--font-sans);
-  font-size: clamp(17px, 1.4vw, 22px);
+  font-size: 22px;
   font-weight: 530;
   color: var(--text-gray-6);
   letter-spacing: var(--tracking-tight);
@@ -808,7 +817,7 @@
   position: relative;
   width: 14px;
   height: 14px;
-  flex-shrink: 0;
+  flex: none;
   color: var(--gold-500);
 }
 .why-acc__item.is-open .why-acc__icon {
@@ -825,14 +834,14 @@
   left: 0;
   top: 50%;
   width: 100%;
-  height: 2px;
+  height: 2.5px;
   transform: translateY(-50%);
 }
 .why-acc__icon::after {
   top: 0;
   left: 50%;
   height: 100%;
-  width: 2px;
+  width: 2.5px;
   transform: translateX(-50%);
 }
 .why-acc__item.is-open .why-acc__icon::after {
@@ -846,11 +855,15 @@
 }
 .why-acc__body-inner {
   padding: var(--space-32) 30px var(--space-40);
-  font-family: var(--font-sans);
-  font-size: var(--text-18);
   color: var(--text-gray-6);
-  line-height: 1.9;
+  font-size: var(--text-18);
   letter-spacing: var(--tracking-tight);
+  line-height: 1.9;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
 }
 .why-cta {
   text-align: center;
