@@ -1070,7 +1070,7 @@ body:has(.gnb-overlay.is-open) {
     flex-direction: column;
   }
   .gnb-overlay--dark .gnb-banners {
-    margin-top: auto;
+    margin-top: clamp(40px, 6vh, 80px);
   }
   .gnb-overlay--dark .gnb-overlay__brand,
   .gnb-overlay--dark .gnb-overlay__brand small,
@@ -1218,7 +1218,7 @@ body:has(.gnb-overlay.is-open) {
   align-items: flex-end;
   justify-content: space-between;
   padding: var(--space-40) var(--space-40);
-  min-height: 210px;
+  height: clamp(200px, 22vh, 360px);
   color: var(--text-white);
   text-decoration: none;
   overflow: hidden;
