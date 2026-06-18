@@ -1319,7 +1319,7 @@
   .treat-cta .btn,
   .why-cta .btn,
   .highlights__more .btn {
-    height: 48px;
+    height: 56px;
     padding: 0;
     font-size: var(--text-15);
   }
