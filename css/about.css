@@ -17,8 +17,7 @@
    ───────────────────────────────────────────────────── */
 .about-hero {
   position: relative;
-  min-height: 88vh;
-  min-height: 88dvh;
+  height: 95vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -185,7 +184,7 @@
 }
 .guarantee-col__desc {
   font-size: var(--text-15);
-  color: rgba(255, 255, 255, 0.50);
+  color: rgba(255, 255, 255, 0.5);
   line-height: 1.85;
 }
 
@@ -363,7 +362,7 @@
     padding-left: 0;
     padding-right: 0;
     border-right: none;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   }
   .guarantee-col:last-child {
     border-bottom: none;
