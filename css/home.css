@@ -1308,10 +1308,15 @@
   .treat-card__body {
     padding: 16px 14px;
   }
+  .treat-cta,
+  .why-cta {
+    margin-top: 0;
+  }
   .treat-cta .btn,
   .why-cta .btn,
   .highlights__more .btn {
-    padding: 14px 0;
+    height: 56px;
+    padding: 0;
     font-size: var(--text-15);
   }
   .highlights__more .btn {
