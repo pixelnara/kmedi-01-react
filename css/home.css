@@ -1326,8 +1326,8 @@
   .treat-cta .btn,
   .why-cta .btn,
   .highlights__more .btn {
-    height: 64px;
-    padding: 0;
+    height: auto;
+    padding: 20px 0;
     font-size: var(--text-15);
   }
   .highlights__more .btn {
