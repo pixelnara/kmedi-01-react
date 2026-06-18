@@ -1,0 +1,1131 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>KMEDITOUR — Design System</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/theme.css">
+<style>
+:root { --ui: 'Noto Sans KR', sans-serif; }
+
+body {
+  font-family: var(--ui);
+  background: var(--bg-white);
+  color: var(--text-gray-3);
+  margin: 0;
+  padding: 48px 48px 100px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+h1 { font-weight: 700; color: var(--text-gray-6); font-size: 38px; margin: 0 0 6px; letter-spacing: -.02em; }
+.sub { color: var(--text-gray-3); margin: 0 0 32px; font-size: 15px; }
+h2 { font-weight: 700; color: var(--text-gray-6); font-size: 28px; margin: 56px 0 16px; border-bottom: 2px solid var(--border-gray-1); padding-bottom: 10px; letter-spacing: -.01em; }
+
+/* ─── Tabs ─── */
+.tabs { display: flex; gap: 4px; margin: 0 0 40px; border-bottom: 2px solid var(--border-gray-1); }
+.tab {
+  appearance: none; border: none; background: none;
+  font-family: var(--ui); font-size: 17px; font-weight: 600;
+  color: var(--text-gray-3);
+  padding: 12px 24px; cursor: pointer;
+  border-bottom: 3px solid transparent; margin-bottom: -2px;
+  transition: color .2s, border-color .2s;
+}
+.tab:hover { color: var(--text-gray-6); }
+.tab.active { color: var(--text-gray-6); border-bottom-color: var(--text-caption); }
+.panel { display: none; }
+.panel.active { display: block; }
+
+/* ─── Section header + toggle ─── */
+.sec-head { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin: 56px 0 16px; border-bottom: 2px solid var(--border-gray-1); padding-bottom: 10px; flex-wrap: wrap; }
+.sec-head h2 { margin: 0; border: none; padding: 0; }
+.toggle { display: inline-flex; align-items: center; gap: 10px; font-size: 14px; font-weight: 600; color: var(--text-gray-3); cursor: pointer; user-select: none; }
+.toggle input { position: absolute; opacity: 0; width: 0; height: 0; }
+.track { width: 46px; height: 26px; border-radius: 99px; background: var(--border-gray-4); position: relative; transition: background .2s; flex-shrink: 0; }
+.track::after { content: ""; position: absolute; top: 3px; left: 3px; width: 20px; height: 20px; border-radius: 50%; background: var(--bg-white); box-shadow: 0 1px 3px rgba(0,0,0,.25); transition: transform .2s; }
+.toggle input:checked + .track { background: var(--text-caption); }
+.toggle input:checked + .track::after { transform: translateX(20px); }
+
+/* ─── Color swatches ─── */
+.swrow { margin-bottom: 56px; }
+.rtitle { font-size: 22px; font-weight: 700; color: var(--text-gray-6); margin: 0 0 5px; letter-spacing: -.01em; }
+.rdesc { font-size: 13.5px; color: var(--text-gray-3); margin: 0 0 24px; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 14px; }
+.sw { position: relative; border: 1px solid var(--border-gray-1); border-radius: 8px; overflow: hidden; background: var(--bg-white); }
+.sw .c { height: 96px; }
+.sw .l { padding: 11px 13px; }
+.sw .n { font-size: 13.5px; color: var(--text-gray-6); font-weight: 600; line-height: 1.3; word-break: break-all; }
+.sw .h { font-size: 12.5px; color: var(--text-gray-3); margin-top: 3px; font-weight: 400; }
+.sw .h .pm { display: none; }
+.sw .h .pm .pn { color: var(--text-caption); font-weight: 600; }
+body.show-prim .sw .h .pm { display: inline; }
+.fan { position: absolute; top: 8px; right: 8px; font-size: 12px; font-weight: 700; color: var(--text-white); background: rgba(0,0,0,.32); border-radius: 99px; padding: 2px 8px; backdrop-filter: blur(2px); }
+.fan.hot { background: var(--text-caption); }
+
+/* ─── Typography ─── */
+.type-grid { display: flex; flex-direction: column; gap: 6px; }
+.type-row {
+  display: grid;
+  grid-template-columns: 180px 1fr 200px;
+  align-items: center;
+  gap: 24px;
+  padding: 14px 20px;
+  border: 1px solid var(--border-gray-1);
+  border-radius: 8px;
+  background: var(--surface-gray-1);
+}
+.type-token { font-size: 13px; font-weight: 700; color: var(--text-caption); font-family: ui-monospace, monospace; }
+.type-preview { color: var(--text-gray-6); font-family: Optima, Candara, "Pretendard", sans-serif; line-height: 1.1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.type-meta { font-size: 12.5px; color: var(--text-gray-3); text-align: right; }
+
+/* ─── Spacing ─── */
+.space-grid { display: flex; flex-direction: column; gap: 6px; }
+.space-row {
+  display: grid;
+  grid-template-columns: 160px 1fr 120px;
+  align-items: center;
+  gap: 20px;
+  padding: 10px 20px;
+  border: 1px solid var(--border-gray-1);
+  border-radius: 8px;
+  background: var(--surface-gray-1);
+}
+.space-token { font-size: 13px; font-weight: 700; color: var(--text-caption); font-family: ui-monospace, monospace; }
+.space-bar-wrap { height: 10px; background: var(--border-gray-1); border-radius: 99px; overflow: hidden; }
+.space-bar { height: 100%; background: var(--text-caption); border-radius: 99px; opacity: 0.7; }
+.space-val { font-size: 12.5px; color: var(--text-gray-3); text-align: right; font-family: ui-monospace, monospace; }
+
+/* ─── Radius / Shadow ─── */
+.nc-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 14px; }
+.ncard { background: var(--surface-gray-1); border: 1px solid var(--border-gray-1); border-radius: 8px; padding: 24px 26px; }
+.nclab { font-size: 11px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--text-gray-3); margin: 0 0 20px; }
+.r-row { display: flex; align-items: center; gap: 20px; margin-bottom: 16px; }
+.r-row:last-child { margin-bottom: 0; }
+.r-prev-full { width: 48px; height: 48px; flex-shrink: 0; background: var(--text-caption); opacity: 0.2; border-radius: 50%; border: 2px solid var(--text-caption); }
+.r-prev-pill { width: 80px; height: 32px; flex-shrink: 0; background: var(--text-caption); opacity: 0.15; border-radius: 100px; border: 2px solid var(--text-caption); }
+.r-meta .code { font-size: 14px; font-weight: 700; color: var(--text-gray-6); font-family: ui-monospace, monospace; }
+.r-meta .desc { font-size: 13px; color: var(--text-gray-3); margin-top: 2px; }
+.sh-row { display: flex; flex-direction: column; gap: 14px; }
+.sh-item { padding: 18px 20px; background: var(--bg-white); border-radius: 8px; }
+.sh-item.sh-header { box-shadow: var(--shadow-header); }
+.sh-item.sh-card { box-shadow: var(--shadow-card); }
+.sh-item.sh-btn { box-shadow: var(--shadow-btn); }
+.sh-token { font-size: 13px; font-weight: 700; color: var(--text-caption); font-family: ui-monospace, monospace; }
+.sh-val { font-size: 12px; color: var(--text-gray-3); margin-top: 4px; }
+
+/* ─── Primary ─── */
+.primary-showcase {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid var(--border-gray-1);
+  margin-bottom: 8px;
+}
+.primary-swatch {
+  background: var(--primary);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 24px;
+  gap: 4px;
+}
+.primary-swatch .ps-name { font-size: 13px; font-weight: 700; color: rgba(255,255,255,.55); letter-spacing: .06em; text-transform: uppercase; }
+.primary-swatch .ps-hex  { font-size: 22px; font-weight: 700; color: #fff; font-family: ui-monospace, monospace; letter-spacing: .02em; }
+.primary-swatch .ps-var  { font-size: 12px; color: rgba(255,255,255,.45); margin-top: 2px; font-family: ui-monospace, monospace; }
+.primary-usage {
+  background: var(--surface-gray-1);
+  padding: 24px 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  justify-content: center;
+}
+.primary-usage .pu-label { font-size: 11px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--text-gray-2); margin-bottom: 4px; }
+.primary-usage .pu-row   { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+.pu-btn  { display: inline-flex; align-items: center; height: 40px; padding: 0 20px; font-size: 13px; font-weight: 600; letter-spacing: .06em; background: var(--primary); color: #fff; border: none; border-radius: 2px; cursor: default; }
+.pu-text { font-size: 18px; font-weight: 700; color: var(--primary); font-family: Optima, Candara, "Pretendard", sans-serif; }
+.pu-border { display: inline-flex; align-items: center; height: 40px; padding: 0 20px; font-size: 13px; font-weight: 600; color: var(--primary); border: 1.5px solid var(--primary); border-radius: 2px; background: transparent; cursor: default; }
+.pu-dot { width: 36px; height: 36px; border-radius: 50%; background: var(--primary); }
+
+/* ─── Components ─── */
+.comp-row { display: flex; gap: 14px; flex-wrap: wrap; align-items: center; margin-bottom: 14px; }
+.ds-btn {
+  display: inline-flex; align-items: center; justify-content: center;
+  height: 54px; padding: 0 28px;
+  font-family: var(--ui); font-size: 14px; font-weight: 600;
+  letter-spacing: 0.08em; cursor: pointer;
+  transition: background .3s, color .3s;
+}
+.ds-btn-solid { background: var(--btn-primary); color: var(--text-white); border: none; }
+.ds-btn-solid:hover { background: var(--btn-primary); }
+.ds-btn-outline { background: transparent; border: 1px solid var(--text-gray-6); color: var(--text-gray-6); }
+.ds-btn-outline:hover { background: var(--text-gray-6); color: var(--bg-white); }
+.ds-btn-accent { background: var(--accent-dark1); color: var(--text-white); border: none; }
+.ds-btn-accent:hover { background: var(--btn-secondary); }
+.ds-card {
+  background: var(--bg-white); border: 1px solid var(--border-gray-1);
+  border-radius: 8px; padding: 24px 26px; max-width: 340px;
+  box-shadow: var(--shadow-card);
+}
+.ds-card h3 { font-weight: 700; font-size: 20px; color: var(--text-gray-6); margin: 0 0 8px; }
+.ds-card p { color: var(--text-gray-3); font-size: 15px; margin: 0; line-height: 1.7; }
+.ds-card .ds-eyebrow { font-size: 12px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--text-caption); margin: 0 0 10px; }
+.ds-chip {
+  display: inline-block; padding: 7px 16px;
+  font-size: 13px; font-weight: 600; font-family: var(--ui);
+  border-radius: 4px;
+}
+.ds-chip-active { background: var(--btn-primary); color: var(--text-white); border: 1px solid var(--btn-primary); }
+.ds-chip-idle { background: var(--bg-white); border: 1px solid var(--border-gray-4); color: var(--text-gray-4); }
+.ds-section-preview {
+  background: var(--surface-gray-1); border-radius: 8px; padding: 40px 36px;
+  border: 1px solid var(--border-gray-1);
+}
+.ds-section-preview .ey { font-size: 13px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--text-caption); margin: 0 0 14px; }
+.ds-section-preview .ttl { font-size: 32px; font-weight: 700; color: var(--text-gray-6); line-height: 1.1; margin: 0 0 14px; letter-spacing: -.02em; font-family: Optima, Candara, "Pretendard", sans-serif; }
+.ds-section-preview .body { font-size: 15px; color: var(--text-gray-3); max-width: 48ch; line-height: 1.75; }
+.ds-dark-preview {
+  background: var(--bg-dark); border-radius: 8px; padding: 40px 36px;
+  color: var(--text-white);
+}
+.ds-dark-preview .ttl { font-size: 28px; font-weight: 700; letter-spacing: -.01em; margin: 0 0 12px; font-family: Optima, Candara, "Pretendard", sans-serif; }
+.ds-dark-preview .body { font-size: 15px; color: rgba(255,255,255,0.62); line-height: 1.75; }
+.ds-cta-preview {
+  background: var(--bg-dark); border-radius: 8px; padding: 40px 36px;
+  color: var(--text-white); text-align: center;
+}
+.ds-cta-preview .ttl { font-size: 28px; font-weight: 700; margin: 0 0 12px; font-family: Optima, Candara, "Pretendard", sans-serif; }
+.ds-cta-preview .body { font-size: 15px; color: rgba(255,255,255,0.85); margin-bottom: 24px; }
+.comp-label { font-size: 12px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--text-gray-3); margin: 28px 0 10px; }
+
+/* ─── Treat Card ─── */
+.ds-treat-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+  margin-bottom: 8px;
+  border: 1px solid var(--border-gray-1);
+}
+.ds-treat-card {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 3 / 4;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 26px 22px;
+  color: #fff;
+}
+.ds-treat-card__bg {
+  position: absolute;
+  inset: 0;
+  background: var(--border-gray-4);
+  filter: brightness(0.7);
+}
+.ds-treat-card:nth-child(2) .ds-treat-card__bg { background: var(--gray-600); }
+.ds-treat-card:nth-child(3) .ds-treat-card__bg { background: var(--gray-700); }
+.ds-treat-card:nth-child(4) .ds-treat-card__bg { background: var(--text-gray-6); }
+.ds-treat-card__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,.72) 0%, rgba(0,0,0,.22) 55%, rgba(0,0,0,.04) 100%);
+}
+.ds-treat-card__body { position: relative; z-index: 1; }
+.ds-treat-card__en {
+  display: block;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: var(--rating);
+  margin-bottom: 5px;
+}
+.ds-treat-card__title {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0 0 10px;
+}
+.ds-treat-card__link {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: .08em;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  opacity: .75;
+  border-bottom: 1px solid rgba(255,255,255,.4);
+  padding-bottom: 2px;
+}
+.ds-treat-cta {
+  margin-top: 2px;
+  background: var(--btn-primary);
+  color: var(--text-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 28px;
+  font-size: 22px;
+  font-weight: 500;
+  letter-spacing: -.01em;
+}
+
+/* ─── Review Card ─── */
+.ds-review-card {
+  background: var(--bg-white);
+  border: 1px solid var(--border-gray-1);
+  border-radius: 8px;
+  padding: 24px 26px;
+  max-width: 360px;
+  box-shadow: var(--shadow-card);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-16);
+}
+.review__stars { display: flex; gap: 2px; }
+.review__star  { color: var(--rating); font-size: 13px; line-height: 1; }
+.review__text  { font-size: 15px; color: var(--text-gray-3); line-height: 1.88; margin: 0; }
+.review__divider { width: 28px; height: 1px; background: var(--border-gray-1); flex-shrink: 0; }
+.review__name  { font-size: 14px; font-weight: 700; color: var(--text-gray-6); margin: 0; line-height: 1.4; }
+.review__info  { font-size: 13px; color: var(--text-gray-2); margin-top: 3px; }
+
+/* ─── Print ─── */
+@media print {
+  * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  body { padding: 24px 32px; font-size: 13px; background: #ffffff !important; }
+  :root { --bg-white: #ffffff !important; --surface-gray-1: #f8f8f8 !important; }
+  .sw, .ncard, .type-row, .space-row, .ds-section-preview { background: #ffffff !important; }
+  .tabs { display: none !important; }
+  .toggle { display: none !important; }
+  .panel { display: block !important; }
+  #panel-semantic::before  { content: "Semantic";    display: block; font-size: 22px; font-weight: 700; color: var(--text-gray-6); border-bottom: 3px solid var(--text-caption); padding-bottom: 8px; margin-bottom: 24px; }
+  #panel-primitive::before { content: "Primitive";   display: block; font-size: 22px; font-weight: 700; color: var(--text-gray-6); border-bottom: 3px solid var(--text-caption); padding-bottom: 8px; margin-bottom: 24px; }
+  #panel-type::before      { content: "Typography";  display: block; font-size: 22px; font-weight: 700; color: var(--text-gray-6); border-bottom: 3px solid var(--text-caption); padding-bottom: 8px; margin-bottom: 24px; }
+  #panel-spacing::before   { content: "Spacing";     display: block; font-size: 22px; font-weight: 700; color: var(--text-gray-6); border-bottom: 3px solid var(--text-caption); padding-bottom: 8px; margin-bottom: 24px; }
+  #panel-components::before{ content: "Components";  display: block; font-size: 22px; font-weight: 700; color: var(--text-gray-6); border-bottom: 3px solid var(--text-caption); padding-bottom: 8px; margin-bottom: 24px; }
+  #panel-architecture::before{ content: "Architecture"; display: block; font-size: 22px; font-weight: 700; color: var(--text-gray-6); border-bottom: 3px solid var(--text-caption); padding-bottom: 8px; margin-bottom: 24px; }
+  #panel-primitive { page-break-before: always; margin-top: 0; }
+  #panel-type      { page-break-before: always; margin-top: 0; }
+  #panel-spacing   { page-break-before: always; margin-top: 0; }
+  #panel-components{ page-break-before: always; margin-top: 0; }
+  .grid { grid-template-columns: repeat(4, 1fr); gap: 10px; }
+  .sw .c { height: 72px; }
+  .type-row, .space-row { page-break-inside: avoid; }
+  .ncard, .ds-card, .ds-section-preview, .ds-dark-preview, .ds-cta-preview { page-break-inside: avoid; }
+  h1 { font-size: 28px; }
+  h2 { font-size: 20px; margin-top: 32px; }
+}
+</style>
+</head>
+<body>
+
+<h1>KMEDITOUR Design System</h1>
+<p class="sub">theme.css 기준 · Primitive → Semantic 구조 · Gray / Brown / Violet / Amber · Gold 스케일</p>
+
+<div class="tabs">
+  <button class="tab active" data-tab="semantic">Semantic</button>
+  <button class="tab" data-tab="primitive">Primitive</button>
+  <button class="tab" data-tab="type">Typography</button>
+  <button class="tab" data-tab="spacing">Spacing</button>
+  <button class="tab" data-tab="components">Components</button>
+  <button class="tab" data-tab="architecture">Architecture</button>
+</div>
+
+<!-- ══════ 탭 1 : SEMANTIC ══════ -->
+<section class="panel active" id="panel-semantic">
+
+  <div class="sec-head">
+    <h2>Color — Semantic Swatches</h2>
+    <label class="toggle">
+      <input type="checkbox" id="primToggle">
+      <span class="track"></span>Primitive 이름 표시
+    </label>
+  </div>
+  <div id="semRows"></div>
+
+  <h2>Radius · Shadow</h2>
+  <div class="nc-grid">
+    <div class="ncard">
+      <p class="nclab">Radius</p>
+      <div class="r-row">
+        <span class="r-prev-full"></span>
+        <div class="r-meta">
+          <div class="code">--radius-full</div>
+          <div class="desc">50% · 원형 (소셜 아이콘, 아바타)</div>
+        </div>
+      </div>
+      <div class="r-row">
+        <span class="r-prev-pill"></span>
+        <div class="r-meta">
+          <div class="code">--radius-pill</div>
+          <div class="desc">100px · 태그, 필터 칩</div>
+        </div>
+      </div>
+    </div>
+    <div class="ncard">
+      <p class="nclab">Shadow</p>
+      <div class="sh-row">
+        <div class="sh-item sh-header">
+          <div class="sh-token">--shadow-header</div>
+          <div class="sh-val">0 1px 0 var(--gray-200)</div>
+        </div>
+        <div class="sh-item sh-card">
+          <div class="sh-token">--shadow-card</div>
+          <div class="sh-val">0 30px 70px -30px rgba(40,30,25,.35)</div>
+        </div>
+        <div class="sh-item sh-btn">
+          <div class="sh-token">--shadow-btn</div>
+          <div class="sh-val">0 4px 16px rgba(0,0,0,.12)</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<!-- ══════ 탭 2 : PRIMITIVE ══════ -->
+<section class="panel" id="panel-primitive">
+  <h2>Primitive Palette</h2>
+  <p class="sub" style="margin-top:-6px">원시 색상 스케일. 우측 배지 = 이 색을 참조하는 Semantic 토큰 수. 보라 배지 = 3개 이상.</p>
+  <div id="primRows"></div>
+</section>
+
+<!-- ══════ 탭 3 : TYPOGRAPHY ══════ -->
+<section class="panel" id="panel-type">
+  <h2>Font Family</h2>
+  <div class="nc-grid">
+    <div class="ncard">
+      <p class="nclab">Font · --font-sans</p>
+      <div style="font-family: Optima, Candara, 'Pretendard', sans-serif; font-size: 48px; line-height: 1; color: var(--text-gray-6); margin-bottom: 12px; font-weight: 400;">Aa 가나다</div>
+      <div style="font-size: 13px; color: var(--text-gray-3);">Optima, Candara, "Pretendard", source-sans-pro, sans-serif</div>
+    </div>
+  </div>
+
+  <h2>Font Size Scale</h2>
+  <div class="type-grid" id="typeRows"></div>
+
+  <h2>Letter Spacing Scale</h2>
+  <div class="type-grid" id="trackRows"></div>
+</section>
+
+<!-- ══════ 탭 4 : SPACING ══════ -->
+<section class="panel" id="panel-spacing">
+  <h2>Spacing Scale</h2>
+  <div class="space-grid" id="spaceRows"></div>
+</section>
+
+<!-- ══════ 탭 5 : COMPONENTS ══════ -->
+<section class="panel" id="panel-components">
+
+  <h2>Primary Color</h2>
+  <div class="primary-showcase">
+    <div class="primary-swatch">
+      <span class="ps-name">Site Dark</span>
+      <span class="ps-hex">#1a1e28</span>
+      <span class="ps-var">--text-gray-6 → --gray-900</span>
+    </div>
+    <div class="primary-usage">
+      <div>
+        <div class="pu-label">Usage</div>
+        <div class="pu-row">
+          <span class="pu-btn">상담예약하기</span>
+          <span class="pu-border">더 알아보기</span>
+          <span class="pu-text">KMEDITOUR</span>
+          <span class="pu-dot"></span>
+        </div>
+      </div>
+      <div style="font-size:12.5px;color:var(--text-gray-2);line-height:1.9;">
+        <code style="background:var(--border-gray-1);padding:1px 6px;border-radius:3px;font-size:11.5px;">--text-gray-6</code>
+        → <strong style="color:var(--text-gray-6)">--gray-900</strong> (#1a1e28)<br>
+        <code style="background:var(--border-gray-1);padding:1px 6px;border-radius:3px;font-size:11.5px;">--btn</code>
+        → <strong style="color:var(--text-gray-6)">--gray-950</strong> (#101219) ·
+        <code style="background:var(--border-gray-1);padding:1px 6px;border-radius:3px;font-size:11.5px;">--accent-dark</code>
+        → <strong style="color:var(--accent-dark1)">--violet-700</strong> (#2a2287)
+      </div>
+    </div>
+  </div>
+
+  <h2>Violet Accent</h2>
+  <div style="display:flex;gap:16px;flex-wrap:wrap;align-items:flex-start;margin-bottom:8px;">
+    <div style="background:var(--bg-dark);border-radius:8px;padding:24px 28px;display:inline-flex;flex-direction:column;gap:6px;">
+      <span style="display:block;font-size:11px;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;color:var(--text-caption);opacity:0.9;">SKIN CARE</span>
+      <span style="display:block;font-size:19px;font-weight:700;color:#fff;font-family:Optima,Candara,sans-serif;">피부 시술</span>
+    </div>
+    <div style="display:inline-flex;align-items:center;justify-content:center;width:64px;height:64px;border-radius:50%;background:var(--accent-dark1);">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14a9 9 0 0 1 18 0"/><path d="M3 14v3a2 2 0 0 0 2 2h1v-5H3z"/><path d="M21 14v3a2 2 0 0 1-2 2h-1v-5h3z"/></svg>
+    </div>
+  </div>
+  <div style="font-size:13px;color:var(--text-gray-3);margin-top:4px;line-height:2.2;">
+    treat-card 영문 레이블: <code style="font-size:12px;background:var(--surface-gray-1);padding:2px 7px;border-radius:4px;">--amber-400 (#d9ad3f)</code> · font-size <code style="font-size:12px;background:var(--surface-gray-1);padding:2px 7px;border-radius:4px;">--text-11</code> · opacity 0.9 · letter-spacing 0.18em<br>
+    HIW 아이콘 원형 배경 · eyebrow · btn--primary hover · --text-caption: <code style="font-size:12px;background:var(--surface-gray-1);padding:2px 7px;border-radius:4px;">--accent-dark (--violet-700 #2a2287)</code>
+  </div>
+
+  <h2>Button</h2>
+  <div class="comp-row">
+    <button class="ds-btn ds-btn-solid">상담예약하기</button>
+    <button class="ds-btn ds-btn-accent">서비스 알아보기</button>
+    <button class="ds-btn ds-btn-outline">더 알아보기</button>
+  </div>
+  <div style="font-size:13px;color:var(--text-gray-3);margin-top:8px;line-height:2.2;">
+    Solid: <code style="font-size:12px;background:var(--surface-gray-1);padding:2px 7px;border-radius:4px;">--btn (--gray-950)</code> · hover 동일 색상 유지<br>
+    Accent: <code style="font-size:12px;background:var(--surface-gray-1);padding:2px 7px;border-radius:4px;">--accent-dark (--violet-700)</code> hover → <code style="font-size:12px;background:var(--surface-gray-1);padding:2px 7px;border-radius:4px;">--violet-800 (직접)</code>
+  </div>
+
+  <h2>Filter Chip</h2>
+  <div class="comp-row">
+    <span class="ds-chip ds-chip-active">전체</span>
+    <span class="ds-chip ds-chip-idle">의료</span>
+    <span class="ds-chip ds-chip-idle">관광</span>
+    <span class="ds-chip ds-chip-idle">숙소</span>
+  </div>
+  <div style="font-size:13px;color:var(--text-gray-3);margin-top:4px;">
+    Active: <code style="font-size:12px;background:var(--surface-gray-1);padding:2px 7px;border-radius:4px;">--btn (--gray-950)</code> bg · Idle: <code style="font-size:12px;background:var(--surface-gray-1);padding:2px 7px;border-radius:4px;">--border-gray-4 (--gray-800)</code> border · border-radius: 4px
+  </div>
+
+  <h2>Card</h2>
+  <p class="comp-label">Light Surface</p>
+  <div class="ds-card">
+    <p class="ds-eyebrow">KMEDITOUR</p>
+    <h3>전담 코디네이터 케어</h3>
+    <p>배경 <code style="font-size:12px;background:var(--border-gray-1);padding:1px 6px;border-radius:3px;">--surface-white</code> · 텍스트 <code style="font-size:12px;background:var(--border-gray-1);padding:1px 6px;border-radius:3px;">--text-gray-3</code> · 보더 <code style="font-size:12px;background:var(--border-gray-1);padding:1px 6px;border-radius:3px;">--border-gray-1</code></p>
+  </div>
+
+  <h2>Treat Card (추천 서비스)</h2>
+  <p class="comp-label">4열 그리드 · 호버 시 설명 슬라이드업 + 이미지 브라이트니스 상승</p>
+  <div class="ds-treat-grid">
+    <div class="ds-treat-card">
+      <div class="ds-treat-card__bg"></div>
+      <div class="ds-treat-card__overlay"></div>
+      <div class="ds-treat-card__body">
+        <span class="ds-treat-card__en">Filler</span>
+        <p class="ds-treat-card__title">필러</p>
+        <span class="ds-treat-card__link">자세히 보기 →</span>
+      </div>
+    </div>
+    <div class="ds-treat-card">
+      <div class="ds-treat-card__bg"></div>
+      <div class="ds-treat-card__overlay"></div>
+      <div class="ds-treat-card__body">
+        <span class="ds-treat-card__en">Botox</span>
+        <p class="ds-treat-card__title">보톡스</p>
+        <span class="ds-treat-card__link">자세히 보기 →</span>
+      </div>
+    </div>
+    <div class="ds-treat-card">
+      <div class="ds-treat-card__bg"></div>
+      <div class="ds-treat-card__overlay"></div>
+      <div class="ds-treat-card__body">
+        <span class="ds-treat-card__en">Thread Lift</span>
+        <p class="ds-treat-card__title">실리프팅</p>
+        <span class="ds-treat-card__link">자세히 보기 →</span>
+      </div>
+    </div>
+    <div class="ds-treat-card">
+      <div class="ds-treat-card__bg"></div>
+      <div class="ds-treat-card__overlay"></div>
+      <div class="ds-treat-card__body">
+        <span class="ds-treat-card__en">Laser</span>
+        <p class="ds-treat-card__title">레이저</p>
+        <span class="ds-treat-card__link">자세히 보기 →</span>
+      </div>
+    </div>
+  </div>
+  <div class="ds-treat-cta">상담 예약하기</div>
+  <div style="font-size:13px;color:var(--text-gray-3);margin-top:12px;line-height:2.2;">
+    <code style="font-size:12px;background:var(--surface-gray-1);padding:2px 7px;border-radius:4px;">.treat-grid</code> 4열 gap:0 · <code style="font-size:12px;background:var(--surface-gray-1);padding:2px 7px;border-radius:4px;">.treat-card</code> aspect-ratio 3/4 · position:relative · overflow:hidden<br>
+    <code style="font-size:12px;background:var(--surface-gray-1);padding:2px 7px;border-radius:4px;">.treat-card__bg</code> filter:brightness(0.58) → hover 0.82 + scale(1.04)<br>
+    <code style="font-size:12px;background:var(--surface-gray-1);padding:2px 7px;border-radius:4px;">.treat-card__en</code> <strong style="color:var(--amber-400)">FILLER</strong> color <code style="font-size:12px;background:var(--surface-gray-1);padding:2px 7px;border-radius:4px;">--amber-400</code> · 11px · tracking 0.18em<br>
+    <code style="font-size:12px;background:var(--surface-gray-1);padding:2px 7px;border-radius:4px;">.treat-card__desc</code> hover 시 opacity 0→0.9, max-height 0→80px 슬라이드업<br>
+    <code style="font-size:12px;background:var(--surface-gray-1);padding:2px 7px;border-radius:4px;">.treat-cta .btn</code> display:block · width:100% · padding:32px · font-size:--text-28 · 반응형 @520px → 14px 0 / --text-15<br>
+    반응형: @960px → 2열 gap:10px · @520px → 2열 gap:2px, aspect-ratio 2/3
+  </div>
+
+  <h2>Review Card</h2>
+  <div class="comp-row" style="align-items:flex-start;">
+    <div class="ds-review-card">
+      <div class="review__stars">
+        <span class="review__star">★</span><span class="review__star">★</span><span class="review__star">★</span><span class="review__star">★</span><span class="review__star">★</span>
+      </div>
+      <p class="review__text">"한국에서 코 성형을 꿈꿨지만 혼자 예약이 걱정됐어요. K-Medi Tour 덕분에 처음부터 끝까지 완벽하게 소통됐습니다."</p>
+      <div class="review__divider"></div>
+      <div>
+        <p class="review__name">Emily R.</p>
+        <p class="review__info">미국, Texas — 코 성형</p>
+      </div>
+    </div>
+    <div class="ds-review-card">
+      <div class="review__stars">
+        <span class="review__star">★</span><span class="review__star">★</span><span class="review__star">★</span><span class="review__star">★</span><span class="review__star">★</span>
+      </div>
+      <p class="review__text">"서울의 피부과 수준은 정말 놀라웠어요. 중국어 코디네이터 덕분에 언어 걱정 없이 시술에만 집중할 수 있었습니다."</p>
+      <div class="review__divider"></div>
+      <div>
+        <p class="review__name">Liu Yan (刘燕)</p>
+        <p class="review__info">중국, 상하이 — 피부 리프팅</p>
+      </div>
+    </div>
+  </div>
+  <div style="font-size:13px;color:var(--text-gray-3);margin-top:12px;line-height:2.2;">
+    <code style="font-size:12px;background:var(--surface-gray-1);padding:2px 7px;border-radius:4px;">.review__stars</code> flex gap 2px ·
+    <code style="font-size:12px;background:var(--surface-gray-1);padding:2px 7px;border-radius:4px;">.review__star</code> <strong style="color:var(--amber-400)">★</strong> color <code style="font-size:12px;background:var(--surface-gray-1);padding:2px 7px;border-radius:4px;">--amber-400</code> 13px<br>
+    <code style="font-size:12px;background:var(--surface-gray-1);padding:2px 7px;border-radius:4px;">.review__text</code> 15px · line-height 1.88 · --text-gray-3 ·
+    <code style="font-size:12px;background:var(--surface-gray-1);padding:2px 7px;border-radius:4px;">.review__divider</code> 28×1px --border-gray-1<br>
+    <code style="font-size:12px;background:var(--surface-gray-1);padding:2px 7px;border-radius:4px;">.review__name</code> 14px 700 --text-gray-6 ·
+    <code style="font-size:12px;background:var(--surface-gray-1);padding:2px 7px;border-radius:4px;">.review__info</code> 13px --text-gray-2
+  </div>
+
+  <h2>Section Pattern</h2>
+  <p class="comp-label">Light Section (--surface-gray-1)</p>
+  <div class="ds-section-preview">
+    <p class="ey">KMEDITOUR</p>
+    <p class="ttl">의료부터 관광까지<br>모든 케어</p>
+    <p class="body">전담 코디네이터가 당신만의 맞춤 케어로 특별한 한국 여행을 완성합니다. 색상: <strong style="color:var(--text-caption)">--caption (violet-500)</strong> / <strong style="color:var(--text-gray-6)">--text-gray-6</strong> / <strong style="color:var(--text-gray-3)">--text-gray-3</strong></p>
+  </div>
+
+  <p class="comp-label" style="margin-top:24px;">Dark Section (--surface-dark)</p>
+  <div class="ds-dark-preview">
+    <p class="ttl">신뢰할 수 있는 파트너</p>
+    <p class="body">배경 <code style="font-size:12px;background:rgba(255,255,255,0.12);color:#fff;padding:1px 6px;border-radius:3px;">--surface-dark → --gray-950</code> (#101219) · 텍스트 rgba(255,255,255,0.62)</p>
+  </div>
+
+  <p class="comp-label" style="margin-top:24px;">CTA Section (violet gradient)</p>
+  <div class="ds-cta-preview" style="background:var(--accent-gradient);">
+    <p class="ttl">한국의 웰니스 여정을 시작할 준비가 되셨나요?</p>
+    <p class="body">gradient: violet-900 → violet-800 → violet-600 → violet-500 (135°)</p>
+    <button class="ds-btn" style="background:transparent;border:1px solid #fff;color:#fff;">상담 예약하기</button>
+  </div>
+
+  <h2>HIW Card</h2>
+  <p class="comp-label">데스크탑 — 4열 그리드 (border-top + border-right 구분)</p>
+  <div style="display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--border-gray-1);margin-bottom:8px;">
+    <div style="padding:48px clamp(28px,3vw,48px) 56px;border-right:1px solid var(--border-gray-1);display:flex;flex-direction:column;align-items:flex-start;">
+      <div style="display:flex;align-items:center;justify-content:center;width:72px;height:72px;border-radius:50%;background:var(--accent-dark1);color:#fff;margin-bottom:40px;flex-shrink:0;">
+        <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14a9 9 0 0 1 18 0"/><path d="M3 14v3a2 2 0 0 0 2 2h1v-5H3z"/><path d="M21 14v3a2 2 0 0 1-2 2h-1v-5h3z"/></svg>
+      </div>
+      <p style="font-family:Optima,Candara,sans-serif;font-size:23px;font-weight:700;color:var(--text-gray-6);letter-spacing:-0.01em;margin:0 0 16px;"><span style="color:var(--text-gray-2);font-weight:400;"><b style="color:var(--text-gray-6);font-weight:600;font-style:italic;">1</b> — </span>시술 상담</p>
+      <p style="font-size:15px;color:var(--text-gray-3);line-height:1.85;max-width:45ch;word-break:keep-all;margin:0;">한국 스킨케어 전문가와 피부 고민을 공유하고 문의 하세요.</p>
+    </div>
+    <div style="padding:48px clamp(28px,3vw,48px) 56px;border-right:1px solid var(--border-gray-1);display:flex;flex-direction:column;align-items:flex-start;">
+      <div style="display:flex;align-items:center;justify-content:center;width:72px;height:72px;border-radius:50%;background:var(--accent-dark1);color:#fff;margin-bottom:40px;flex-shrink:0;">
+        <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/></svg>
+      </div>
+      <p style="font-family:Optima,Candara,sans-serif;font-size:23px;font-weight:700;color:var(--text-gray-6);letter-spacing:-0.01em;margin:0 0 16px;"><span style="color:var(--text-gray-2);font-weight:400;"><b style="color:var(--text-gray-6);font-weight:600;font-style:italic;">2</b> — </span>한국 예약 및 방문</p>
+      <p style="font-size:15px;color:var(--text-gray-3);line-height:1.85;max-width:45ch;word-break:keep-all;margin:0;">시술 예약과 치료 계획, 일정, 여행을 도와드립니다.</p>
+    </div>
+    <div style="padding:48px clamp(28px,3vw,48px) 56px;border-right:1px solid var(--border-gray-1);display:flex;flex-direction:column;align-items:flex-start;">
+      <div style="display:flex;align-items:center;justify-content:center;width:72px;height:72px;border-radius:50%;background:var(--accent-dark1);color:#fff;margin-bottom:40px;flex-shrink:0;">
+        <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M17.8 19.2 16 11l3.5-3.5a1.8 1.8 0 0 0-2.5-2.5L13.5 8.5 5.3 6.7a1 1 0 0 0-.9 1.7l4.2 3.2-2 2-2.5-.6a.8.8 0 0 0-.8 1.3l3 2.6 2.6 3a.8.8 0 0 0 1.3-.8l-.6-2.5 2-2 3.2 4.2a1 1 0 0 0 1.7-.9Z"/></svg>
+      </div>
+      <p style="font-family:Optima,Candara,sans-serif;font-size:23px;font-weight:700;color:var(--text-gray-6);letter-spacing:-0.01em;margin:0 0 16px;"><span style="color:var(--text-gray-2);font-weight:400;"><b style="color:var(--text-gray-6);font-weight:600;font-style:italic;">3</b> — </span>피부 관리 및 치료</p>
+      <p style="font-size:15px;color:var(--text-gray-3);line-height:1.85;max-width:45ch;word-break:keep-all;margin:0;">프리미엄 한국 스킨케어 트리트먼트를 느껴보세요.</p>
+    </div>
+    <div style="padding:48px clamp(28px,3vw,48px) 56px;display:flex;flex-direction:column;align-items:flex-start;">
+      <div style="display:flex;align-items:center;justify-content:center;width:72px;height:72px;border-radius:50%;background:var(--accent-dark1);color:#fff;margin-bottom:40px;flex-shrink:0;">
+        <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/><line x1="8" y1="14" x2="8" y2="14"/><line x1="12" y1="14" x2="12" y2="14"/><line x1="16" y1="14" x2="16" y2="14"/><line x1="8" y1="18" x2="8" y2="18"/><line x1="12" y1="18" x2="12" y2="18"/></svg>
+      </div>
+      <p style="font-family:Optima,Candara,sans-serif;font-size:23px;font-weight:700;color:var(--text-gray-6);letter-spacing:-0.01em;margin:0 0 16px;"><span style="color:var(--text-gray-2);font-weight:400;"><b style="color:var(--text-gray-6);font-weight:600;font-style:italic;">4</b> — </span>고객 맞춤 스케줄링</p>
+      <p style="font-size:15px;color:var(--text-gray-3);line-height:1.85;max-width:45ch;word-break:keep-all;margin:0;">공항 픽업부터 호텔·쇼핑 맞춤 여정까지.</p>
+    </div>
+  </div>
+  <p class="comp-label" style="margin-top:20px;">모바일 — 1열 수평 레이아웃 (아이콘 → 숫자 ::before)</p>
+  <div style="max-width:480px;border:1px solid var(--border-gray-1);border-radius:8px;overflow:hidden;">
+    <div style="display:grid;grid-template-columns:40px 1fr;column-gap:20px;row-gap:10px;align-items:center;padding:22px 20px;border-bottom:1px solid var(--border-gray-1);">
+      <div style="display:flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:50%;background:var(--accent-dark1);color:#fff;font-family:Optima,Candara,sans-serif;font-size:14px;font-weight:800;grid-column:1;grid-row:1 / span 2;align-self:start;padding-top:3px;">1</div>
+      <p style="font-size:18px;font-weight:700;color:var(--text-gray-6);margin:0;grid-column:2;grid-row:1;">시술 상담</p>
+      <p style="font-size:13px;color:var(--text-gray-3);line-height:1.7;margin:0;grid-column:2;grid-row:2;">한국 스킨케어 전문가와 피부 고민을 공유하세요.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:40px 1fr;column-gap:20px;row-gap:10px;align-items:center;padding:22px 20px;">
+      <div style="display:flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:50%;background:var(--accent-dark1);color:#fff;font-family:Optima,Candara,sans-serif;font-size:14px;font-weight:800;grid-column:1;grid-row:1 / span 2;align-self:start;padding-top:3px;">2</div>
+      <p style="font-size:18px;font-weight:700;color:var(--text-gray-6);margin:0;grid-column:2;grid-row:1;">한국 예약 및 방문</p>
+      <p style="font-size:13px;color:var(--text-gray-3);line-height:1.7;margin:0;grid-column:2;grid-row:2;">시술 예약과 여행 일정을 도와드립니다.</p>
+    </div>
+  </div>
+  <div style="font-size:13px;color:var(--text-gray-3);margin-top:12px;line-height:2.2;">
+    <strong>데스크탑:</strong> 아이콘 원 <code style="font-size:12px;background:var(--surface-gray-1);padding:2px 7px;border-radius:4px;">--accent-dark (--violet-700)</code> · 72×72px · SVG 34px · margin-bottom 40px ·
+    step font-size <code style="font-size:12px;background:var(--surface-gray-1);padding:2px 7px;border-radius:4px;">--text-23</code> · prefix <code style="font-size:12px;background:var(--surface-gray-1);padding:2px 7px;border-radius:4px;">--gray-400</code> · b italic --gray-900<br>
+    <strong>모바일:</strong> 1열 수평 · 아이콘 40×40px, SVG 숨김 · <code style="font-size:12px;background:var(--surface-gray-1);padding:2px 7px;border-radius:4px;">::before</code> data-num 숫자 표시 · step <code style="font-size:12px;background:var(--surface-gray-1);padding:2px 7px;border-radius:4px;">--text-18</code> · desc <code style="font-size:12px;background:var(--surface-gray-1);padding:2px 7px;border-radius:4px;">--text-13</code>
+  </div>
+
+</section>
+
+<!-- ══════ 탭 6 : ARCHITECTURE ══════ -->
+<section class="panel" id="panel-architecture">
+  <p class="sub" style="margin-top:-6px">페이지별 CSS 분리 구조 (2026-06-18 기준). 브라우저 리셋은 reset.css, 공통 컴포넌트는 common.css, 페이지 전용 스타일은 각 페이지 CSS에 위치.</p>
+
+  <!-- 파일 구조 다이어그램 -->
+  <div style="background:var(--surface-gray-1);border-radius:12px;padding:28px 32px;margin-bottom:32px;font-family:monospace;font-size:14px;line-height:2;color:var(--text-gray-3);">
+    <div style="color:var(--text-gray-6);font-weight:700;font-size:16px;margin-bottom:12px;">site-0618-blue/</div>
+    <div style="padding-left:20px;">
+      <div>├── index.html</div>
+      <div>├── about.html</div>
+      <div>├── center.html</div>
+      <div>├── <strong style="color:var(--text-caption);">css/</strong></div>
+      <div style="padding-left:20px;">
+        <div>│ ├── reset.css <span style="font-family:var(--font-sans);font-size:12px;color:var(--text-gray-2);">— Browser Reset &amp; Normalization (최상위, 스타일링 없음)</span></div>
+        <div>│ ├── theme.css <span style="font-family:var(--font-sans);font-size:12px;color:var(--text-gray-2);">— Design Tokens (Primitive + Semantic)</span></div>
+        <div>│ ├── common.css <span style="font-family:var(--font-sans);font-size:12px;color:var(--text-gray-2);">— Shared: Header, Footer, GNB, Mobile Bar, Utilities</span></div>
+        <div>│ ├── home.css <span style="font-family:var(--font-sans);font-size:12px;color:var(--text-gray-2);">— Home / index.html 전용</span></div>
+        <div>│ ├── about.css <span style="font-family:var(--font-sans);font-size:12px;color:var(--text-gray-2);">— About 페이지 전용</span></div>
+        <div>│ └── center.css <span style="font-family:var(--font-sans);font-size:12px;color:var(--text-gray-2);">— Center 페이지 전용</span></div>
+      </div>
+      <div>├── <strong style="color:var(--text-caption);">js/</strong></div>
+      <div style="padding-left:20px;">
+        <div>│ ├── app.js</div>
+        <div>│ └── image-slot.js</div>
+      </div>
+      <div>└── assets/</div>
+    </div>
+  </div>
+
+  <!-- Import 순서 -->
+  <h2>HTML Import 순서</h2>
+  <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:32px;">
+    <div style="border:1px solid var(--border-gray-1);border-radius:10px;padding:20px 22px;">
+      <div style="font-size:13px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--text-caption);margin-bottom:12px;">index.html</div>
+      <div style="font-family:monospace;font-size:13px;line-height:2;color:var(--text-gray-3);">
+        css/reset.css<br>
+        css/theme.css<br>
+        css/common.css<br>
+        <strong style="color:var(--text-gray-6);">css/home.css</strong>
+      </div>
+    </div>
+    <div style="border:1px solid var(--border-gray-1);border-radius:10px;padding:20px 22px;">
+      <div style="font-size:13px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--text-caption);margin-bottom:12px;">about.html</div>
+      <div style="font-family:monospace;font-size:13px;line-height:2;color:var(--text-gray-3);">
+        css/reset.css<br>
+        css/theme.css<br>
+        css/common.css<br>
+        <strong style="color:var(--text-gray-6);">css/about.css</strong>
+      </div>
+    </div>
+    <div style="border:1px solid var(--border-gray-1);border-radius:10px;padding:20px 22px;">
+      <div style="font-size:13px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--text-caption);margin-bottom:12px;">center.html</div>
+      <div style="font-family:monospace;font-size:13px;line-height:2;color:var(--text-gray-3);">
+        css/reset.css<br>
+        css/theme.css<br>
+        css/common.css<br>
+        <strong style="color:var(--text-gray-6);">css/center.css</strong>
+      </div>
+    </div>
+  </div>
+
+  <!-- reset.css 내용 요약 -->
+  <h2>reset.css 포함 규칙</h2>
+  <div style="background:var(--surface-gray-1);border-radius:12px;padding:20px 28px;font-size:13.5px;line-height:2.2;color:var(--text-gray-3);margin-bottom:32px;">
+    <code style="background:var(--border-gray-1);padding:1px 6px;border-radius:3px;font-size:12px;">*, *::before, *::after</code> box-sizing · margin · padding 초기화 &nbsp;·&nbsp;
+    <code style="background:var(--border-gray-1);padding:1px 6px;border-radius:3px;font-size:12px;">html</code> scroll-behavior · overflow-x &nbsp;·&nbsp;
+    <code style="background:var(--border-gray-1);padding:1px 6px;border-radius:3px;font-size:12px;">body</code> font-smoothing · overflow-x &nbsp;·&nbsp;
+    <code style="background:var(--border-gray-1);padding:1px 6px;border-radius:3px;font-size:12px;">img, video</code> display:block · max-width · height:auto &nbsp;·&nbsp;
+    <code style="background:var(--border-gray-1);padding:1px 6px;border-radius:3px;font-size:12px;">a</code> color:inherit · text-decoration:none &nbsp;·&nbsp;
+    <code style="background:var(--border-gray-1);padding:1px 6px;border-radius:3px;font-size:12px;">button</code> font-family:inherit · cursor · border · background 초기화 &nbsp;·&nbsp;
+    <code style="background:var(--border-gray-1);padding:1px 6px;border-radius:3px;font-size:12px;">ul, ol</code> list-style:none &nbsp;·&nbsp;
+    <code style="background:var(--border-gray-1);padding:1px 6px;border-radius:3px;font-size:12px;">input, textarea, select</code> font-family/size:inherit
+  </div>
+
+  <!-- common.css 섹션 목록 -->
+  <h2>common.css 포함 컴포넌트</h2>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:32px;">
+    <div style="background:var(--surface-gray-1);border-radius:8px;padding:16px 20px;font-size:13.5px;line-height:2;color:var(--text-gray-3);">
+      <strong style="color:var(--text-gray-6);display:block;margin-bottom:4px;">공통 레이아웃</strong>
+      body · .wrap · .section · .eyebrow · .display · .btn · .link-arrow
+    </div>
+    <div style="background:var(--surface-gray-1);border-radius:8px;padding:16px 20px;font-size:13.5px;line-height:2;color:var(--text-gray-3);">
+      <strong style="color:var(--text-gray-6);display:block;margin-bottom:4px;">Header / GNB</strong>
+      .header · .gnb · .gnb-overlay · GNB Sub2 아코디언 · .lang-select · .lang-dropdown
+    </div>
+    <div style="background:var(--surface-gray-1);border-radius:8px;padding:16px 20px;font-size:13.5px;line-height:2;color:var(--text-gray-3);">
+      <strong style="color:var(--text-gray-6);display:block;margin-bottom:4px;">Footer / Top Button</strong>
+      .footer · .footer__* · .top-btn · .footer__top-btn
+    </div>
+    <div style="background:var(--surface-gray-1);border-radius:8px;padding:16px 20px;font-size:13.5px;line-height:2;color:var(--text-gray-3);">
+      <strong style="color:var(--text-gray-6);display:block;margin-bottom:4px;">Mobile / Modal</strong>
+      .mobile-bar · .lang-sheet · .proc-sheet · .login-modal · .chat-btn
+    </div>
+    <div style="background:var(--surface-gray-1);border-radius:8px;padding:16px 20px;font-size:13.5px;line-height:2;color:var(--text-gray-3);">
+      <strong style="color:var(--text-gray-6);display:block;margin-bottom:4px;">공통 섹션 컴포넌트</strong>
+      .trust (Trust Band) · [data-reveal] (Scroll Animation)
+    </div>
+    <div style="background:var(--surface-gray-1);border-radius:8px;padding:16px 20px;font-size:13.5px;line-height:2;color:var(--text-gray-3);">
+      <strong style="color:var(--text-gray-6);display:block;margin-bottom:4px;">공통 반응형 (860px / 600px)</strong>
+      Header mobile · GNB accordion · Mobile bar layout · Footer mobile · Trust mobile
+    </div>
+  </div>
+
+  <!-- page CSS 섹션 목록 -->
+  <h2>페이지 전용 CSS</h2>
+  <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px;">
+    <div style="border:1px solid var(--border-gray-1);border-radius:10px;padding:20px 22px;">
+      <div style="font-size:13px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--text-caption);margin-bottom:12px;">home.css</div>
+      <div style="font-size:13px;line-height:2.1;color:var(--text-gray-3);">
+        Hero · Booking Widget<br>
+        Enhance Your Stay<br>
+        Hotel Collection · Membership<br>
+        Feature Slider · Why Us (5-col Grid)<br>
+        Highlights · CTA Dark<br>
+        Follow Us · Services (Accordion)<br>
+        Treatments · How It Works
+      </div>
+    </div>
+    <div style="border:1px solid var(--border-gray-1);border-radius:10px;padding:20px 22px;">
+      <div style="font-size:13px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--text-caption);margin-bottom:12px;">about.css</div>
+      <div style="font-size:13px;line-height:2.1;color:var(--text-gray-3);">
+        About Hero<br>
+        Who We Are (Intro)<br>
+        How It Works (Steps)<br>
+        Our Promise (Guarantee)<br>
+        Testimonials · Reviews<br>
+        Why Korea · Stats
+      </div>
+    </div>
+    <div style="border:1px solid var(--border-gray-1);border-radius:10px;padding:20px 22px;">
+      <div style="font-size:13px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--text-caption);margin-bottom:12px;">center.css</div>
+      <div style="font-size:13px;line-height:2.1;color:var(--text-gray-3);">
+        Center Hero<br>
+        Article Body (Editorial)<br>
+        AI 피부 분석 Section<br>
+        Treatment Carousel<br>
+        Building Info · Floors Grid<br>
+        Location · CTA Banner
+      </div>
+    </div>
+  </div>
+
+  <!-- 확장 가이드 -->
+  <h2 style="margin-top:48px;">신규 페이지 추가 시</h2>
+  <div style="background:var(--surface-gray-1);border-radius:12px;padding:24px 28px;font-size:13.5px;line-height:2.2;color:var(--text-gray-3);">
+    1. <code style="background:var(--border-gray-1);padding:1px 6px;border-radius:3px;font-size:12px;">css/</code> 폴더에 <code style="background:var(--border-gray-1);padding:1px 6px;border-radius:3px;font-size:12px;">service.css</code> · <code style="background:var(--border-gray-1);padding:1px 6px;border-radius:3px;font-size:12px;">contact.css</code> · <code style="background:var(--border-gray-1);padding:1px 6px;border-radius:3px;font-size:12px;">magazine.css</code> 생성<br>
+    2. HTML에서 <code style="background:var(--border-gray-1);padding:1px 6px;border-radius:3px;font-size:12px;">theme.css → common.css → [page].css</code> 순서로 import<br>
+    3. 공통으로 사용할 컴포넌트는 <code style="background:var(--border-gray-1);padding:1px 6px;border-radius:3px;font-size:12px;">common.css</code>에 추가 (재사용 가능한 경우)<br>
+    4. 페이지 전용 스타일만 <code style="background:var(--border-gray-1);padding:1px 6px;border-radius:3px;font-size:12px;">[page].css</code>에 작성
+  </div>
+</section>
+
+<script>
+/* ─── Semantic 그룹 ─── */
+const SEM_GROUPS = [
+  {
+    key: 'background',
+    title: 'Background',
+    desc: '명시적 단색 배경 — bg-white(흰색) · bg-gray(회색) · bg-dark(최어두운)',
+    tokens: ['bg-white','bg-gray','bg-dark']
+  },
+  {
+    key: 'surface',
+    title: 'Surface',
+    desc: '섹션·컴포넌트 서피스 — gray-1(연한) · gray-2(강조) · gray-3(웜 브라운)',
+    tokens: ['surface-gray-1','surface-gray-2','surface-gray-3']
+  },
+  {
+    key: 'text',
+    title: 'Text',
+    desc: 'gray-1~7: 밝은(gray-300)→어두운(gray-950) 순 · inverse(흰글) · caption(violet) · rating(amber)',
+    tokens: ['text-gray-1','text-gray-2','text-gray-3','text-gray-4','text-gray-5','text-gray-6','text-gray-7','text-white','text-caption','rating']
+  },
+  {
+    key: 'border',
+    title: 'Border',
+    desc: 'gray-1~4: 밝은(gray-200)→어두운(gray-800) 순',
+    tokens: ['border-gray-1','border-gray-2','border-gray-3','border-gray-4']
+  },
+  {
+    key: 'button',
+    title: 'Button',
+    desc: 'btn-primary(기본 버튼 배경) · btn-cta(CTA 호버 배경)',
+    tokens: ['btn-primary','btn-cta']
+  },
+  {
+    key: 'accent',
+    title: 'Accent',
+    desc: 'violet 500→700→800 · gradient (CTA dark 배경)',
+    tokens: ['accent-mid','accent-dark1','accent-dark2','accent-gradient']
+  },
+  {
+    key: 'social',
+    title: 'Social Login',
+    desc: 'Kakao 소셜 로그인 버튼 전용 — btn-kakao(#fee500) · btn-kakao-text(#191919)',
+    tokens: ['btn-kakao','btn-kakao-text']
+  },
+];
+
+/* ─── Primitive 팔레트 ─── */
+const PRIM = {
+  // Gray Scale
+  '#ffffff': ['white',      'Gray'],
+  '#f2f4f8': ['gray-50',    'Gray'],
+  '#e4e6ec': ['gray-150',   'Gray'],
+  '#dcdfe5': ['gray-200',   'Gray'],
+  '#b8bdc7': ['gray-300',   'Gray'],
+  '#949aa8': ['gray-400',   'Gray'],
+  '#6b7180': ['gray-500',   'Gray'],
+  '#515767': ['gray-600',   'Gray'],
+  '#3d4352': ['gray-700',   'Gray'],
+  '#292e3d': ['gray-800',   'Gray'],
+  '#1a1e28': ['gray-900',   'Gray'],
+  '#101219': ['gray-950',   'Gray'],
+  // Brown Scale
+  '#f7f4f2': ['brown-50',   'Brown'],
+  '#ece6e4': ['brown-100',  'Brown'],
+  '#d6cbc7': ['brown-200',  'Brown'],
+  '#b7a59e': ['brown-300',  'Brown'],
+  '#a28a81': ['brown-400',  'Brown'],
+  '#886f65': ['brown-500',  'Brown'],
+  '#6f5b52': ['brown-600',  'Brown'],
+  '#56453e': ['brown-700',  'Brown'],
+  '#3c2f2a': ['brown-800',  'Brown'],
+  '#251c18': ['brown-900',  'Brown'],
+  // Violet Scale
+  '#efeffb': ['violet-50',  'Violet'],
+  '#d9d7f4': ['violet-100', 'Violet'],
+  '#b0adeb': ['violet-200', 'Violet'],
+  '#8681e4': ['violet-300', 'Violet'],
+  '#6861e0': ['violet-400', 'Violet'],
+  '#3b33d9': ['violet-500', 'Violet'],
+  '#2e26b5': ['violet-600', 'Violet'],
+  '#2a2287': ['violet-700', 'Violet'],
+  '#1f1957': ['violet-800', 'Violet'],
+  '#151132': ['violet-900', 'Violet'],
+  // Gold Scale
+  '#b8955e': ['gold-500',   'Gold'],
+  '#9b7943': ['gold-600',   'Gold'],
+  '#765b30': ['gold-700',   'Gold'],
+  '#4f3c1f': ['gold-800',   'Gold'],
+  // Social (Kakao login)
+  '#fee500': ['kakao-yellow', 'Social'],
+  '#191919': ['kakao-dark',   'Social'],
+};
+const PRIM_ORDER = ['Gray', 'Brown', 'Violet', 'Gold', 'Social'];
+const PRIM_DESC = {
+  'Gray':   'Cool Blue-Gray 스케일 — 배경·텍스트·버튼·보더 전반 (gray-300: border-gray-2 · text-gray-1 / gray-700: text-gray-5)',
+  'Brown':  '내추럴 브라운 (#886f65 기준) — surface-warm(brown-50) · 따뜻한 보조 팔레트',
+  'Violet': '바이올렛블루 (#3b33d9 기준) — 직접(violet-300: guarantee-col icon) · 미사용(400) · accent-mid/text-caption(500) · btn-cta+직접(violet-600: why-journey icon,sub) · accent-dark1(700) · accent-dark2(800) · accent-gradient',
+  'Gold':   'Bronze-Gold (#9b7943 기준) — 팔레트 예약 (현재 semantic 연결 없음)',
+  'Social': 'Kakao 소셜 로그인 전용 색상 — 사이트 브랜드 컬러 아님 · btn-kakao(kakao-yellow #fee500) · btn-kakao-text(kakao-dark #191919)',
+};
+
+/* ─── Amber 팔레트 (별도 토큰) ─── */
+const AMBER = [
+  ['#fbf3d1', 'amber-100'],
+  ['#f4e1a3', 'amber-200'],
+  ['#e8c76f', 'amber-300'],
+  ['#d9ad3f', 'amber-400'],
+  ['#b08e31', 'amber-500'],
+  ['#8b6f26', 'amber-600'],
+  ['#6b511c', 'amber-700'],
+  ['#483613', 'amber-800'],
+  ['#241a0a', 'amber-900'],
+];
+
+/* ─── 유틸 ─── */
+const cs = getComputedStyle(document.documentElement);
+const hexOf = n => {
+  const raw = cs.getPropertyValue('--' + n).trim();
+  const m = raw.match(/^var\(--([^,)]+)/);
+  return m ? hexOf(m[1].trim()) : raw.toLowerCase();
+};
+const norm = h => { h = h.toLowerCase(); if (h.length === 4) h = '#' + [...h.slice(1)].map(c => c+c).join(''); return h; };
+
+const primNameOf = varName => {
+  const h = norm(hexOf(varName));
+  const p = PRIM[h];
+  return p ? p[0] : '';
+};
+
+const fan = {};
+SEM_GROUPS.forEach(g => g.tokens.forEach(n => {
+  const h = norm(hexOf(n));
+  if (h) fan[h] = (fan[h] || 0) + 1;
+}));
+
+/* ─── 색상 카드 렌더 ─── */
+function swCard(bg, name, hexVal, fanCount, primName) {
+  let badge = '';
+  if (fanCount !== undefined) {
+    const hot = fanCount >= 3 ? ' hot' : '';
+    badge = `<span class="fan${hot}">${fanCount}</span>`;
+  }
+  const pmSpan = primName
+    ? `<span class="pm">  ·  <span class="pn">${primName}</span></span>`
+    : '';
+  return `<div class="sw">
+    <div class="c" style="background:${bg}"></div>${badge}
+    <div class="l">
+      <div class="n">--${name}</div>
+      <div class="h">${hexVal}${pmSpan}</div>
+    </div>
+  </div>`;
+}
+
+/* ─── 탭1: Semantic ─── */
+const semWrap = document.getElementById('semRows');
+SEM_GROUPS.forEach(g => {
+  const sws = g.tokens.map(n => {
+    const hex = hexOf(n);
+    const pn  = primNameOf(n);
+    return swCard(`var(--${n})`, n, hex, undefined, pn);
+  }).join('');
+  const div = document.createElement('div');
+  div.className = 'swrow';
+  div.innerHTML = `<div class="rtitle">${g.title}</div><div class="rdesc">${g.desc}</div><div class="grid">${sws}</div>`;
+  semWrap.appendChild(div);
+});
+
+/* ─── 탭2: Primitive ─── */
+const primWrap = document.getElementById('primRows');
+PRIM_ORDER.forEach(g => {
+  const items = Object.entries(PRIM).filter(([, v]) => v[1] === g);
+  if (!items.length) return;
+  const sws = items.map(([hex, [nm]]) =>
+    swCard(hex, nm, hex.toUpperCase(), fan[norm(hex)] || 0)
+  ).join('');
+  const div = document.createElement('div');
+  div.className = 'swrow';
+  div.innerHTML = `<div class="rtitle">${g}</div><div class="rdesc">${PRIM_DESC[g] || ''}</div><div class="grid">${sws}</div>`;
+  primWrap.appendChild(div);
+});
+
+/* Amber — 별도 토큰 */
+{
+  const amberDiv = document.createElement('div');
+  amberDiv.className = 'swrow';
+  const amberSws = AMBER.map(([hex, nm]) => swCard(hex, nm, hex.toUpperCase(), undefined)).join('');
+  amberDiv.innerHTML = `<div class="rtitle">Amber</div><div class="rdesc">--amber-400(#d9ad3f) → <strong>--rating</strong> Semantic으로 연결됨 — treat-card 영문 레이블 · review__star 별점 색상</div><div class="grid">${amberSws}</div>`;
+  primWrap.appendChild(amberDiv);
+}
+
+/* ─── 탭3: Typography ─── */
+const typeData = [
+  { token: '--text-10',  val: '10px',                      label: 'Brand subline · 푸터 소문자' },
+  { token: '--text-11',  val: '11px',                      label: '레이블 · 배지 · 버텀바 · treat-card 영문' },
+  { token: '--text-12',  val: '12.5px',                    label: '날짜 · 보조 메타' },
+  { token: '--text-13',  val: '13px',                      label: '링크 · news-card 카테고리 · GNB 유틸' },
+  { token: '--text-14',  val: '14px',                      label: '버튼 · 필터 · lang-flag' },
+  { token: '--text-15',  val: '15px',                      label: '아이브로우 · UI 보조' },
+  { token: '--text-16',  val: '16px',                      label: '본문 기준 · lead · booking tab' },
+  { token: '--text-17',  val: '17px',                      label: '본문 텍스트 · 탭 UI' },
+  { token: '--text-18',  val: '18px',                      label: 'CTA 설명 · 멤버십' },
+  { token: '--text-19',  val: '19px',                      label: 'GNB · 카드 설명 · 아코디언(모바일)' },
+  { token: '--text-20',  val: '20px',                      label: '뉴스 카드 제목' },
+  { token: '--text-21',  val: '21px',                      label: 'HIW 제목 · 아코디언 · 비교(모바일)' },
+  { token: '--text-23',  val: '23px',                      label: '비교 제목 (데스크탑)' },
+  { token: '--text-24',  val: '24px',                      label: '예약 값 · 푸터 브랜드' },
+  { token: '--text-25',  val: '25px',                      label: '뉴스 카드 대제목' },
+  { token: '--text-28',  val: '28px',                      label: 'Stay 카드 제목' },
+  { token: '--text-30',  val: '30px',                      label: '히어로 설명 · 카드 타이틀' },
+  { token: '--text-34',  val: 'clamp(24px, 2.4vw, 34px)',  label: '섹션 소제목' },
+  { token: '--text-46',  val: 'clamp(30px, 3.4vw, 46px)',  label: '섹션 제목' },
+  { token: '--text-76',  val: 'clamp(38px, 5.4vw, 76px)',  label: '대형 헤딩' },
+  { token: '--text-80',  val: 'clamp(56px, 5vw, 80px)',    label: '초대형 헤딩' },
+  { token: '--text-104', val: 'clamp(44px, 6.6vw, 104px)', label: '히어로 타이틀' },
+];
+const previewSizes = {
+  '--text-10':'10px','--text-11':'11px','--text-12':'12.5px','--text-13':'13px',
+  '--text-14':'14px','--text-15':'15px','--text-16':'16px','--text-17':'17px',
+  '--text-18':'18px','--text-19':'19px','--text-20':'20px','--text-21':'21px',
+  '--text-23':'23px','--text-24':'24px','--text-25':'25px','--text-28':'28px',
+  '--text-30':'30px','--text-34':'28px','--text-46':'32px',
+  '--text-76':'36px','--text-80':'40px','--text-104':'44px'
+};
+const typeWrap = document.getElementById('typeRows');
+typeData.forEach(({ token, val, label }) => {
+  const pxSize = previewSizes[token] || '16px';
+  const div = document.createElement('div');
+  div.className = 'type-row';
+  div.innerHTML = `
+    <span class="type-token">${token}</span>
+    <span class="type-preview" style="font-size:${pxSize}">의료부터 관광까지</span>
+    <span class="type-meta">${val}<br><span style="opacity:.7">${label}</span></span>
+  `;
+  typeWrap.appendChild(div);
+});
+
+/* ─── 탭3: Letter Spacing ─── */
+const trackData = [
+  { token: '--tracking-tighter', val: '-0.02em', label: '제목 압축' },
+  { token: '--tracking-tight',   val: '-0.01em', label: '디스플레이 제목' },
+  { token: '--tracking-snug',    val: '0.01em',  label: '본문 소제목' },
+  { token: '--tracking-normal',  val: '0em',     label: '일반 간격 · brand' },
+  { token: '--tracking-wide',    val: '0.1em',   label: '아이브로우 · 필터' },
+  { token: '--tracking-wider',   val: '0.22em',  label: 'Brand small · 카드 키커' },
+];
+const trackWrap = document.getElementById('trackRows');
+trackData.forEach(({ token, val, label }) => {
+  const div = document.createElement('div');
+  div.className = 'type-row';
+  div.innerHTML = `
+    <span class="type-token">${token}</span>
+    <span class="type-preview" style="letter-spacing:${val}">의료부터 관광까지</span>
+    <span class="type-meta">${val}<br><span style="opacity:.7">${label}</span></span>
+  `;
+  trackWrap.appendChild(div);
+});
+
+/* ─── 탭4: Spacing ─── */
+const spaceData = [
+  { token: '--space-2',      val: '2px' },
+  { token: '--space-3',      val: '3px' },
+  { token: '--space-4',      val: '4px' },
+  { token: '--space-5',      val: '5px' },
+  { token: '--space-6',      val: '6px' },
+  { token: '--space-8',      val: '8px' },
+  { token: '--space-10',     val: '10px' },
+  { token: '--space-12',     val: '12px' },
+  { token: '--space-14',     val: '14px' },
+  { token: '--space-16',     val: '16px' },
+  { token: '--space-18',     val: '18px' },
+  { token: '--space-20',     val: '20px' },
+  { token: '--space-24',     val: '24px' },
+  { token: '--space-28',     val: '28px' },
+  { token: '--space-32',     val: '32px' },
+  { token: '--space-36',     val: '36px' },
+  { token: '--space-40',     val: '40px' },
+  { token: '--space-44',     val: '44px' },
+  { token: '--space-48',     val: '48px' },
+  { token: '--space-52',     val: '52px' },
+  { token: '--space-56',     val: '56px' },
+  { token: '--space-64',     val: '64px' },
+  { token: '--space-72',     val: '72px' },
+  { token: '--space-80',     val: '80px' },
+  { token: '--space-gutter', val: 'clamp(16px, 1.6vw, 34px)' },
+];
+const maxPx = 80;
+const spaceWrap = document.getElementById('spaceRows');
+spaceData.forEach(({ token, val }) => {
+  const px = parseFloat(val) || 24;
+  const pct = Math.min((px / maxPx) * 100, 100);
+  const div = document.createElement('div');
+  div.className = 'space-row';
+  div.innerHTML = `
+    <span class="space-token">${token}</span>
+    <div class="space-bar-wrap"><div class="space-bar" style="width:${pct}%"></div></div>
+    <span class="space-val">${val}</span>
+  `;
+  spaceWrap.appendChild(div);
+});
+
+/* ─── Primary hex 동적 표시 ─── */
+const primaryHexEl = document.getElementById('primary-hex');
+if (primaryHexEl) primaryHexEl.textContent = norm(hexOf('primary'));
+
+/* ─── 토글 ─── */
+document.getElementById('primToggle').addEventListener('change', e => {
+  document.body.classList.toggle('show-prim', e.target.checked);
+});
+
+/* ─── 탭 전환 ─── */
+document.querySelectorAll('.tab').forEach(t => {
+  t.addEventListener('click', () => {
+    document.querySelectorAll('.tab').forEach(x => x.classList.remove('active'));
+    document.querySelectorAll('.panel').forEach(x => x.classList.remove('active'));
+    t.classList.add('active');
+    document.getElementById('panel-' + t.dataset.tab).classList.add('active');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+});
+</script>
+</body>
+</html>

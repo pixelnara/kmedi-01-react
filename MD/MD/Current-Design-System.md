@@ -97,7 +97,7 @@ gray-1~4: 밝은(gray-200) → 어두운(gray-800) 순
 | Semantic Token  | Primitive      | Actual Value | Usage                                           | 사용수 |
 | --------------- | -------------- | ------------ | ----------------------------------------------- | ------ |
 | `--btn-primary` | `--gray-950`   | #101219      | .btn--solid, .btn--primary bg, filter.is-active | 7      |
-| `--btn-cta`     | `--violet-600` | #2e26b5      | .btn--primary:hover 배경                        | 1      |
+| `--btn-secondary`     | `--violet-600` | #2e26b5      | .btn--primary:hover 배경                        | 1      |
 
 ### 5.6 Accent
 
@@ -164,7 +164,7 @@ Kakao 소셜 로그인 전용. 사이트 브랜드 컬러 아님.
 | `--violet-300`               | #8681e4 | —                                | `about.css` `.guarantee-col__icon` (직접) |
 | `--violet-400`               | #6861e0 | —                                | — (Palette)                               |
 | `--violet-500`               | #3b33d9 | `--text-caption`, `--accent-mid` | —                                         |
-| `--violet-600`               | #2e26b5 | `--btn-cta`                      | —                                         |
+| `--violet-600`               | #2e26b5 | `--btn-secondary`                      | —                                         |
 | `--violet-700`               | #2a2287 | `--accent-dark1`                 | —                                         |
 | `--violet-800`               | #1f1957 | `--accent-dark2`                 | —                                         |
 | `--violet-900`               | #151132 | `--accent-gradient` (내부)       | —                                         |
@@ -221,7 +221,7 @@ Kakao 소셜 로그인 전용. 사이트 브랜드 컬러 아님.
 | `--border-gray-3`   | `--gray-400`     | #949aa8    |
 | `--border-gray-4`   | `--gray-800`     | #292e3d    |
 | `--btn-primary`     | `--gray-950`     | #101219    |
-| `--btn-cta`         | `--violet-600`   | #2e26b5    |
+| `--btn-secondary`         | `--violet-600`   | #2e26b5    |
 | `--accent-mid`      | `--violet-500`   | #3b33d9    |
 | `--accent-dark1`    | `--violet-700`   | #2a2287    |
 | `--accent-dark2`    | `--violet-800`   | #1f1957    |
@@ -256,7 +256,7 @@ Kakao 소셜 로그인 전용. 사이트 브랜드 컬러 아님.
 | 버튼                            | 배경             | 텍스트          | 호버                |
 | ------------------------------- | ---------------- | --------------- | ------------------- |
 | `.btn--solid` / `.btn--primary` | `--btn-primary`  | `--bg-white`    | 유지                |
-| `.btn--primary:hover`           | `--btn-cta`      | `--text-white`  | —                   |
+| `.btn--primary:hover`           | `--btn-secondary`      | `--text-white`  | —                   |
 | `.btn--primary2`                | `--accent-dark1` | `--bg-white`    | `--accent-dark2`    |
 | outline                         | transparent      | `--text-gray-6` | bg: `--text-gray-6` |
 

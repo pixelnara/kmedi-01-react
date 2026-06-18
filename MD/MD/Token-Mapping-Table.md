@@ -32,7 +32,7 @@
 | `--border-gray-3` | `--gray-400` | #949aa8 | ✓ | 중간 구분선 (footer top/bottom) | |
 | `--border-gray-4` | `--gray-800` | #292e3d | ✓ | 강조 보더 (cnav-btn, filter chip) | |
 | `--btn-primary` | `--gray-950` | #101219 | ✓ | btn--solid, btn--primary bg, filter.is-active | |
-| `--btn-cta` | `--violet-600` | #2e26b5 | ✓ | btn--primary:hover 배경 | |
+| `--btn-secondary` | `--violet-600` | #2e26b5 | ✓ | btn--primary:hover 배경 | |
 | `--accent-mid` | `--violet-500` | #3b33d9 | ✓ | feature dots active, stay-card tags bg, services acc-icon | text-caption과 동일값 |
 | `--accent-dark1` | `--violet-700` | #2a2287 | ✓ | services acc open head, btn--primary2, hiw icon, proc-sheet, about btn | |
 | `--accent-dark2` | `--violet-800` | #1f1957 | ✓ | compare__col--ours bg, footer__bottom, btn--primary2:hover | |
@@ -66,7 +66,7 @@
 | `--violet-300` | #8681e4 | — | about.css (직접) | accent-light 삭제 후 직접 참조 |
 | `--violet-400` | #6861e0 | — | — | Palette |
 | `--violet-500` | #3b33d9 | `--text-caption`, `--accent-mid` | — | 이중 매핑 |
-| `--violet-600` | #2e26b5 | `--btn-cta` | home.css (직접) | why-journey icon wrap bg + sub color |
+| `--violet-600` | #2e26b5 | `--btn-secondary` | home.css (직접) | why-journey icon wrap bg + sub color |
 | `--violet-700` | #2a2287 | `--accent-dark1` | — | |
 | `--violet-800` | #1f1957 | `--accent-dark2` | — | |
 | `--violet-900` | #151132 | `--accent-gradient` (내부) | — | |
@@ -87,8 +87,8 @@ semantic 없이 CSS 파일에서 primitive를 직접 참조하는 항목. 삭제
 |-----------|-----|---------|-----|
 | `--violet-300` | about.css | `.guarantee-col__icon` | `--accent-light` 삭제 후 직접 유지 |
 | `--gold-600` | home.css | `.treat-highlight` | `--text-gold` 삭제 후 직접 유지 |
-| `--violet-600` | home.css | `.why-journey__icon-wrap` | why-journey 아이콘 원 배경 — `--btn-cta`와 동일값이나 의미 불일치 |
-| `--violet-600` | home.css | `.why-journey__icon-sub` | why-journey 서브타이틀 컬러 — `--btn-cta`와 동일값이나 의미 불일치 |
+| `--violet-600` | home.css | `.why-journey__icon-wrap` | why-journey 아이콘 원 배경 — `--btn-secondary`와 동일값이나 의미 불일치 |
+| `--violet-600` | home.css | `.why-journey__icon-sub` | why-journey 서브타이틀 컬러 — `--btn-secondary`와 동일값이나 의미 불일치 |
 
 **Direct CSS 건수: 4건** (의도적, 관리 대상)
 
@@ -126,7 +126,7 @@ semantic 없이 CSS 파일에서 primitive를 직접 참조하는 항목. 삭제
 | `--accent` | 0건 · 미사용 | — |
 | `--accent-light` | 1건 · 저사용 | `--violet-300` 직접 참조 |
 | `--accent-dark` | → `--accent-dark1` | `--accent-dark1` |
-| `--accent-hover` | → `--btn-cta` (Button 카테고리) | `--btn-cta` |
+| `--accent-hover` | → `--btn-secondary` (Button 카테고리) | `--btn-secondary` |
 | `--accent-deep` | → `--accent-dark2` | `--accent-dark2` |
 
 ---
