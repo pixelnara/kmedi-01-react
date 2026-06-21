@@ -124,7 +124,7 @@
 .proc-slide__num {
   font-size: 12px;
   font-weight: 700;
-  color: var(--accent-blue1);
+  color: var(--accent-gray-1);
   letter-spacing: var(--tracking-open);
   display: block;
   margin-bottom: var(--space-10);
@@ -170,7 +170,7 @@
   gap: var(--space-8);
   font-size: var(--text-14);
   font-weight: 600;
-  color: var(--accent-blue1);
+  color: var(--accent-gray-1);
   text-decoration: none;
   letter-spacing: var(--tracking-tight);
   transition: gap 0.2s;
@@ -195,7 +195,7 @@
   padding: 0;
 }
 .proc-dot.is-active {
-  background: var(--accent-blue1);
+  background: var(--accent-gray-1);
   width: 20px;
   border-radius: 100px;
 }

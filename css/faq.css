@@ -76,7 +76,7 @@
 .faq-cta {
   margin-top: var(--space-56);
   padding: 48px 32px;
-  background: var(--accent-blue2);
+  background: var(--accent-gray-2);
   border-radius: 2px;
   text-align: center;
 }
@@ -98,7 +98,7 @@
   border-radius: 2px;
   border: 1.5px solid #fff;
   background: #fff;
-  color: var(--accent-blue2);
+  color: var(--accent-gray-2);
   text-decoration: none;
   transition:
     background 0.25s,

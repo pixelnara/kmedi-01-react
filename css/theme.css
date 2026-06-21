@@ -194,9 +194,9 @@
   --btn-secondary: var(--blue-500); /* .btn--primary:hover → 블루 액센트 (상담 예약하기 등) */
 
   /* ─── Semantic: Accent ─── */
-  --accent-blue1: var(--gray-900); /* UI 아이콘 · 체크마크 · 숫자 원 */
-  --accent-blue2: var(--gray-950); /* 아코디언 배경 · 비교 제목 · 브랜드 버튼 */
-  --accent-blue3: var(--gray-950); /* 딥 액센트 (compare col, footer bottom, btn2:hover) */
+  --accent-gray-1: var(--gray-900); /* UI 아이콘 · 체크마크 · 숫자 원 */
+  --accent-gray-2: var(--gray-950); /* 아코디언·모달·버튼·CTA 배경 */
+  --accent-blue: var(--blue-500);
   --accent-gradient: linear-gradient(
     135deg,
     var(--gray-950) 0%,

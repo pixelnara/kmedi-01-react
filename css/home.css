@@ -280,7 +280,7 @@
   flex-wrap: wrap;
   gap: var(--space-3);
   margin-top: 15px;
-  background: var(--accent-blue1);
+  background: var(--accent-gray-1);
 }
 @media (max-width: 860px) {
   .stay-card {
@@ -416,7 +416,7 @@
   transition: background 0.3s;
 }
 .feature__dots button.is-active {
-  background: var(--accent-blue1);
+  background: var(--accent-blue);
 }
 
 /* ============================================================
@@ -705,7 +705,7 @@
 }
 .cta-dark .btn:hover {
   background: var(--bg-white);
-  color: var(--accent-blue2);
+  color: var(--accent-gray-2);
 }
 
 /* ============================================================
@@ -1088,7 +1088,7 @@
   width: 72px;
   height: 72px;
   border-radius: 50%;
-  background: var(--accent-blue2);
+  background: var(--accent-gray-2);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1179,7 +1179,7 @@
     width: 36px;
     height: 36px;
     border-radius: 50%;
-    background: var(--accent-blue2);
+    background: var(--accent-gray-2);
     color: var(--text-white);
     font-family: var(--font-sans);
     font-size: var(--text-14);
@@ -1263,7 +1263,7 @@
   }
   .header__main .brand {
     display: block;
-    font-size: var(--text-15);
+    font-size: var(--text-16);
     font-weight: 600;
     letter-spacing: var(--tracking-wide);
     color: var(--text-gray-7);

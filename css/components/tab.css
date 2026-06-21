@@ -22,13 +22,13 @@
   left: 0;
   right: 0;
   height: 2px;
-  background: var(--accent-blue1);
+  background: var(--accent-gray-1);
   transform: scaleX(0);
   transition: transform 0.25s ease;
 }
 .tab-line__btn:hover { color: var(--border-gray-4); }
 .tab-line__btn.is-active {
-  color: var(--accent-blue1);
+  color: var(--accent-gray-1);
   font-weight: 700;
 }
 .tab-line__btn.is-active::after { transform: scaleX(1); }

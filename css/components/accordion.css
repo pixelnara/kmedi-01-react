@@ -33,13 +33,13 @@
     color 0.3s;
 }
 .acc-item.is-open .acc-head {
-  background: var(--accent-blue2);
+  background: var(--accent-gray-2);
   color: var(--text-white);
 }
 .acc-icon {
   position: relative;
   flex: none;
-  color: var(--accent-blue1);
+  color: var(--accent-gray-1);
 }
 .acc-icon::before,
 .acc-icon::after {

@@ -200,7 +200,7 @@
   letter-spacing: var(--tracking-tight);
 }
 .pd-gallery__tag:nth-child(2) {
-  background: var(--accent-blue2);
+  background: var(--accent-gray-2);
 }
 /* ── [신규] 하단 썸네일 스트립: 메인 이미지 안쪽 하단에 오버레이로 표시되는 제품 다중 사진 선택기 ── */
 .pd-gallery__thumbstrip {

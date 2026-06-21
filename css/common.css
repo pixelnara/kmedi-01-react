@@ -999,7 +999,7 @@ image-slot#cert-sgi {
   color: var(--text-white);
 }
 .chat-btn.is-open:hover {
-  background: var(--accent-blue3);
+  background: var(--accent-gray-2);
   transform: scale(1.08);
 }
 .chat-btn .chat-icon-close {
@@ -1107,7 +1107,7 @@ image-slot#cert-sgi {
 }
 .contact-popup__icon--email {
   background: var(--gray-50);
-  color: var(--accent-blue1);
+  color: var(--accent-gray-1);
 }
 .contact-popup__icon--phone {
   background: var(--teal-50);
@@ -1142,14 +1142,14 @@ image-slot#cert-sgi {
   align-items: center;
   gap: var(--space-12);
   padding: var(--space-16) var(--space-20);
-  background: var(--accent-blue3);
+  background: var(--accent-gray-2);
   color: var(--text-white);
   font-size: var(--text-15);
   font-weight: 600;
   transition: background 0.2s;
 }
 .contact-popup__login-btn:hover {
-  background: var(--accent-blue2);
+  background: var(--accent-gray-2);
 }
 .contact-popup__login-icon {
   flex-shrink: 0;
@@ -1176,8 +1176,8 @@ image-slot#cert-sgi {
   padding: 1px var(--space-6);
   font-size: var(--text-11);
   font-weight: 600;
-  color: var(--accent-blue1);
-  border: 1px solid var(--accent-blue1);
+  color: var(--accent-gray-1);
+  border: 1px solid var(--accent-gray-1);
   border-radius: var(--radius-pill);
   background: transparent;
   cursor: pointer;

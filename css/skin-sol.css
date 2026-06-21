@@ -13,9 +13,8 @@
   --edi-green: var(--gray-950); /* 액센트2 → 그레이 */
 
   /* 시맨틱 토큰 재매핑 */
-  --accent-blue1: var(--edi-blue); /* 아이콘·체크·숫자원·액티브·보더강조 */
-  --accent-blue2: var(--edi-blue); /* 링크 */
-  --accent-blue3: var(--edi-blue-d);
+  --accent-gray-1: var(--edi-blue); /* 아이콘·체크·숫자원·액티브·보더강조 */
+  --accent-gray-2: var(--edi-blue-d); /* 아코디언·버튼·CTA 배경 */
   --text-caption: var(--edi-blue); /* 카테고리/캡션 라벨 = 블루 */
   --btn-primary: var(--edi-blue); /* 솔리드 블루 버튼 */
   --btn-secondary: var(--edi-blue-d); /* 버튼 호버 */
@@ -206,8 +205,8 @@
   margin: 0 var(--space-6);
 }
 .pss-quiz-arrow:hover:not(:disabled) {
-  border-color: var(--accent-blue1);
-  color: var(--accent-blue1);
+  border-color: var(--accent-gray-1);
+  color: var(--accent-gray-1);
 }
 .pss-quiz-arrow:disabled {
   opacity: 0.3;
@@ -242,7 +241,7 @@
   transition: border-color 0.3s;
 }
 .pss-category.is-answered {
-  border-color: var(--accent-blue1);
+  border-color: var(--accent-gray-1);
 }
 
 .pss-category__header {
@@ -262,7 +261,7 @@
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  color: var(--accent-blue1);
+  color: var(--accent-gray-1);
 }
 .pss-category__icon svg {
   width: 24px;
@@ -292,7 +291,7 @@
   width: 28px;
   height: 28px;
   border-radius: 0;
-  background: var(--accent-blue1);
+  background: var(--accent-gray-1);
   display: none;
   align-items: center;
   justify-content: center;
@@ -344,8 +343,8 @@
 }
 
 .pss-option__card:hover {
-  border-color: var(--accent-blue1);
-  box-shadow: inset 0 0 0 1px var(--accent-blue1); /* 2px 효과를 리플로우 없이 (호버 흔들림 방지) */
+  border-color: var(--accent-gray-1);
+  box-shadow: inset 0 0 0 1px var(--accent-gray-1); /* 2px 효과를 리플로우 없이 (호버 흔들림 방지) */
 }
 
 /* Selected state */
@@ -672,12 +671,12 @@
 .pss-section-title svg {
   width: 20px;
   height: 20px;
-  color: var(--accent-blue1);
+  color: var(--accent-gray-1);
 }
 .pss-section-title__link {
   font-size: var(--text-13);
   font-weight: 600;
-  color: var(--accent-blue2);
+  color: var(--accent-gray-2);
   letter-spacing: var(--tracking-normal);
   text-decoration: none;
   white-space: nowrap;
@@ -716,7 +715,7 @@
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  color: var(--accent-blue1);
+  color: var(--accent-gray-1);
 }
 .pss-ingredient-card__icon svg {
   width: 18px;
@@ -797,7 +796,7 @@
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  color: var(--accent-blue1);
+  color: var(--accent-gray-1);
 }
 .pss-cta__icon svg {
   width: 24px;
@@ -1333,8 +1332,8 @@
     background 0.2s;
 }
 .pss-hair-nav__btn:hover {
-  border-color: var(--accent-blue1);
-  color: var(--accent-blue1);
+  border-color: var(--accent-gray-1);
+  color: var(--accent-gray-1);
 }
 .pss-hair-nav__btn:disabled {
   opacity: 0.3;
@@ -1357,7 +1356,7 @@
     width 0.2s;
 }
 .pss-hair-dot.is-active {
-  background: var(--accent-blue1);
+  background: var(--accent-gray-1);
   width: 24px;
 }
 
