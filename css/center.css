@@ -342,7 +342,7 @@ figure.art-img--center img {
 }
 .info-row {
   display: flex;
-  gap: var(--space-20);
+  gap: var(--space-32);
   padding: 13px 0;
   border-bottom: 1px solid var(--border-gray-1);
   align-items: flex-start;
@@ -361,13 +361,13 @@ figure.art-img--center img {
   flex: 1;
 }
 .info-dd a {
-  color: var(--light-blue-500);
+  color: var(--blue-500);
   text-decoration: underline;
   text-underline-offset: 3px;
   text-decoration-color: var(--light-blue-300);
 }
 .info-dd a:hover {
-  color: var(--light-blue-400);
+  color: var(--blue-500);
 }
 
 /* ─────────────────────────────────────────────────────
