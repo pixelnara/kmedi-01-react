@@ -1173,7 +1173,14 @@
   function renderRecCards(items) {
     return items.map(function(item){
       var sub = item.tags && item.tags.length ? item.tags[0] : 'SKIN CARE';
-      return '<a href="cosmetic.html" class="pss-rec-card">' +
+      var safeName = (item.name || '').replace(/"/g, '&quot;');
+      var safeImg  = (item.img  || '').replace(/"/g, '&quot;');
+      var tagsVal  = (item.tags || []).join(',');
+      return '<a href="#" class="pss-rec-card"' +
+        ' data-prd-name="' + safeName + '"' +
+        ' data-prd-price="' + (item.price || '') + '"' +
+        ' data-prd-img="'  + safeImg  + '"' +
+        ' data-prd-tags="' + tagsVal  + '">' +
         '<div class="pss-rec-card__top">' +
           '<p class="pss-rec-card__label">KMEDITOUR<br>' + sub + '</p>' +
           '<hr class="pss-rec-card__sep">' +
@@ -1356,6 +1363,28 @@
       img:      img,
       tags:     tags,
       category: '스킨케어',
+    }));
+    window.location.href = 'product.html';
+  });
+
+  /* ── rec-card (분석 결과 추천 제품) → product.html ── */
+  document.addEventListener('click', function(e) {
+    var card = e.target.closest('.pss-rec-card');
+    if (!card) return;
+    e.preventDefault();
+    var name     = card.getAttribute('data-prd-name') || '';
+    var priceStr = card.getAttribute('data-prd-price') || '';
+    var img      = card.getAttribute('data-prd-img') || '';
+    var tagsStr  = card.getAttribute('data-prd-tags') || '';
+    var tags     = tagsStr ? tagsStr.split(',').filter(Boolean) : [];
+    var price    = parseInt(priceStr.replace(/[^0-9]/g, '')) || 0;
+    sessionStorage.setItem('cosm_product', JSON.stringify({
+      name:     name,
+      price:    price,
+      img:      img,
+      imgs:     img ? [img] : [],
+      tags:     tags,
+      category: '스킨케어'
     }));
     window.location.href = 'product.html';
   });
