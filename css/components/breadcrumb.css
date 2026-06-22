@@ -45,7 +45,9 @@
 }
 .bc-bar .bc-nav                          { color: var(--text-gray-2); }
 .bc-bar .bc-nav a                        { color: var(--text-gray-2); }
+@media (hover: hover) {
 .bc-bar .bc-nav a:hover                  { color: var(--text-gray-5); }
+}
 .bc-bar .bc-nav [aria-current="page"]    { color: var(--text-gray-5); font-weight: 500; }
 
 /* ── 패턴 B: page-hero--bc (히어로 하단 중앙) ── */
@@ -58,10 +60,14 @@
 /* navy 버전 */
 .page-hero--navy.page-hero--bc .bc-nav                        { color: rgba(255,255,255,0.42); }
 .page-hero--navy.page-hero--bc .bc-nav a                      { color: rgba(255,255,255,0.42); }
+@media (hover: hover) {
 .page-hero--navy.page-hero--bc .bc-nav a:hover                { color: rgba(255,255,255,0.8); }
+}
 .page-hero--navy.page-hero--bc .bc-nav [aria-current="page"]  { color: rgba(255,255,255,0.65); font-weight: 500; }
 /* white 버전 */
 .page-hero--white.page-hero--bc .bc-nav                       { color: var(--text-gray-2); }
 .page-hero--white.page-hero--bc .bc-nav a                     { color: var(--text-gray-2); }
+@media (hover: hover) {
 .page-hero--white.page-hero--bc .bc-nav a:hover               { color: var(--text-gray-5); }
+}
 .page-hero--white.page-hero--bc .bc-nav [aria-current="page"] { color: var(--text-gray-5); font-weight: 500; }

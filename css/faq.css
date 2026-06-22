@@ -104,9 +104,11 @@
     background 0.25s,
     color 0.25s;
 }
+@media (hover: hover) {
 .faq-cta .faq-cta__btn:hover {
   background: transparent;
   color: #fff;
+}
 }
 
 /* ── Responsive ── */

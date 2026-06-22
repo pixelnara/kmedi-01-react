@@ -26,7 +26,9 @@
   transform: scaleX(0);
   transition: transform 0.25s ease;
 }
+@media (hover: hover) {
 .tab-line__btn:hover { color: var(--border-gray-4); }
+}
 .tab-line__btn.is-active {
   color: var(--accent-gray-1);
   font-weight: 700;

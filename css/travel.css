@@ -103,8 +103,10 @@
   white-space: nowrap;
   transition: border-color 0.2s;
 }
+@media (hover: hover) {
 .tv-sort__btn:hover {
   border-color: var(--gray-500);
+}
 }
 .tv-sort__menu {
   position: absolute;
@@ -134,8 +136,10 @@
   cursor: pointer;
   transition: background 0.15s;
 }
+@media (hover: hover) {
 .tv-sort__item:hover {
   background: var(--surface-gray-1);
+}
 }
 .tv-sort__item.is-active {
   color: var(--accent-gray-1);
@@ -194,9 +198,11 @@
     box-shadow 0.25s,
     transform 0.25s;
 }
+@media (hover: hover) {
 .tv-card:hover {
   box-shadow: 0 8px 28px rgba(0, 0, 0, 0.13);
   transform: translateY(-3px);
+}
 }
 .tv-card__img {
   width: 100%;
@@ -310,8 +316,10 @@
   padding: 20px 24px 12px;
   transition: color 0.2s;
 }
+@media (hover: hover) {
 .tv-detail__back:hover {
   color: var(--border-gray-4);
+}
 }
 
 /* 이미지 캐러셀 */
@@ -488,8 +496,10 @@
   margin-bottom: var(--space-16);
   transition: background 0.2s;
 }
+@media (hover: hover) {
 .tv-detail__cta-btn:hover {
   background: var(--border-gray-4);
+}
 }
 .tv-detail__cta-info {
   display: flex;

@@ -60,9 +60,11 @@
     background 0.15s;
   white-space: nowrap;
 }
+@media (hover: hover) {
 .cosm-select-btn:hover {
   border-color: var(--border-gray-4);
   background: var(--surface-gray-1);
+}
 }
 .cosm-select-btn.is-open {
   border-color: var(--text-caption);
@@ -108,9 +110,11 @@
   cursor: pointer;
   transition: background 0.12s;
 }
+@media (hover: hover) {
 .cosm-select-dropdown li:hover {
   background: var(--surface-gray-1);
   color: var(--text-gray-6);
+}
 }
 .cosm-select-dropdown li.is-active {
   color: var(--text-caption);
@@ -164,9 +168,11 @@
     color 0.15s;
   border-radius: 0;
 }
+@media (hover: hover) {
 .cosm-pagi-btn:hover:not(:disabled) {
   background: var(--surface-gray-1);
   color: var(--text-gray-7);
+}
 }
 .cosm-pagi-btn:disabled {
   opacity: 0.3;
@@ -191,9 +197,11 @@
 }
 
 /* ── Product Card (shared styles via .prod-card in common.css) ── */
+@media (hover: hover) {
 .cosm-grid .prod-card:hover {
   background: var(--cosm-card-hover);
   box-shadow: var(--cosm-card-hover-shadow);
+}
 }
 
 /* 키워드 — 타이틀 위 텍스트 + 회색 언더바 */
@@ -214,9 +222,11 @@
     transform 0.1s;
   border-radius: 2px;
 }
+@media (hover: hover) {
 .cosm-hbtn:hover {
   color: #fff;
   background: rgba(255, 255, 255, 0.14);
+}
 }
 .cosm-hbtn:active {
   transform: scale(0.86);

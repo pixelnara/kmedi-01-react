@@ -47,8 +47,10 @@
   display: flex;
   padding: var(--space-4);
 }
+@media (hover: hover) {
 .login-modal__close:hover {
   color: var(--text-gray-7);
+}
 }
 .login-modal__brand {
   font-size: var(--text-18);
@@ -135,8 +137,10 @@ input[type="password"].login-modal__input {
   align-items: center;
   padding: var(--space-4);
 }
+@media (hover: hover) {
 .login-pwd-eye:hover {
   color: var(--text-gray-3);
+}
 }
 .login-modal__options {
   display: flex;
@@ -163,8 +167,10 @@ input[type="password"].login-modal__input {
   color: var(--text-caption);
   text-decoration: none;
 }
+@media (hover: hover) {
 .login-modal__forgot:hover {
   text-decoration: underline;
+}
 }
 .login-modal__submit {
   width: 100%;
@@ -179,8 +185,10 @@ input[type="password"].login-modal__input {
   margin-top: var(--space-4);
   transition: opacity 0.2s;
 }
+@media (hover: hover) {
 .login-modal__submit:hover {
   opacity: 0.82;
+}
 }
 .login-modal__divider {
   display: flex;
@@ -218,8 +226,10 @@ input[type="password"].login-modal__input {
   cursor: pointer;
   transition: opacity 0.15s;
 }
+@media (hover: hover) {
 .login-social-btn:hover {
   opacity: 0.85;
+}
 }
 .login-social-btn--kakao {
   background: var(--btn-kakao);
@@ -237,8 +247,10 @@ input[type="password"].login-modal__input {
   font-weight: 600;
   text-decoration: none;
 }
+@media (hover: hover) {
 .login-modal__join a:hover {
   text-decoration: underline;
+}
 }
 .login-modal__admin {
   margin-top: var(--space-14);
@@ -254,8 +266,10 @@ input[type="password"].login-modal__input {
   color: var(--text-gray-2);
   text-decoration: none;
 }
+@media (hover: hover) {
 .login-admin-link:hover {
   color: var(--text-gray-3);
+}
 }
 @media (max-width: 768px) {
   .login-modal {
