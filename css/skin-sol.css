@@ -152,12 +152,8 @@
    ============================================================ */
 .pss-quiz {
   padding: var(--space-8) 0 clamp(48px, 6vw, 72px);
-  /* 데스크탑: 분석 버튼을 flex order로 슬라이더 아래에 유지 */
   display: flex;
   flex-direction: column;
-}
-.pss-analyze-wrap {
-  order: 2; /* 데스크탑: quiz-outer(order 0 기본값) 뒤로 */
 }
 .pss-wrap {
   max-width: 900px;
@@ -185,37 +181,6 @@
   flex: 0 0 100%;
   min-width: 0;
   padding: var(--space-24) 0 var(--space-16);
-}
-
-/* 좌우 화살표 — 헤어 슬라이더와 동일 스타일 */
-.pss-quiz-arrow {
-  flex-shrink: 0;
-  width: 40px;
-  height: 40px;
-  border-radius: var(--radius-full);
-  border: 1.5px solid var(--border-gray-1);
-  background: var(--bg-white);
-  color: var(--text-gray-5);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  transition:
-    border-color 0.2s,
-    color 0.2s,
-    background 0.2s;
-  padding: 0;
-  margin: 0 var(--space-6);
-}
-@media (hover: hover) {
-.pss-quiz-arrow:hover:not(:disabled) {
-  border-color: var(--accent-gray-1);
-  color: var(--accent-gray-1);
-}
-}
-.pss-quiz-arrow:disabled {
-  opacity: 0.3;
-  cursor: default;
 }
 
 /* 현재 단계 — 링 강조 */
@@ -881,26 +846,13 @@
   .chat-btn {
     display: none;
   }
-  /* 퀴즈 좌우 화살표를 콘텐츠 아래로 이동 — 뷰포트가 100% 폭을 쓰도록 */
   .pss-quiz-outer {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: var(--space-8);
     max-width: 100%;
-  }
-  .pss-quiz-viewport {
-    flex: 1 1 100%;
-    order: -1;
-  }
-  .pss-quiz-arrow {
-    margin: 0;
   }
   .pss-quiz {
     padding-bottom: 24px;
   }
-  /* 모바일: 분석 버튼을 슬라이더 위(상단 CTA)로 올림 */
   .pss-analyze-wrap {
-    order: -2;
     margin-bottom: var(--space-8);
   }
   .pss-steps {
