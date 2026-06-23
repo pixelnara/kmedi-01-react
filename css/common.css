@@ -2308,6 +2308,9 @@ image-slot#cert-sgi {
     height: 2.5px;
   }
   .header-menu-btn {
+    display: none;
+  }
+  .header-mypage-btn {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -2315,8 +2318,12 @@ image-slot#cert-sgi {
     height: 36px;
     flex-shrink: 0;
     color: var(--text-gray-7);
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
   }
-  .header-menu-btn svg {
+  .header-mypage-btn svg {
     width: 22px;
     height: 22px;
   }

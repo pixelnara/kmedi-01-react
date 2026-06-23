@@ -441,6 +441,19 @@
     });
   });
 
+  /* ---------- Mobile header: My Page button → login modal ---------- */
+  document.querySelectorAll(".header-mypage-btn").forEach(function (btn) {
+    btn.addEventListener("click", function (e) {
+      e.preventDefault();
+      var modal = document.getElementById("loginModal");
+      if (modal) {
+        modal.classList.add("is-open");
+        modal.setAttribute("aria-hidden", "false");
+        document.body.style.overflow = "hidden";
+      }
+    });
+  });
+
   /* ---------- Mobile bottom bar: active state ---------- */
   const mbarBtns = document.querySelectorAll(".mobile-bar .mbar-btn");
   mbarBtns.forEach((btn) => {
