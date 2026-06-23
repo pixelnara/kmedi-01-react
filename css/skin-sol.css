@@ -462,8 +462,30 @@
 
 /* Result Header */
 .pss-result__header {
+  position: relative;
   text-align: center;
   margin-bottom: clamp(40px, 6vw, 64px);
+}
+.pss-result__reset-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 6px 12px;
+  border-radius: var(--radius-full);
+  border: 1px solid var(--border-gray-1);
+  background: var(--bg-white);
+  color: var(--text-gray-4);
+  font-size: var(--text-12);
+  font-weight: 500;
+  cursor: pointer;
+  transition: border-color 0.2s, color 0.2s;
+}
+.pss-result__reset-btn:hover {
+  border-color: var(--text-gray-3);
+  color: var(--text-gray-6);
 }
 .pss-result__label {
   font-size: var(--text-12);
@@ -1035,24 +1057,6 @@
   }
   .pss-result__close-btn:active {
     background: var(--border-gray-1);
-  }
-  /* 다시 분석하기 — 상단 바 버튼 */
-  .pss-result__reset-btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 5px;
-    padding: 6px 10px;
-    border-radius: var(--radius-full);
-    border: 1px solid var(--border-gray-1);
-    background: var(--bg-white);
-    color: var(--text-gray-4);
-    font-size: var(--text-12);
-    font-weight: 500;
-    flex-shrink: 0;
-    cursor: pointer;
-    transition:
-      border-color 0.2s,
-      color 0.2s;
   }
   .pss-result__reset-btn:active {
     border-color: var(--text-gray-3);
