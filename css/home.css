@@ -1270,14 +1270,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 36px;
-    height: 36px;
+    width: 32px;
+    height: 32px;
     border-radius: 50%;
     background: var(--blue-ec);
     color: var(--text-white);
     font-family: var(--font-sans);
-    font-size: var(--text-14);
+    font-size: var(--text-15);
     font-weight: 800;
+    vertical-align: middle;
   }
   .hiw-card__step {
     grid-column: 2;
