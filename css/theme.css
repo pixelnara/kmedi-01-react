@@ -50,27 +50,26 @@
   --kakao-dark: #191919;
 
   /* ─── Primitive: Typography ─── */
-
-  --text-10: 0.625rem; /* 10px @ 16px base */
-  --text-11: 0.6875rem; /* 11px */
-  --text-12: 0.78rem; /* ~12.5px */
-  --text-13: 0.8125rem; /* 13px */
-  --text-14: 0.875rem; /* 14px */
-  --text-15: 0.9375rem; /* 15px */
-  --text-16: 1rem; /* 16px */
-  --text-17: 1.0625rem; /* 17px */
-  --text-18: 1.125rem; /* 18px */
-  --text-19: 1.1875rem; /* 19px */
-  --text-20: 1.25rem; /* 20px */
-  --text-21: 1.3125rem; /* 21px */
-  --text-22: 1.375rem; /* 22px */
-  --text-23: 1.4375rem; /* 23px */
-  --text-24: 1.5rem; /* 24px */
-  --text-25: 1.5625rem; /* 25px */
-  --text-28: 1.75rem; /* 28px */
-  --text-29: 1.8125rem; /* 29px */
-  --text-30: 1.875rem; /* 30px */
-  --text-32: 2rem; /* 32px */
+  --text-10: 1rem; /* 10px @ 10px base */
+  --text-11: 1.1rem; /* 11px */
+  --text-12: 1.25rem; /* ~12.5px */
+  --text-13: 1.3rem; /* 13px */
+  --text-14: 1.4rem; /* 14px */
+  --text-15: 1.5rem; /* 15px */
+  --text-16: 1.6rem; /* 16px */
+  --text-17: 1.7rem; /* 17px */
+  --text-18: 1.8rem; /* 18px */
+  --text-19: 1.9rem; /* 19px */
+  --text-20: 2rem; /* 20px */
+  --text-21: 2.1rem; /* 21px */
+  --text-22: 2.2rem; /* 22px */
+  --text-23: 2.3rem; /* 23px */
+  --text-24: 2.4rem; /* 24px */
+  --text-25: 2.5rem; /* 25px */
+  --text-28: 2.8rem; /* 28px */
+  --text-29: 2.9rem; /* 29px */
+  --text-30: 3rem; /* 30px */
+  --text-32: 3.2rem; /* 32px */
   --text-34: clamp(24px, 2.4vw, 34px);
   --text-46: clamp(30px, 3.4vw, 46px);
   --text-76: clamp(38px, 5.4vw, 76px);
