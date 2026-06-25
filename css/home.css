@@ -868,13 +868,14 @@
 }
 .acc-em {
   display: inline-block;
-  font-size: var(--text-17);
-  font-weight: 600;
+  font-size: var(--text-15);
+  font-weight: 520;
   padding-bottom: 12px;
   line-height: 1.4;
 }
 .acc-desc {
   color: var(--text-gray-4);
+  font-size: var(--text-14);
   font-weight: 450;
   line-height: 1.4;
 }
@@ -1241,12 +1242,12 @@
     display: grid;
     grid-template-columns: 36px 1fr;
     grid-template-rows: auto auto;
-    column-gap: var(--space-20);
+    column-gap: var(--space-16);
     row-gap: var(--space-10);
     align-items: center;
     border-right: none;
     border-top: 1px solid var(--border-gray-1);
-    padding: var(--space-16) 0;
+    padding: var(--space-20) 0;
     flex-direction: unset;
   }
   .hiw-card__icon {
@@ -1270,10 +1271,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 32px;
-    height: 32px;
+    width: 28px;
+    height: 28px;
     border-radius: 50%;
-    background: var(--blue-ec);
+    background: var(--gray-800);
     color: var(--text-white);
     font-family: var(--font-sans);
     font-size: var(--text-15);
