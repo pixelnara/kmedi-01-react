@@ -230,12 +230,13 @@
   width: 52px;
   height: 52px;
   border-radius: 0;
-  background: var(--surface-gray-1);
+  background: var(--icon-bg-white);
   display: flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
   color: var(--accent-gray-1);
+  border: 1px solid var(--blue-500);
 }
 .pss-category__icon svg {
   width: 24px;
@@ -243,18 +244,18 @@
 }
 .pss-category__num {
   font-family: var(--font-sans);
-  font-size: var(--text-12);
+  font-size: var(--text-14);
   font-weight: 700;
-  letter-spacing: 0.12em;
+  letter-spacing: var(--tracking-normal);
   color: var(--text-caption);
-  margin-bottom: var(--space-4);
+  /* margin-bottom: var(--space-4); */
 }
 .pss-category__title {
-  font-size: var(--text-20);
-  font-weight: 700;
+  font-size: var(--text-23);
+  font-weight: 650;
   color: var(--text-gray-6);
   letter-spacing: var(--tracking-tight);
-  margin-bottom: var(--space-3);
+  margin-bottom: var(--space-4);
 }
 .pss-category__desc {
   font-size: var(--text-13);
@@ -404,17 +405,18 @@
 
 /* ── Analyze Button ── */
 .pss-analyze {
-  margin-top: var(--space-40);
+  /* margin-top: var(--space-40); */
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: var(--space-16);
+  /* gap: var(--space-16); */
 }
 .pss-analyze__hint {
   font-size: var(--text-13);
-  color: var(--text-gray-2);
+  color: var(--text-gray-7);
   letter-spacing: var(--tracking-snug);
   transition: opacity 0.3s;
+  font-weight: 500;
 }
 .pss-analyze__btn {
   height: 60px;
