@@ -13,6 +13,7 @@
 <link rel="stylesheet" href="css/reset.css" />
 <link rel="stylesheet" href="css/font.css" />
 <link rel="stylesheet" href="css/theme.css" />
+<link rel="stylesheet" href="css/components/mag-card.css" />
 <link rel="stylesheet" href="css/components/button.css" />
 <link rel="stylesheet" href="css/components/modal.css" />
 <link rel="stylesheet" href="css/common.css" />
@@ -499,21 +500,6 @@
 </div>
 
 <script src="js/app.js"></script>
-<script>
-  /* Category filter */
-  const filterTabs = document.querySelectorAll('.mag-filter__tab');
-  const cards = document.querySelectorAll('.mag-card');
-  filterTabs.forEach(tab => {
-    tab.addEventListener('click', () => {
-      filterTabs.forEach(t => { t.classList.remove('is-active'); t.setAttribute('aria-selected','false'); });
-      tab.classList.add('is-active');
-      tab.setAttribute('aria-selected','true');
-      const f = tab.dataset.filter;
-      cards.forEach(card => {
-        card.style.display = (f === 'all' || card.dataset.category === f) ? '' : 'none';
-      });
-    });
-  });
-</script>
+<script src="js/magazine.js"></script>
 </body>
 </html>

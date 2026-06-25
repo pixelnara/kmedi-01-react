@@ -8,61 +8,7 @@
   display: none;
 }
 
-/* ─────────────────────────────────────────────────────
-   TOP BAR — 모바일 전용 back 버튼 헤더
-   ───────────────────────────────────────────────────── */
-.sa-topbar {
-  display: none;
-}
-
-@media (max-width: 900px) {
-  .header {
-    display: none;
-  }
-
-  .sa-topbar {
-    display: flex;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 56px;
-    background: var(--bg-white);
-    border-bottom: 1px solid var(--border-gray-1);
-    z-index: 200;
-    padding: 0 var(--gutter);
-  }
-
-  .sa-topbar__back {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    width: 40px;
-    height: 40px;
-    color: var(--text-gray-6);
-    text-decoration: none;
-    flex-shrink: 0;
-  }
-
-  .sa-topbar__title {
-    flex: 1;
-    text-align: center;
-    font-size: var(--text-16);
-    font-weight: 700;
-    letter-spacing: var(--tracking-tight);
-    color: var(--text-gray-6);
-  }
-
-  .sa-topbar__spacer {
-    width: 40px;
-    flex-shrink: 0;
-  }
-
-  main {
-    padding-top: 56px;
-  }
-}
+/* → components/topbar.css (기본 56px 그대로 사용) */
 
 /* ─────────────────────────────────────────────────────
    IMAGE AREA — 풀블리드 드라마틱 이미지
