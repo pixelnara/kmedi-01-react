@@ -1037,10 +1037,12 @@ REVEAL ON SCROLL ============================================================ */
   }
   .header,
   .header--light,
-  .header--light.is-solid {
+  .header--light.is-solid,
+  .header--solid,
+  .header--solid.is-solid {
     background: var(--bg-white);
     color: var(--text-gray-6);
-    /* box-shadow: 0 1px 0 var(--border-gray-1); */
+    box-shadow: none;
   }
   /* 상단바 v2 활성 / v1 숨김 */
 

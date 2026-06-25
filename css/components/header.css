@@ -496,7 +496,6 @@
   position: relative;
 }
 
-
 /* ============================================================
    ★ [신규 기능] 모바일 GNB 상단 블록: 컨택 정보 + 언어 탭
    (데스크탑에서는 숨김, 860px 이하 모바일에서만 표시)
@@ -507,7 +506,7 @@
 
 @media (max-width: 860px) {
   .header__right {
-    gap: 10px;
+    gap: 6px;
   }
   .gnb-mobile-top {
     display: block;
@@ -997,5 +996,3 @@ ul.gnb-sub-list.gnb-sub-list--flat {
     text-decoration: none;
   }
 }
-
-/* ============================================================
