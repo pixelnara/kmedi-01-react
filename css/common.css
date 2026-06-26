@@ -161,6 +161,7 @@ body {
 }
 .page-hero__sub {
   font-size: var(--text-15);
+  font-weight: 500;
   line-height: 1.6;
   max-width: 640px;
   margin-left: auto;
@@ -229,6 +230,7 @@ body {
 }
 .cta-banner__label {
   font-size: var(--text-14);
+  font-weight: 500;
   color: rgba(255, 255, 255, 0.6);
   letter-spacing: var(--tracking-tight);
   margin-bottom: var(--space-6);
@@ -426,6 +428,7 @@ image-slot#cert-sgi {
 }
 .contact-popup__sub {
   font-size: var(--text-13);
+  font-weight: 450;
   color: var(--text-gray-5);
   line-height: 1.6;
 }
@@ -500,6 +503,7 @@ image-slot#cert-sgi {
 }
 .contact-popup__item-label {
   font-size: var(--text-12);
+  font-weight: 500;
   color: var(--text-gray-5);
 }
 .contact-popup__item-value {
@@ -509,6 +513,7 @@ image-slot#cert-sgi {
 }
 .contact-popup__item-hint {
   font-size: var(--text-12);
+  font-weight: 400;
   color: var(--text-gray-4);
   line-height: 1.5;
   margin-top: var(--space-2);
@@ -626,6 +631,7 @@ image-slot#cert-sgi {
 }
 .contact-sheet__subtitle {
   font-size: var(--text-13);
+  font-weight: 450;
   color: var(--text-gray-4);
   line-height: 1.5;
 }
@@ -660,6 +666,7 @@ image-slot#cert-sgi {
 }
 .contact-sheet__label {
   font-size: var(--text-12);
+  font-weight: 500;
   color: var(--text-gray-4);
 }
 .contact-sheet__value {
@@ -669,6 +676,7 @@ image-slot#cert-sgi {
 }
 .contact-sheet__hint {
   font-size: var(--text-12);
+  font-weight: 400;
   color: var(--text-gray-3);
   line-height: 1.5;
   margin-top: 2px;
@@ -680,6 +688,7 @@ image-slot#cert-sgi {
   border: 1px solid var(--border-gray-2);
   border-radius: 20px;
   font-size: var(--text-12);
+  font-weight: 500;
   color: var(--text-gray-5);
   background: none;
   cursor: pointer;

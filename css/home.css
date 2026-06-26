@@ -505,6 +505,7 @@
 .feature__desc {
   color: var(--text-gray-3);
   font-size: var(--type-body-lg);
+  font-weight: 500;
   line-height: 1.95;
   letter-spacing: var(--tracking-tight);
   max-width: 46ch;
@@ -1013,6 +1014,7 @@
   padding: var(--space-32) 30px var(--space-40);
   color: var(--text-gray-6);
   font-size: var(--text-18);
+  font-weight: 500;
   letter-spacing: var(--tracking-tight);
   line-height: 1.9;
   width: 100%;
@@ -1420,7 +1422,7 @@
   color: var(--text-gray-4);
   font-size: var(--text-15);
   font-weight: 500;
-  line-height: 1.8;
+  line-height: 2.15;
   margin-top: var(--space-12);
   letter-spacing: var(--tracking-tighter);
 }
