@@ -1,0 +1,183 @@
+{
+  "about": {
+    "route": "/about",
+    "pageCss": [
+      "css/about.css"
+    ],
+    "pageScripts": [
+      "js/about.js"
+    ],
+    "hasMobileBar": true,
+    "hasImageSlot": true,
+    "title": "About — KMEDITOUR · 프리미엄 컨시어지 인 코리아 | Premium Concierge in Korea",
+    "desc": "KMEDITOUR 소개 — 한국 뷰티·의료·관광의 가장 신뢰할 수 있는 파트너. 정부 공인, 검증된 파트너 기관, 1:1 전담 코디네이터. Premium Concierge in Korea."
+  },
+  "center": {
+    "route": "/center",
+    "pageCss": [
+      "css/center.css"
+    ],
+    "pageScripts": [
+      "js/center.js"
+    ],
+    "hasMobileBar": true,
+    "hasImageSlot": true,
+    "title": "휴그로 센터 — 프리미엄 뷰티 & 웰니스 | Hugro Center · KMEDITOUR",
+    "desc": "서울 압구정 휴그로 센터 — AI 피부 분석, 프리미엄 트리트먼트, 1:1 전담 코디네이터. Premium Beauty & Wellness Destination in Seoul, Korea."
+  },
+  "cosmetic": {
+    "route": "/cosmetic",
+    "pageCss": [
+      "css/cosmetic.css"
+    ],
+    "pageScripts": [
+      "js/cosmetic.js"
+    ],
+    "hasMobileBar": true,
+    "hasImageSlot": true,
+    "title": "코스메틱 — KMEDITOUR · 프리미엄 K-뷰티 화장품 | Premium Concierge in Korea",
+    "desc": "KMEDITOUR 코스메틱 — 프리미엄 K-뷰티 화장품. 한국 최고의 스킨케어 제품을 만나보세요. 세럼, 크림, 에센스, 미스트 등 다양한 뷰티 제품을 제공합니다."
+  },
+  "faq": {
+    "route": "/faq",
+    "pageCss": [
+      "css/faq.css"
+    ],
+    "pageScripts": [
+      "js/faq.js"
+    ],
+    "hasMobileBar": true,
+    "hasImageSlot": true,
+    "title": "FAQ — KMEDITOUR · 프리미엄 컨시어지 인 코리아",
+    "desc": "KMEDITOUR 자주 묻는 질문 — 예약, 서비스, 시술, 쇼핑에 대한 궁금증을 해결하세요."
+  },
+  "index": {
+    "route": "/",
+    "pageCss": [
+      "css/home.css"
+    ],
+    "pageScripts": [
+      "js/index.js"
+    ],
+    "hasMobileBar": true,
+    "hasImageSlot": true,
+    "title": "KMEDITOUR — 프리미엄 컨시어지 인 코리아 | Premium Concierge in Korea",
+    "desc": "KMEDITOUR는 한국 뷰티·의료·관광을 아우르는 프리미엄 컨시어지 서비스입니다. 전담 코디네이터가 처음부터 끝까지 함께합니다. Premium Concierge in Korea."
+  },
+  "magazine-detail": {
+    "route": "/magazine-detail",
+    "pageCss": [
+      "css/magazine.css"
+    ],
+    "pageScripts": [],
+    "hasMobileBar": true,
+    "hasImageSlot": false,
+    "title": "강남 피부과 투어 — 압구정에서 청담까지 | KMEDITOUR 매거진",
+    "desc": "뷰티 코디네이터가 직접 다녀온 서울 최고의 피부과 클리닉 로드맵. 압구정부터 청담까지, 놓쳐서는 안 될 핵심 클리닉 7곳을 소개합니다."
+  },
+  "magazine": {
+    "route": "/magazine",
+    "pageCss": [
+      "css/magazine.css"
+    ],
+    "pageScripts": [
+      "js/magazine.js"
+    ],
+    "hasMobileBar": true,
+    "hasImageSlot": false,
+    "title": "매거진 — 뷰티·의료·여행 인사이트 | KMEDITOUR",
+    "desc": "한국 의료 뷰티의 모든 것. 시술 트렌드, 여행 가이드, 웰니스 루틴까지 — KMEDITOUR 에디토리얼."
+  },
+  "procedure-detail": {
+    "route": "/procedure-detail",
+    "pageCss": [
+      "css/procedure-detail.css"
+    ],
+    "pageScripts": [
+      "js/procedure-detail.js"
+    ],
+    "hasMobileBar": true,
+    "hasImageSlot": true,
+    "title": "필러 | K-MEDI TOUR",
+    "desc": "꺼진 볼륨을 복원하여 자연스러운 볼륨과 세련된 얼굴 윤곽 완성하는 비수술 미용 시술 — 필러 상세 안내"
+  },
+  "procedure": {
+    "route": "/procedure",
+    "pageCss": [
+      "css/procedure.css"
+    ],
+    "pageScripts": [
+      "js/procedure.js"
+    ],
+    "hasMobileBar": true,
+    "hasImageSlot": true,
+    "title": "프리미엄 시술 — 필러·보톡스·리프팅·레이저 | KMEDITOUR",
+    "desc": "당신만을 위한 맞춤 솔루션, 안전하고 검증된 한국 의료 시술을 경험해보세요. 필러, 보톡스, 실리프팅, 레이저, 스킨부스터, 피부관리, 지방분해."
+  },
+  "product": {
+    "route": "/product",
+    "pageCss": [
+      "css/product.css"
+    ],
+    "pageScripts": [
+      "js/product.js"
+    ],
+    "hasMobileBar": true,
+    "hasImageSlot": false,
+    "title": "상품 상세 — KMEDITOUR 코스메틱",
+    "desc": ""
+  },
+  "reservation": {
+    "route": "/reservation",
+    "pageCss": [
+      "css/reservation.css"
+    ],
+    "pageScripts": [
+      "js/reservation.js"
+    ],
+    "hasMobileBar": true,
+    "hasImageSlot": true,
+    "title": "상담 예약 — KMEDITOUR · 프리미엄 컨시어지 인 코리아",
+    "desc": "KMEDITOUR 시술 상담 예약 — 원하는 시술을 선택하고 전담 코디네이터와 1:1 상담을 예약하세요."
+  },
+  "skin-analysis": {
+    "route": "/skin-analysis",
+    "pageCss": [
+      "css/skin-analysis.css"
+    ],
+    "pageScripts": [
+      "js/skin-analysis.js"
+    ],
+    "hasMobileBar": false,
+    "hasImageSlot": true,
+    "title": "피부 분석 시스템 — AI 피부 진단 & 케어 플랜 | KMEDITOUR",
+    "desc": "AI 기반 피부 분석 시스템을 통해 피부 타입과 컨디션을 세밀하게 진단하고, 최적화된 맞춤 케어 및 시술 계획을 제안합니다."
+  },
+  "skin-sol": {
+    "route": "/skin-sol",
+    "pageCss": [
+      "css/skin-sol.css"
+    ],
+    "pageScripts": [
+      "js/pss-state.js",
+      "js/skin-sol.js"
+    ],
+    "hasMobileBar": true,
+    "hasImageSlot": true,
+    "title": "나의 피부 솔루션 찾기 — 나의 피부 솔루션 찾기 | KMEDITOUR",
+    "desc": "4가지 항목에서 나의 피부 특성을 선택하면 AI가 맞춤 피부 타입을 분석합니다. 나의 피부 솔루션 찾기 — KMEDITOUR"
+  },
+  "travel": {
+    "route": "/travel",
+    "pageCss": [
+      "css/travel.css"
+    ],
+    "pageScripts": [
+      "js/travel.js"
+    ],
+    "hasMobileBar": true,
+    "hasImageSlot": true,
+    "title": "투어 — 호텔 & 쇼핑 | KMEDITOUR",
+    "desc": "KMEDITOUR 투어. 서울의 프리미엄 호텔과 쇼핑 명소를 탐색하세요."
+  }
+}
