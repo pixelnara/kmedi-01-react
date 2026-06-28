@@ -10,7 +10,7 @@ export default function AboutPage() {
   return (
     <Page
       fragment={fragment}
-      pageCss={["css/about.css"]}
+      pageCss={["css/components/subpage.css", "css/about.css"]}
       pageScripts={["js/about.js"]}
       hasMobileBar={true}
       hasImageSlot={true}

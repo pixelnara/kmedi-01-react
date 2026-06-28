@@ -10,7 +10,7 @@ export default function CosmeticPage() {
   return (
     <Page
       fragment={fragment}
-      pageCss={["css/cosmetic.css"]}
+      pageCss={["css/components/subpage.css", "css/cosmetic.css"]}
       pageScripts={["js/cosmetic.js"]}
       hasMobileBar={true}
       hasImageSlot={true}

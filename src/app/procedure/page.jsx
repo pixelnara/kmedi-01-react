@@ -10,7 +10,7 @@ export default function ProcedurePage() {
   return (
     <Page
       fragment={fragment}
-      pageCss={["css/procedure.css"]}
+      pageCss={["css/components/subpage.css", "css/procedure.css"]}
       pageScripts={["js/procedure.js"]}
       hasMobileBar={true}
       hasImageSlot={true}

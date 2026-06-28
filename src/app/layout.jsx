@@ -1,4 +1,6 @@
 // 공통(공유) 스타일시트 — 원본 각 페이지가 공통으로 로드하던 순서를 유지.
+// subpage.css: .gnb { display:none } 포함 → 홈 페이지에서 GNB 숨겨지므로 공통 제외, 각 서브페이지에서 개별 로드
+// topbar.css: @media(max-width:900px) .header { display:none } 포함 → topbar 없는 페이지에서 모바일 헤더 숨겨지므로 공통 제외
 const SHARED_CSS = [
   '/css/font.css',
   '/css/reset.css',
@@ -11,8 +13,6 @@ const SHARED_CSS = [
   '/css/components/breadcrumb.css',
   '/css/components/header.css',
   '/css/components/footer.css',
-  '/css/components/subpage.css',
-  '/css/components/topbar.css',
   '/css/components/mag-card.css',
   '/css/components/travel-card.css',
   '/css/common.css',

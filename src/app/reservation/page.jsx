@@ -10,7 +10,7 @@ export default function ReservationPage() {
   return (
     <Page
       fragment={fragment}
-      pageCss={["css/reservation.css"]}
+      pageCss={["css/components/subpage.css", "css/reservation.css"]}
       pageScripts={["js/reservation.js"]}
       hasMobileBar={true}
       hasImageSlot={true}

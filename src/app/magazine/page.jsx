@@ -10,7 +10,7 @@ export default function MagazinePage() {
   return (
     <Page
       fragment={fragment}
-      pageCss={["css/magazine.css"]}
+      pageCss={["css/components/subpage.css", "css/magazine.css"]}
       pageScripts={["js/magazine.js"]}
       hasMobileBar={true}
       hasImageSlot={false}

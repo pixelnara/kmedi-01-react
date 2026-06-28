@@ -10,7 +10,7 @@ export default function CenterPage() {
   return (
     <Page
       fragment={fragment}
-      pageCss={["css/center.css"]}
+      pageCss={["css/components/subpage.css", "css/center.css"]}
       pageScripts={["js/center.js"]}
       hasMobileBar={true}
       hasImageSlot={true}

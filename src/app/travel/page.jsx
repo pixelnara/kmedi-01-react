@@ -10,7 +10,7 @@ export default function TravelPage() {
   return (
     <Page
       fragment={fragment}
-      pageCss={["css/travel.css"]}
+      pageCss={["css/components/subpage.css", "css/travel.css"]}
       pageScripts={["js/travel.js"]}
       hasMobileBar={true}
       hasImageSlot={true}

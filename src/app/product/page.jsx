@@ -10,7 +10,7 @@ export default function ProductPage() {
   return (
     <Page
       fragment={fragment}
-      pageCss={["css/product.css"]}
+      pageCss={["css/components/subpage.css", "css/product.css"]}
       pageScripts={["js/product.js"]}
       hasMobileBar={true}
       hasImageSlot={false}

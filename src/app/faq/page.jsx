@@ -10,7 +10,7 @@ export default function FaqPage() {
   return (
     <Page
       fragment={fragment}
-      pageCss={["css/faq.css"]}
+      pageCss={["css/components/subpage.css", "css/faq.css"]}
       pageScripts={["js/faq.js"]}
       hasMobileBar={true}
       hasImageSlot={true}

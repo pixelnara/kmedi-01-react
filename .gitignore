@@ -2,6 +2,22 @@
 /.next
 /out
 /build
+
+# macOS
 .DS_Store
+**/.DS_Store
+
+# 로그
 *.log
+npm-debug.log*
+
+# 환경변수
+.env
 .env*.local
+
+# 테스트 결과물
+/test-results
+
+# 에디터
+.vscode/
+.idea/

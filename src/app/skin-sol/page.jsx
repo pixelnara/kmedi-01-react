@@ -10,7 +10,7 @@ export default function SkinSolPage() {
   return (
     <Page
       fragment={fragment}
-      pageCss={["css/skin-sol.css"]}
+      pageCss={["css/components/subpage.css", "css/skin-sol.css"]}
       pageScripts={["js/pss-state.js","js/skin-sol.js"]}
       hasMobileBar={true}
       hasImageSlot={true}

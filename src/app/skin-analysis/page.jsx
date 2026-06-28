@@ -10,7 +10,7 @@ export default function SkinAnalysisPage() {
   return (
     <Page
       fragment={fragment}
-      pageCss={["css/skin-analysis.css"]}
+      pageCss={["css/components/topbar.css", "css/components/subpage.css", "css/skin-analysis.css"]}
       pageScripts={["js/skin-analysis.js"]}
       hasMobileBar={false}
       hasImageSlot={true}
