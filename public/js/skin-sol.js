@@ -430,7 +430,7 @@
       category: '스킨케어',
     }));
     if (window.pssState) pssState.markNavToProduct();
-    window.location.href = '/product';
+    window.location.href = 'product.html';
   });
 
   /* ── rec-card (분석 결과 추천 제품) → product.html ── */
@@ -453,7 +453,7 @@
       category: '스킨케어'
     }));
     if (window.pssState) pssState.markNavToProduct();
-    window.location.href = '/product';
+    window.location.href = 'product.html';
   });
 
   /* ── Reset ── */

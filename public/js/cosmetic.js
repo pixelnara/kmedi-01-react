@@ -80,7 +80,7 @@
         if (product) {
           sessionStorage.setItem('cosm_product', JSON.stringify(product));
           sessionStorage.setItem('cosm_products', JSON.stringify(products)); /* ★ [신규] product.html 좌측 추천 상품 패널용 전체 상품 목록 전달 */
-          window.location.href = '/product';
+          window.location.href = 'product.html';
         }
       });
 

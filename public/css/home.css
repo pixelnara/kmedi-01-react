@@ -502,8 +502,8 @@
   width: 80px;
   height: 80px;
   border-radius: 50%;
-  background: var(--blue-600);
-  color: var(--text-white);
+  background: var(--gray-100);
+  color: var(--gray-900);
   flex-shrink: 0;
   margin-bottom: var(--space-20);
 }
@@ -1006,6 +1006,13 @@
     letter-spacing: var(--tracking-tight);
   }
 }
+.acc-img {
+  display: block;
+  width: calc(100% - 80px);
+  margin: 32px 40px 0;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
 .acc-detail-link {
   display: inline-flex;
   align-items: center;
@@ -1498,7 +1505,7 @@
   }
   .hiw-card {
     display: grid;
-    grid-template-columns: 36px 1fr;
+    grid-template-columns: 80px 1fr;
     grid-template-rows: auto auto;
     column-gap: var(--space-16);
     row-gap: var(--space-8);
@@ -1508,36 +1515,36 @@
     padding: var(--space-20) 0;
     flex-direction: unset;
   }
-  .hiw-card__icon {
+  .hiw-card__img-wrap {
     grid-column: 1;
-    grid-row: 1;
-    width: 36px;
-    height: 36px;
-    border-radius: 50%;
-    background: transparent;
-    margin-bottom: 0;
-    margin-top: 0;
-    flex-shrink: unset;
-    align-self: start;
-    padding-top: 2px;
+    grid-row: 1 / span 2;
+    position: relative;
+    width: 80px;
+    height: 80px;
+    align-self: center;
+    flex-shrink: 0;
   }
-  .hiw-card__icon svg {
-    display: none;
+  .hiw-card__photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
   }
-  .hiw-card__icon::before {
-    content: attr(data-num);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 28px;
-    height: 28px;
+  .hiw-card__num {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    width: 24px;
+    height: 24px;
     border-radius: 50%;
     background: var(--gray-800);
     color: var(--text-white);
     font-family: var(--font-body);
-    font-size: var(--text-15);
+    font-size: var(--text-13);
     font-weight: 800;
-    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .hiw-card__step {
     grid-column: 2;
@@ -1936,6 +1943,13 @@
     line-height: 1.7;
     letter-spacing: var(--tracking-normal);
     padding: var(--space-24) var(--space-20) var(--space-32);
+  }
+  .acc-img {
+    display: block;
+    width: calc(100% - 40px);
+    margin: 24px 20px 0;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
   }
   /* CTA 다크 */
   .cta-dark {

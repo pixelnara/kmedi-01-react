@@ -37,6 +37,16 @@
   window.KMT.HERO = HERO;
   window.KMT.mqMax = (px) => window.matchMedia("(max-width: " + px + "px)");
 
+  /* ---------- applyLang — 언어 코드/국기 동기화 헬퍼 ---------- */
+  function applyLang(code, flagImg) {
+    document.querySelectorAll(".lang-code, .header-lang-code").forEach((el) => (el.textContent = code));
+    if (flagImg) {
+      document.querySelectorAll(".lang-flag img").forEach((img) => {
+        img.src = flagImg.src;
+        img.alt = flagImg.alt;
+      });
+    }
+  }
 
   /* ---------- Header: transparent -> solid on scroll ---------- */
   const header = document.querySelector(".header");
@@ -127,6 +137,20 @@
       });
     }
   }
+
+  /* ★ 모바일 GNB 언어 탭 핸들러: 정적 HTML(.gnb-mobile-top)의 탭에 연결 ---------- */
+  (function wireGnbMobileLangTabs() {
+    const tabs = document.querySelectorAll(".gnb-overlay .gnb-mobile-top .gnb-lang-tab");
+    tabs.forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        tabs.forEach(function (b) {
+          b.classList.remove("is-active");
+        });
+        btn.classList.add("is-active");
+        applyLang(btn.dataset.lang);
+      });
+    });
+  })();
 
   /* ---------- GNB accordion (mobile) ---------- */
   const gnbIsMobile = () => window.KMT.mqMax(BP.mobile).matches;
@@ -422,6 +446,62 @@
     });
   }
 
+  /* ---------- Mobile bar: language sheet ---------- */
+  const mbarLangs = document.querySelectorAll(".mbar-lang");
+  const langSheet = document.getElementById("langSheet");
+  if (mbarLangs.length && langSheet) {
+    const backdrop = langSheet.querySelector(".lang-sheet__backdrop");
+    const closeLang = () => {
+      langSheet.classList.remove("is-open");
+      langSheet.setAttribute("aria-hidden", "true");
+      document.body.style.overflow = "";
+    };
+    mbarLangs.forEach((btn) =>
+      btn.addEventListener("click", () => {
+        langSheet.classList.add("is-open");
+        langSheet.setAttribute("aria-hidden", "false");
+        document.body.style.overflow = "hidden";
+      }),
+    );
+    backdrop.addEventListener("click", closeLang);
+    langSheet.querySelectorAll(".lang-sheet__opt").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        langSheet.querySelectorAll(".lang-sheet__opt").forEach((b) => b.classList.remove("is-active"));
+        btn.classList.add("is-active");
+        applyLang(btn.dataset.lang || "", btn.querySelector("img"));
+        closeLang();
+      });
+    });
+  }
+
+  /* ---------- Desktop lang-select dropdown ---------- */
+  document.querySelectorAll(".lang-select").forEach((sel) => {
+    const btn = sel.querySelector(".lang-select__btn");
+    const dropdown = sel.querySelector(".lang-dropdown");
+    if (!btn || !dropdown) return;
+    btn.addEventListener("click", (e) => {
+      e.stopPropagation();
+      const isOpen = sel.classList.toggle("is-open");
+      btn.setAttribute("aria-expanded", String(isOpen));
+    });
+    document.addEventListener("click", () => {
+      sel.classList.remove("is-open");
+      btn.setAttribute("aria-expanded", "false");
+    });
+  });
+  document.querySelectorAll(".lang-option").forEach((opt) => {
+    opt.addEventListener("click", () => {
+      document.querySelectorAll(".lang-option").forEach((o) => o.classList.remove("is-active"));
+      opt.classList.add("is-active");
+      applyLang(opt.textContent.trim(), opt.querySelector("img"));
+      const parentSel = opt.closest(".lang-select");
+      if (parentSel) {
+        parentSel.classList.remove("is-open");
+        const parentBtn = parentSel.querySelector(".lang-select__btn");
+        if (parentBtn) parentBtn.setAttribute("aria-expanded", "false");
+      }
+    });
+  });
 
   /* ---------- Login modal: 모든 트리거 통합 (util-bar, mobile, GNB) ---------- */
   (function initLoginModal() {

@@ -3,7 +3,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const ROOT = path.resolve(__dirname, '..', '..');      // k-medi-web-ko
+const ROOT = path.resolve(__dirname, '..', '..', 'k-medi-web-KoEn-0728', 'ko');
 const OUT = path.resolve(__dirname, '..', 'src', 'fragments');
 fs.mkdirSync(OUT, { recursive: true });
 
@@ -16,11 +16,13 @@ const SHARED_CSS = new Set([
   'css/components/topbar.css', 'css/components/mag-card.css', 'css/components/travel-card.css',
 ]);
 
-// Rewrite "*.html" links to clean Next routes. index -> '/', others -> '/name'.
+// Rewrite "*.html" links and relative asset paths for Next.js
 function rewriteLinks(s) {
-  return s.replace(/([a-z0-9][a-z0-9-]*)\.html/gi, (m, base) =>
-    base.toLowerCase() === 'index' ? '/' : '/' + base
-  );
+  return s
+    .replace(/\.\.\/(assets|css|js)\//g, '/$1/')
+    .replace(/([a-z0-9][a-z0-9-]*)\.html/gi, (_, base) =>
+      base.toLowerCase() === 'index' ? '/' : '/' + base
+    );
 }
 
 function between(html, startRe, endRe) {
@@ -73,13 +75,15 @@ for (const file of files) {
     modals: rewriteLinks(modals),
   };
 
-  // css links (page-scoped only)
-  const cssLinks = [...html.matchAll(/<link[^>]+href="([^"]+\.css)"/g)].map(m => m[1]);
+  // css links (page-scoped only) — normalize ../css/ → css/
+  const cssLinks = [...html.matchAll(/<link[^>]+href="([^"]+\.css)"/g)]
+    .map(m => m[1].replace(/^\.\.\//, ''));
   const pageCss = cssLinks.filter(href => !SHARED_CSS.has(href));
 
   // page-specific scripts (exclude globals handled by GlobalScripts)
-  const GLOBAL_JS = new Set(['js/image-slot.js', 'js/app.js', 'js/contact-popup.js', 'js/mobile-bar.js']);
-  const scripts = [...html.matchAll(/<script[^>]+src="([^"]+\.js)"/g)].map(m => m[1]);
+  const GLOBAL_JS = new Set(['js/image-slot.js', 'js/app.js', 'js/contact-popup.js', 'js/mobile-bar.js', 'js/lang-nav.js']);
+  const scripts = [...html.matchAll(/<script[^>]+src="([^"]+\.js)"/g)]
+    .map(m => m[1].replace(/^\.\.\//, ''));
   const pageScripts = scripts.filter(src => !GLOBAL_JS.has(src));
   const hasMobileBar = scripts.includes('js/mobile-bar.js');
   const hasImageSlot = scripts.includes('js/image-slot.js');
