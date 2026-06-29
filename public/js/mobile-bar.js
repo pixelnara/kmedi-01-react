@@ -10,28 +10,26 @@
   };
 
   var ITEMS = [
-    { label: '홈',         href: 'index.html' },
-    { label: '피부타입측정', href: 'skin-sol.html' },
-    { label: '코스메틱',    href: 'cosmetic.html' },
-    { label: '투어',       href: 'travel.html' },
-    { label: '매거진',     href: 'magazine.html' },
+    { label: '홈',         href: '/' },
+    { label: '피부타입측정', href: '/skin-sol' },
+    { label: '코스메틱',    href: '/cosmetic' },
+    { label: '투어',       href: '/travel' },
+    { label: '매거진',     href: '/magazine' },
   ];
 
-  // 파일명 → 활성 탭
+  // 경로 → 활성 탭
   var PAGE_ACTIVE = {
-    'index.html':          '홈',
-    '':                    '홈',
-    'skin-sol.html':       '피부타입측정',
-    'skin-analysis.html':  '피부타입측정',
-    'cosmetic.html':       '코스메틱',
-    'product.html':        '코스메틱',
-    'travel.html':         '투어',
-    'magazine.html':       '매거진',
-    'magazine-detail.html':'매거진',
+    '/':                   '홈',
+    '/skin-sol':           '피부타입측정',
+    '/skin-analysis':      '피부타입측정',
+    '/cosmetic':           '코스메틱',
+    '/product':            '코스메틱',
+    '/travel':             '투어',
+    '/magazine':           '매거진',
   };
 
-  var filename = window.location.pathname.split('/').pop() || 'index.html';
-  var activeLabel = PAGE_ACTIVE[filename] || null;
+  var pathname = window.location.pathname.replace(/\/+$/, '') || '/';
+  var activeLabel = PAGE_ACTIVE[pathname] || null;
   var theme = document.body.dataset.mbarTheme || 'dark';
 
   var nav = document.createElement('nav');
