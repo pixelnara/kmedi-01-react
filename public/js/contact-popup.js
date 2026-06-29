@@ -1,8 +1,9 @@
 (function () {
   var isEN = document.documentElement.lang === 'en' || location.pathname.indexOf('/en/') !== -1;
   var chatLabel = isEN ? 'Contact' : '문의하기';
-  // 예약 페이지 경로 (현재 폴더 깊이에 맞춰 계산)
-  var reservationHref = '/reservation';
+  // 프로젝트에서 사용 중인 예약 페이지(Next.js route).
+  // 국문/영문 각각의 예약 route로 연결 (영문 전용 route가 없으면 공통 /reservation 사용).
+  var reservationHref = isEN ? '/reservation' : '/reservation';
   var html = [
     '<button class="chat-btn" id="chatBtn" aria-label="' + chatLabel + '" aria-expanded="false">',
     '  <svg class="chat-icon-chat" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">',
@@ -121,6 +122,21 @@
       closePopup();
     }
   });
+  /* '만나서 상담받기' → 예약 페이지로 Next.js 클라이언트 라우팅 이동 */
+  var meetItem = popup.querySelector(".contact-popup__item--feature");
+  if (meetItem) {
+    meetItem.addEventListener("click", function (e) {
+      // 새 탭/수정키 클릭은 브라우저 기본 동작 유지
+      if (e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+      var href = meetItem.getAttribute("href") || reservationHref;
+      e.preventDefault();
+      closePopup();
+      if (location.pathname === href) return;
+      // 예약 페이지로 확실히 이동 (Next.js route)
+      window.location.assign(href);
+    });
+  }
+
   var copyBtn = document.getElementById("emailCopyBtn");
   if (copyBtn) {
     copyBtn.addEventListener("click", function (e) {
