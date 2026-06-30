@@ -312,7 +312,7 @@ const main = `
     <!-- Desktop: 4-column photo card layout -->
     <div class="news-grid hiw-grid hiw-desktop">
       <article class="news-card" data-reveal>
-        <div class="news-card__img"><image-slot id="hiw-1" shape="rect" fit="cover" src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=900&q=70" placeholder="사진 추가"></image-slot></div>
+        <div class="news-card__img"><image-slot id="hiw-1" shape="rect" fit="cover" src="/assets/img/1-page-home/03_service_guide/1.consult.png" placeholder="사진 추가"></image-slot></div>
         <div class="news-card__meta">
           <span class="news-card__cat"><small>STEP</small>1</span>
         </div>
@@ -320,7 +320,7 @@ const main = `
         <p class="news-card__desc">한국 스킨케어 전문가와 피부 고민을 공유하고 문의 하세요. 피부 타입과 뷰티 목표를 위한 맞춤형 온라인 상담을 받으세요.</p>
       </article>
       <article class="news-card" data-reveal data-reveal="2">
-        <div class="news-card__img"><image-slot id="hiw-2" shape="rect" fit="cover" src="https://images.unsplash.com/photo-1702737970081-79a1b42aea39?auto=format&fit=crop&w=900&q=70" placeholder="사진 추가"></image-slot></div>
+        <div class="news-card__img"><image-slot id="hiw-2" shape="rect" fit="cover" src="/assets/img/1-page-home/03_service_guide/2.skin-treatment.png" placeholder="사진 추가"></image-slot></div>
         <div class="news-card__meta">
           <span class="news-card__cat"><small>STEP</small>2</span>
         </div>
@@ -328,7 +328,7 @@ const main = `
         <p class="news-card__desc">저희는 고객들이 K-뷰티를 경험할 수 있도록 시술 예약과 치료 계획, 일정, 여행을 도와드립니다. 한국 서울에서 한국 뷰티 문화와 프리미엄 스킨케어 서비스를 경험하세요.</p>
       </article>
       <article class="news-card" data-reveal data-reveal="3">
-        <div class="news-card__img"><image-slot id="hiw-3" shape="rect" fit="cover" src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=900&q=70" placeholder="사진 추가"></image-slot></div>
+        <div class="news-card__img"><image-slot id="hiw-3" shape="rect" fit="cover" src="/assets/img/1-page-home/03_service_guide/3.tour-guide.png" placeholder="사진 추가"></image-slot></div>
         <div class="news-card__meta">
           <span class="news-card__cat"><small>STEP</small>3</span>
         </div>
@@ -336,7 +336,7 @@ const main = `
         <p class="news-card__desc">피부 상태와 개인 미용 목표에 맞춘 프리미엄 한국 스킨케어 트리트먼트를 느껴보세요. 건강하고 빛나는 자연스러운 피부를 되찾기 위해 설계된 고급 K-뷰티 솔루션을 경험할 수 있습니다.</p>
       </article>
       <article class="news-card" data-reveal data-reveal="4">
-        <div class="news-card__img"><image-slot id="hiw-4" shape="rect" fit="cover" src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=900&q=70" placeholder="사진 추가"></image-slot></div>
+        <div class="news-card__img"><image-slot id="hiw-4" shape="rect" fit="cover" src="/assets/img/1-page-home/03_service_guide/4.aftercare.png" placeholder="사진 추가"></image-slot></div>
         <div class="news-card__meta">
           <span class="news-card__cat"><small>STEP</small>4</span>
         </div>
@@ -349,7 +349,7 @@ const main = `
     <div class="hiw__grid hiw-mobile">
       <article class="hiw-card" data-reveal>
         <div class="hiw-card__img-wrap">
-          <img src="/assets/img/2-hugro/center-1.png" alt="시술 상담" class="hiw-card__photo">
+          <img src="/assets/img/1-page-home/03_service_guide/1.consult.png" alt="시술 상담" class="hiw-card__photo">
           <span class="hiw-card__num">1</span>
         </div>
         <h3 class="hiw-card__step">시술 상담</h3>
@@ -357,7 +357,7 @@ const main = `
       </article>
       <article class="hiw-card" data-reveal>
         <div class="hiw-card__img-wrap">
-          <img src="/assets/img/1-page-home/01_main_banner/hero-20.jpeg" alt="한국 예약 및 방문" class="hiw-card__photo">
+          <img src="/assets/img/1-page-home/03_service_guide/2.skin-treatment.png" alt="한국 예약 및 방문" class="hiw-card__photo">
           <span class="hiw-card__num">2</span>
         </div>
         <h3 class="hiw-card__step">한국 예약 및 방문</h3>
@@ -365,7 +365,7 @@ const main = `
       </article>
       <article class="hiw-card" data-reveal>
         <div class="hiw-card__img-wrap">
-          <img src="/assets/img/1-page-home/01_main_banner/hero-5.png" alt="피부 관리 및 치료" class="hiw-card__photo">
+          <img src="/assets/img/1-page-home/03_service_guide/3.tour-guide.png" alt="피부 관리 및 치료" class="hiw-card__photo">
           <span class="hiw-card__num">3</span>
         </div>
         <h3 class="hiw-card__step">피부 관리 및 치료</h3>
@@ -373,7 +373,7 @@ const main = `
       </article>
       <article class="hiw-card" data-reveal>
         <div class="hiw-card__img-wrap">
-          <img src="/assets/img/1-page-home/06_others/hero-man-hotel.png" alt="고객 맞춤 스케줄링" class="hiw-card__photo">
+          <img src="/assets/img/1-page-home/03_service_guide/4.aftercare.png" alt="고객 맞춤 스케줄링" class="hiw-card__photo">
           <span class="hiw-card__num">4</span>
         </div>
         <h3 class="hiw-card__step">고객 맞춤 스케줄링</h3>
@@ -519,7 +519,7 @@ const main = `
     <div class="treat-grid" data-reveal>
 
       <a class="treat-card" href="/procedure-detail">
-        <div class="treat-card__bg" style="background-image:url('https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=600&q=75')"></div>
+        <div class="treat-card__bg" style="background-image:url('/assets/img/2-hugro/treatment-1.png')"></div>
         <div class="treat-card__overlay"></div>
         <div class="treat-card__body">
           <span class="treat-card__en">Filler</span>
@@ -531,7 +531,7 @@ const main = `
       </a>
 
       <a class="treat-card" href="/procedure-detail">
-        <div class="treat-card__bg" style="background-image:url('https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=600&q=75')"></div>
+        <div class="treat-card__bg" style="background-image:url('/assets/img/2-hugro/treatment-2.png')"></div>
         <div class="treat-card__overlay"></div>
         <div class="treat-card__body">
           <span class="treat-card__en">Botox</span>
@@ -543,7 +543,7 @@ const main = `
       </a>
 
       <a class="treat-card" href="/procedure-detail">
-        <div class="treat-card__bg" style="background-image:url('https://images.unsplash.com/photo-1519823551278-64ac92734fb1?auto=format&fit=crop&w=600&q=75')"></div>
+        <div class="treat-card__bg" style="background-image:url('/assets/img/2-hugro/treatment-3.png')"></div>
         <div class="treat-card__overlay"></div>
         <div class="treat-card__body">
           <span class="treat-card__en">Thread Lift</span>
@@ -555,7 +555,7 @@ const main = `
       </a>
 
       <a class="treat-card" href="/procedure-detail">
-        <div class="treat-card__bg" style="background-image:url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=600&q=75')"></div>
+        <div class="treat-card__bg" style="background-image:url('/assets/img/2-hugro/treatment-4.png')"></div>
         <div class="treat-card__overlay"></div>
         <div class="treat-card__body">
           <span class="treat-card__en">Laser</span>
@@ -567,7 +567,7 @@ const main = `
       </a>
 
       <a class="treat-card" href="/procedure-detail">
-        <div class="treat-card__bg" style="background-image:url('https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?auto=format&fit=crop&w=600&q=75')"></div>
+        <div class="treat-card__bg" style="background-image:url('/assets/img/2-hugro/treatment-5.png')"></div>
         <div class="treat-card__overlay"></div>
         <div class="treat-card__body">
           <span class="treat-card__en">Skin Booster</span>
@@ -579,7 +579,7 @@ const main = `
       </a>
 
       <a class="treat-card" href="/procedure-detail">
-        <div class="treat-card__bg" style="background-image:url('https://images.unsplash.com/photo-1600334129128-685c5582fd35?auto=format&fit=crop&w=600&q=75')"></div>
+        <div class="treat-card__bg" style="background-image:url('/assets/img/2-hugro/treatment-main.png')"></div>
         <div class="treat-card__overlay"></div>
         <div class="treat-card__body">
           <span class="treat-card__en">Skin Care</span>
@@ -591,7 +591,7 @@ const main = `
       </a>
 
       <a class="treat-card" href="/procedure-detail">
-        <div class="treat-card__bg" style="background-image:url('https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=600&q=75')"></div>
+        <div class="treat-card__bg" style="background-image:url('/assets/img/2-hugro/center-2.png')"></div>
         <div class="treat-card__overlay"></div>
         <div class="treat-card__body">
           <span class="treat-card__en">Fat Dissolving</span>
@@ -603,7 +603,7 @@ const main = `
       </a>
 
       <a class="treat-card" href="/cosmetic">
-        <div class="treat-card__bg" style="background-image:url('https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&w=600&q=75')"></div>
+        <div class="treat-card__bg" style="background-image:url('/assets/img/2-hugro/center-2f.png')"></div>
         <div class="treat-card__overlay"></div>
         <div class="treat-card__body">
           <span class="treat-card__en">Cosmetic</span>
