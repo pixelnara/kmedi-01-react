@@ -1,2 +1,490 @@
-const f = {"skip":"<a class=\"skip-link\" href=\"#main-content\">본문으로 이동</a>","header":"<header class=\"header header--light\">\n  <div class=\"header__util\">\n    <div class=\"wrap\">       <div class=\"util-left\">\n        <div class=\"util-dropdown\">\n          <span class=\"util-dropdown__trigger\">뷰티\n            <svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" width=\"10\" height=\"10\"><polyline points=\"6 9 12 15 18 9\"/></svg>\n          </span>\n          <div class=\"util-dropdown__menu\">\n            <a href=\"/procedure\">시술 종류</a>\n            <a href=\"/skin-sol\">나의 피부 솔루션 찾기</a>\n          </div>\n        </div>\n        <span class=\"util-sep\" aria-hidden=\"true\"></span>\n        <a href=\"/travel\">투어</a>\n        <span class=\"util-sep\" aria-hidden=\"true\"></span>\n        <div class=\"util-dropdown\">\n          <span class=\"util-dropdown__trigger\">쇼핑\n            <svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" width=\"10\" height=\"10\"><polyline points=\"6 9 12 15 18 9\"/></svg>\n          </span>\n          <div class=\"util-dropdown__menu\">\n            <a href=\"/cosmetic\">코스메틱 제품</a>\n\n          </div>\n        </div>\n        <span class=\"util-sep\" aria-hidden=\"true\"></span>\n        <div class=\"util-dropdown\">\n          <span class=\"util-dropdown__trigger\">휴그로센터\n            <svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" width=\"10\" height=\"10\"><polyline points=\"6 9 12 15 18 9\"/></svg>\n          </span>\n          <div class=\"util-dropdown__menu\">\n            <a href=\"/center\">휴그로센터 소개</a>\n            <a href=\"/skin-analysis\">피부분석 서비스</a>\n          </div>\n        </div>\n      </div>\n      <div class=\"util-right\">\n        <a href=\"/about\">회사소개</a>\n        <span class=\"util-sep\" aria-hidden=\"true\"></span>\n        <a href=\"/faq\">FAQ</a>\n        <span class=\"util-sep\" aria-hidden=\"true\"></span>\n        <div class=\"lang-select\">\n          <button class=\"lang-select__btn\" aria-expanded=\"false\" aria-haspopup=\"listbox\" aria-label=\"언어 선택\">\n            <span class=\"lang-flag\"><img src=\"/assets/flag/flag_south korea.svg\" width=\"22\" height=\"16\" alt=\"KR\" /></span>\n            <span class=\"lang-code\">KR</span>\n            <svg class=\"lang-chevron\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><polyline points=\"6 9 12 15 18 9\"/></svg>\n          </button>\n          <ul class=\"lang-dropdown\">\n            <li class=\"lang-option is-active\"><span><img src=\"/assets/flag/flag_south korea.svg\" width=\"22\" height=\"16\" alt=\"KR\" /></span>KR</li>\n            <li class=\"lang-option\"><span><img src=\"/assets/flag/flag_united states.svg\" width=\"22\" height=\"16\" alt=\"US\" /></span>EN</li>\n            <li class=\"lang-option\"><span><img src=\"/assets/flag/flag_china.svg\" width=\"22\" height=\"16\" alt=\"CN\" /></span>CN</li>\n            <li class=\"lang-option\"><span><img src=\"/assets/flag/flag_japan.svg\" width=\"22\" height=\"16\" alt=\"JP\" /></span>JP</li>\n            <li class=\"lang-option\"><span><img src=\"/assets/flag/flag_vietnam.svg\" width=\"22\" height=\"16\" alt=\"VN\" /></span>VN</li>\n          </ul>\n        </div>\n      </div>\n    </div>\n  </div>\n  <div class=\"header__main\">\n    <div class=\"wrap\">\n      <div class=\"header__left\">\n        <button class=\"header-lang-btn mbar-lang\" aria-label=\"언어변경\">\n          <svg class=\"header-lang-icon\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"12\" r=\"10\"/><line x1=\"2\" y1=\"12\" x2=\"22\" y2=\"12\"/><path d=\"M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z\"/></svg>\n          <span class=\"header-lang-code\">KR</span>\n        </button>\n        <a href=\"/center\" class=\"header-center-btn\" aria-label=\"휴그로센터\">\n          <svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" width=\"20\" height=\"20\"><path d=\"M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z\"/><path d=\"M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2\"/><path d=\"M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2\"/><path d=\"M10 6h4\"/><path d=\"M10 10h4\"/><path d=\"M10 14h4\"/><path d=\"M10 18h4\"/></svg>\n          <span class=\"header-center-label\">휴그로센터</span>\n        </a>\n      </div>\n      <a href=\"/\" class=\"brand\">KMEDITOUR<small class=\"brand-sub-mobile\">Premium Concierge in Korea</small></a>\n      <span class=\"header__tagline\">프리미엄 컨시어지</span>\n      <nav class=\"gnb\">\n        <a href=\"/\">홈</a>\n        <a href=\"/#how\">서비스 이용 방법</a>\n        <a href=\"/#services\">서비스</a>\n        <a href=\"/#whyus\">우리를 선택하는 이유</a>\n        <a href=\"/#treatments\">하이라이트</a>\n        <a href=\"/#why\">매거진</a>\n      </nav>\n      <div class=\"header__right\">\n        <a href=\"/reservation\" class=\"btn btn--primary2\">상담 예약하기</a>\n        <button class=\"header-lang-btn header-right--v2 mbar-lang\" aria-label=\"언어변경\">\n          <svg class=\"header-lang-icon\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"12\" r=\"10\"/><line x1=\"2\" y1=\"12\" x2=\"22\" y2=\"12\"/><path d=\"M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z\"/></svg>\n          <span class=\"header-lang-code\">KR</span>\n        </button>\n        <button class=\"header-mypage-btn header-right--v2\" aria-label=\"마이 페이지\">\n          <svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"8\" r=\"4\"/><path d=\"M4 20c0-4 3.6-7 8-7s8 3 8 7\"/></svg>\n        </button>\n        <button class=\"menu-btn header-menu-btn\" aria-label=\"메뉴\">\n          <svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><line x1=\"3\" y1=\"6\" x2=\"21\" y2=\"6\"/><line x1=\"3\" y1=\"12\" x2=\"21\" y2=\"12\"/><line x1=\"3\" y1=\"18\" x2=\"21\" y2=\"18\"/></svg>\n        </button>\n      </div>\n    </div>\n  </div>\n</header>","drawer":"\n\n<!-- ============================== GNB OVERLAY ============================== -->\n<div class=\"gnb-overlay gnb-overlay--dark\" role=\"dialog\" aria-modal=\"true\" aria-label=\"사이트 내비게이션\" aria-hidden=\"true\">\n  <div class=\"wrap\">\n    <div class=\"gnb-overlay__bar\">\n      <a href=\"/\" class=\"brand gnb-overlay__brand\">KMEDITOUR<small>Premium Concierge in Korea</small></a>\n      <div class=\"gnb-overlay__actions\">\n        <a href=\"#\" class=\"gnb-login-btn\">로그인 / 회원가입</a>\n      </div>\n      <button class=\"gnb-overlay__close\" aria-label=\"닫기\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><line x1=\"18\" y1=\"6\" x2=\"6\" y2=\"18\"/><line x1=\"6\" y1=\"6\" x2=\"18\" y2=\"18\"/></svg></button>\n    </div>\n    <div class=\"gnb-mobile-top\">\n      <div class=\"gnb-contact-block\">\n        <div class=\"gnb-contact-cta\">\n          <a href=\"/reservation\" class=\"gnb-cta-btn gnb-cta-btn--book\">상담 예약하기</a>\n          <a href=\"mailto:contact@kmeditour.com\" class=\"gnb-cta-btn gnb-cta-btn--mail\">\n            contact@kmeditour.com\n          </a>\n        </div>\n      </div>\n      <div class=\"gnb-lang-tabs\">\n        <button class=\"gnb-lang-tab is-active\" data-lang=\"KR\"><img src=\"/assets/flag/flag_south korea.svg\" alt=\"KR\" class=\"gnb-lang-flag\" /><span class=\"gnb-lang-code\">KR</span></button>\n        <button class=\"gnb-lang-tab\" data-lang=\"EN\"><img src=\"/assets/flag/flag_united states.svg\" alt=\"EN\" class=\"gnb-lang-flag\" /><span class=\"gnb-lang-code\">EN</span></button>\n        <button class=\"gnb-lang-tab\" data-lang=\"CN\"><img src=\"/assets/flag/flag_china.svg\" alt=\"CN\" class=\"gnb-lang-flag\" /><span class=\"gnb-lang-code\">CN</span></button>\n        <button class=\"gnb-lang-tab\" data-lang=\"JP\"><img src=\"/assets/flag/flag_japan.svg\" alt=\"JP\" class=\"gnb-lang-flag\" /><span class=\"gnb-lang-code\">JP</span></button>\n        <button class=\"gnb-lang-tab\" data-lang=\"VN\"><img src=\"/assets/flag/flag_vietnam.svg\" alt=\"VN\" class=\"gnb-lang-flag\" /><span class=\"gnb-lang-code\">VN</span></button>\n      </div>\n    </div>\n\n        <!-- 1행: 서비스, 스페이스, 쇼핑, 소식 -->\n    <div class=\"gnb-cols\">\n      <div class=\"gnb-col gnb-col--mobile-only\">\n        <h4 data-en=\"About\">소개<svg class=\"gnb-chevron\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><polyline points=\"6 9 12 15 18 9\"/></svg></h4>\n        <ul>\n          <li><a href=\"/about\" data-en=\"Who We Are\">회사소개</a></li>\n          <li><a href=\"/center\" data-en=\"Hugro Center\">휴그로센터</a></li>\n          <li><a href=\"/faq\">FAQ</a></li>\n        </ul>\n      </div>\n      <div class=\"gnb-col\">\n        <h4 data-en=\"Our Services\">서비스<svg class=\"gnb-chevron\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><polyline points=\"6 9 12 15 18 9\"/></svg></h4>\n        <ul>\n          <li class=\"gnb-has-sub\">\n            <div class=\"gnb-item-row\">\n              <a href=\"#\" data-en=\"Beauty Concierge\">뷰티</a>\n              <button class=\"gnb-sub-toggle\" aria-label=\"뷰티 하위 메뉴\">\n                <svg class=\"gnb-sub-chevron\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polyline points=\"6 9 12 15 18 9\"/></svg>\n              </button>\n            </div>\n            <ul class=\"gnb-sub-list\">\n              <li><a href=\"/skin-sol\">나의 피부 솔루션 찾기</a></li>\n              <li class=\"gnb-has-sub\">\n                <div class=\"gnb-item-row\">\n                  <a href=\"/procedure\" class=\"gnb-proc-trigger\">시술 종류</a>\n                  <button class=\"gnb-sub-toggle\" aria-label=\"시술 하위 메뉴\">\n                    <svg class=\"gnb-sub-chevron\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polyline points=\"6 9 12 15 18 9\"/></svg>\n                  </button>\n                </div>\n                <ul class=\"gnb-sub-list\">\n                  <li><a href=\"/procedure\">전체</a></li>\n                  <li><a href=\"#\">필러</a></li>\n                  <li><a href=\"#\">보톡스</a></li>\n                  <li><a href=\"#\">실리프팅</a></li>\n                  <li><a href=\"#\">레이저</a></li>\n                  <li><a href=\"#\">스킨 부스터</a></li>\n                  <li><a href=\"#\">피부관리</a></li>\n                  <li><a href=\"#\">지방분해</a></li>\n                </ul>\n              </li>\n            </ul>\n          </li>\n          <li><a href=\"/travel\" data-en=\"Travel Concierge\">투어</a></li>\n        </ul>\n      </div>\n      <div class=\"gnb-col\">\n        <h4 data-en=\"Shopping\">쇼핑<svg class=\"gnb-chevron\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><polyline points=\"6 9 12 15 18 9\"/></svg></h4>\n        <ul>\n          <li><a href=\"/cosmetic\">코스메틱 제품</a></li>\n\n        </ul>\n      </div>\n      <div class=\"gnb-col\">\n        <h4 data-en=\"Space\">스페이스<svg class=\"gnb-chevron\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><polyline points=\"6 9 12 15 18 9\"/></svg></h4>\n        <ul>\n          <li><a href=\"/center\">휴그로센터 소개</a></li>\n          <li><a href=\"/skin-analysis\">피부분석 서비스</a></li>\n        </ul>\n      </div>\n      <div class=\"gnb-col\">\n        <h4 data-en=\"News\">소식<svg class=\"gnb-chevron\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><polyline points=\"6 9 12 15 18 9\"/></svg></h4>\n        <ul>\n          <li><a href=\"#\" data-en=\"Event\" class=\"gnb-link--utility\">이벤트</a></li>\n          <li><a href=\"/magazine\" data-en=\"Magazine\" class=\"gnb-link--utility\">매거진</a></li>\n        </ul>\n      </div>\n      <div class=\"gnb-col gnb-col--about-desktop\">\n        <h4 data-en=\"About\">소개<svg class=\"gnb-chevron\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><polyline points=\"6 9 12 15 18 9\"/></svg></h4>\n        <ul>\n          <li><a href=\"/about\" data-en=\"Who We Are\" class=\"gnb-link--utility\">회사소개</a></li>\n          <li><a href=\"/center\" data-en=\"Hugro Center\">휴그로센터</a></li>\n          <li><a href=\"/faq\" data-en=\"FAQ\" class=\"gnb-link--utility\">FAQ</a></li>\n        </ul>\n      </div>\n    </div>\n    <div class=\"gnb-banners\">\n      <a href=\"/center\" class=\"gnb-banner gnb-banner--hugro\">\n        <div class=\"gnb-banner__inner\">\n          <p class=\"gnb-banner__label\">Premium Space</p>\n          <p class=\"gnb-banner__title\">휴그로센터</p>\n          <p class=\"gnb-banner__sub\">의료 뷰티 여행 토탈 케어 공간</p>\n        </div>\n        <svg class=\"gnb-banner__arrow\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><line x1=\"5\" y1=\"12\" x2=\"19\" y2=\"12\"/><polyline points=\"12 5 19 12 12 19\"/></svg>\n      </a>\n      <a href=\"/skin-sol\" class=\"gnb-banner gnb-banner--skin\">\n        <div class=\"gnb-banner__inner\">\n          <p class=\"gnb-banner__label\">Skin Solution</p>\n          <p class=\"gnb-banner__title\">나의 피부 솔루션 찾기</p>\n          <p class=\"gnb-banner__sub\">나만의 피부 타입 맞춤 케어</p>\n        </div>\n        <svg class=\"gnb-banner__arrow\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><line x1=\"5\" y1=\"12\" x2=\"19\" y2=\"12\"/><polyline points=\"12 5 19 12 12 19\"/></svg>\n      </a>\n    </div>\n  </div>\n</div>\n\n<!-- 시술 팝업 시트 (모바일) -->\n<div class=\"proc-sheet\" id=\"procSheet\" aria-hidden=\"true\">\n  <div class=\"proc-sheet__bar\">\n    <span class=\"proc-sheet__title\">시술 종류</span>\n    <button class=\"proc-sheet__close\" aria-label=\"닫기\">\n      <svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polyline points=\"6 9 12 15 18 9\"/></svg>\n    </button>\n  </div>\n  <ul class=\"proc-sheet__list\">\n    <li><a href=\"/procedure\">전체</a></li>\n    <li><a href=\"#\">필러</a></li>\n    <li><a href=\"#\">보톡스</a></li>\n    <li><a href=\"#\">실리프팅</a></li>\n    <li><a href=\"#\">레이저</a></li>\n    <li><a href=\"#\">스킨 부스터</a></li>\n    <li><a href=\"#\">피부관리</a></li>\n    <li><a href=\"#\">지방분해</a></li>\n  </ul>\n  <a href=\"/reservation\" class=\"proc-sheet__banner\">\n    <div class=\"proc-sheet__banner-inner\">\n      <p class=\"proc-sheet__banner-label\">Premium Beauty Concierge</p>\n      <p class=\"proc-sheet__banner-title\">시술 상담 예약하기</p>\n      <p class=\"proc-sheet__banner-sub\">전담 코디네이터가 맞춤 시술을 안내합니다</p>\n    </div>\n    <svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><line x1=\"5\" y1=\"12\" x2=\"19\" y2=\"12\"/><polyline points=\"12 5 19 12 12 19\"/></svg>\n  </a>\n</div>\n","main":"<main id=\"main-content\">\n<div class=\"pd-page\">\n\n  <!-- ── 뒤로 ── -->\n  <div class=\"pd-back-wrap\">\n    <button class=\"pd-back-btn\" onclick=\"history.back()\">\n      <svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polyline points=\"15 18 9 12 15 6\"/></svg>\n      뒤로\n    </button>\n  </div>\n\n  <!-- ── 상품 메인 (이미지 + 정보) ── -->\n  <section class=\"pd-main\">\n    <div class=\"pd-main-inner\">\n\n      <!-- ★ [신규 기능] 갤러리 외부 래퍼: 좌측 추천 패널 + 메인 갤러리 가로 배치 -->\n      <div class=\"pd-gallery-outer\">\n\n        <!-- ★ [신규 기능] 좌측 추천 상품 패널\n             - /cosmetic에서 전달받은 cosm_products(세션스토리지) 기준으로\n             - 현재 상품 제외 인기순 상위 3개를 세로로 나열\n             - 클릭 시 해당 상품 상세 페이지로 이동 (리로드) -->\n        <aside class=\"pd-rec-panel\" id=\"pdRecPanel\">\n          <p class=\"pd-rec-panel__label\">추천</p>\n          <div class=\"pd-rec-items\" id=\"pdRecItems\"></div>\n        </aside>\n\n        <!-- 갤러리 -->\n        <div class=\"pd-gallery\">\n          <div class=\"pd-gallery__main\">\n            <img id=\"pdMainImg\" class=\"pd-gallery__img\" src=\"\" alt=\"\" />\n            <button class=\"pd-gallery__arrow pd-gallery__arrow--prev\" id=\"pdPrev\" aria-label=\"이전 이미지\">\n              <svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polyline points=\"15 18 9 12 15 6\"/></svg>\n            </button>\n            <button class=\"pd-gallery__arrow pd-gallery__arrow--next\" id=\"pdNext\" aria-label=\"다음 이미지\">\n              <svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polyline points=\"9 18 15 12 9 6\"/></svg>\n            </button>\n            <div class=\"pd-gallery__counter\" id=\"pdCounter\">1 / 1</div>\n            <div class=\"pd-gallery__tags\" id=\"pdGalleryTags\"></div>\n            <!-- ★ [신규 기능] 하단 썸네일 스트립: 이미지 내부 하단 오버레이로 제품 다중 사진 선택 -->\n            <div class=\"pd-gallery__thumbstrip\" id=\"pdThumbStrip\"></div>\n          </div>\n          <div class=\"pd-gallery__dots\" id=\"pdGalleryDots\" style=\"display:none\"></div>\n        </div>\n\n      </div>\n\n      <!-- 상품 정보 -->\n      <div class=\"pd-info\">\n        <span class=\"pd-category-tag\" id=\"pdCategoryTag\"></span>\n        <h1 class=\"pd-title\" id=\"pdTitle\"></h1>\n\n        <div class=\"pd-rating-row\">\n          <span class=\"pd-rating-stars\" id=\"pdRatingStars\">★</span>\n          <span id=\"pdRatingVal\"></span>\n          <span class=\"pd-rating-count\" id=\"pdRatingCount\"></span>\n        </div>\n\n        <!-- 옵션 -->\n        <div class=\"pd-option-section\">\n          <div class=\"pd-option-label\">옵션 선택</div>\n          <div class=\"pd-option-item is-selected\">\n            <span class=\"pd-option-dot\"></span>\n            <span class=\"pd-option-name\">기본</span>\n            <span class=\"pd-option-price\" id=\"pdOptionPrice\"></span>\n          </div>\n        </div>\n\n        <!-- 가격 -->\n        <div class=\"pd-price-section\">\n          <div class=\"pd-price-orig\" id=\"pdPriceOrig\" style=\"display:none\"></div>\n          <div class=\"pd-price-row\">\n            <span class=\"pd-discount\" id=\"pdDiscount\" style=\"display:none\"></span>\n            <span class=\"pd-price\" id=\"pdPrice\"></span>\n          </div>\n        </div>\n\n        <!-- 설명 -->\n        <p class=\"pd-desc\" id=\"pdDesc\"></p>\n\n        <!-- 수량 -->\n        <div class=\"pd-qty-section\">\n          <span class=\"pd-qty-label\">수량</span>\n          <div class=\"pd-qty\">\n            <button class=\"pd-qty-btn\" id=\"pdQtyMinus\">−</button>\n            <span class=\"pd-qty-val\" id=\"pdQtyVal\">1</span>\n            <button class=\"pd-qty-btn\" id=\"pdQtyPlus\">+</button>\n          </div>\n        </div>\n\n        <!-- 버튼 -->\n        <div class=\"pd-actions\">\n          <button class=\"pd-btn pd-btn--cart\">\n            <svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" style=\"vertical-align:-3px;margin-right:6px\"><circle cx=\"9\" cy=\"21\" r=\"1\"/><circle cx=\"20\" cy=\"21\" r=\"1\"/><path d=\"M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6\"/></svg>\n            장바구니 담기\n          </button>\n          <button class=\"pd-btn pd-btn--buy\">바로 구매</button>\n        </div>\n      </div>\n\n    </div>\n  </section>\n\n  <!-- ── 상품정보 ── -->\n  <section class=\"pd-specs-section\">\n    <div class=\"wrap\" style=\"max-width:1230px;margin:0 auto;padding:0 var(--gutter);\">\n      <div class=\"pd-specs-card\">\n        <h2 class=\"pd-specs-heading\">상품정보</h2>\n        <table class=\"pd-specs-table\" id=\"pdSpecsTable\"></table>\n      </div>\n    </div>\n  </section>\n\n  <!-- ── 상세 설명 ── -->\n  <section class=\"pd-detail-section\">\n    <div class=\"wrap\" style=\"max-width:1230px;margin:0 auto;padding:0 var(--gutter);\">\n      <h2 class=\"pd-detail-heading\">상세 설명</h2>\n      <div class=\"pd-detail-img-wrap\">\n        <img id=\"pdDetailImg\" src=\"\" alt=\"\" style=\"display:none\" />\n        <div id=\"pdDetailPlaceholder\" class=\"pd-detail-placeholder\"></div>\n      </div>\n    </div>\n  </section>\n\n</div>\n</main>","footer":"<footer class=\"footer\">\n  <div class=\"wrap\">\n    <div class=\"footer__top\">\n      <a href=\"#\">개인정보처리방침</a>\n      <a href=\"#\">이용약관</a>\n      <a href=\"#\">환불 정책</a>\n    </div>\n    <div class=\"footer__mid\">\n      <div>\n        <a href=\"/\" class=\"footer__brand\">KMEDITOUR<small>Premium Concierge in Korea</small></a>\n        <p class=\"footer__tagline\">한국의 앞선 의료와 서울의 품격을 잇는 프리미엄 컨시어지. 시술부터 머무름까지, 전담 코디네이터가 당신만의 여정을 섬세하게 완성합니다.</p>\n      </div>\n      <dl>\n        <dt>대표자</dt><dd>이석재</dd>\n        <dt>주소</dt><dd>서울특별시 강남구 압구정로14길 22, 4층(신사동)</dd>\n        <dt>대표전화</dt><dd>+82-2-514-0799</dd>\n        <dt>사업자등록번호</dt><dd>558-81-03752</dd>\n      </dl>\n      <dl>\n        <dt>상담 운영</dt><dd>연중무휴 09:00 — 21:00</dd>\n        <dt>카카오 상담</dt><dd>@KMEDITOUR</dd>\n        <dt>이메일</dt><dd>contact@kmeditour.com</dd>\n        <dt>전담 케어</dt><dd>1:1 코디네이터 배정</dd>\n      </dl>\n    </div>\n    <div class=\"footer__top-wrap\">\n      <button class=\"footer__top-btn\" aria-label=\"맨 위로\">\n        <svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><line x1=\"12\" y1=\"19\" x2=\"12\" y2=\"5\"/><polyline points=\"5 12 12 5 19 12\"/></svg>\n        <span>TOP</span>\n      </button>\n    </div>\n    <div class=\"footer__bottom\">\n      <span>© 2026 KMEDITOUR. All rights reserved.</span>\n      <div class=\"footer__social\">\n        <a href=\"#\" aria-label=\"Instagram\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><rect x=\"3\" y=\"3\" width=\"18\" height=\"18\" rx=\"5\"/><circle cx=\"12\" cy=\"12\" r=\"4\"/><circle cx=\"17.5\" cy=\"6.5\" r=\"1\" fill=\"currentColor\" stroke=\"none\"/></svg></a>\n        <a href=\"#\" aria-label=\"Facebook\"><svg viewBox=\"0 0 24 24\" fill=\"currentColor\"><path d=\"M14 9h3V6h-3c-1.7 0-3 1.3-3 3v2H8v3h3v6h3v-6h2.5l.5-3H14V9z\"/></svg></a>\n        <a href=\"#\" aria-label=\"YouTube\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><rect x=\"3\" y=\"6\" width=\"18\" height=\"12\" rx=\"3\"/><path d=\"M11 9.5l4 2.5-4 2.5z\" fill=\"currentColor\"/></svg></a>\n      </div>\n    </div>\n  </div>\n</footer>","modals":"<!-- 로그인 모달 (공통) -->\n<div class=\"login-modal\" id=\"loginModal\" aria-hidden=\"true\">\n  <div class=\"login-modal__backdrop\" id=\"loginBackdrop\"></div>\n  <div class=\"login-modal__box\" role=\"dialog\" aria-modal=\"true\" aria-label=\"로그인\">\n    <button class=\"login-modal__close\" id=\"loginClose\" aria-label=\"닫기\">\n      <svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" width=\"20\" height=\"20\"><line x1=\"18\" y1=\"6\" x2=\"6\" y2=\"18\"/><line x1=\"6\" y1=\"6\" x2=\"18\" y2=\"18\"/></svg>\n    </button>\n    <div class=\"login-modal__brand\">K<span>MEDI</span>TOUR</div>\n    <h2 class=\"login-modal__title\">다시 오신 것을 환영합니다</h2>\n    <p class=\"login-modal__subtitle\">KMEDITOUR 계정에 로그인하세요</p>\n    <form class=\"login-modal__form\" onsubmit=\"return false;\">\n      <div class=\"login-modal__label-group\">\n        <label class=\"login-field-label\" for=\"loginEmail\">이메일</label>\n        <div class=\"login-modal__field\">\n          <span class=\"login-field-icon\">\n            <svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linecap=\"round\" stroke-linejoin=\"round\" width=\"17\" height=\"17\"><rect x=\"2\" y=\"4\" width=\"20\" height=\"16\" rx=\"2\"/><polyline points=\"2,4 12,13 22,4\"/></svg>\n          </span>\n          <input id=\"loginEmail\" type=\"email\" class=\"login-modal__input\" placeholder=\"email@example.com\" autocomplete=\"email\" />\n        </div>\n      </div>\n      <div class=\"login-modal__label-group\">\n        <label class=\"login-field-label\" for=\"loginPassword\">비밀번호</label>\n        <div class=\"login-modal__field\">\n          <span class=\"login-field-icon\">\n            <svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linecap=\"round\" stroke-linejoin=\"round\" width=\"17\" height=\"17\"><rect x=\"3\" y=\"11\" width=\"18\" height=\"11\" rx=\"2\"/><path d=\"M7 11V7a5 5 0 0 1 10 0v4\"/></svg>\n          </span>\n          <input type=\"password\" id=\"loginPassword\" class=\"login-modal__input\" placeholder=\"••••••••\" autocomplete=\"current-password\" />\n          <button type=\"button\" class=\"login-pwd-eye\" id=\"loginPwdToggle\" aria-label=\"비밀번호 보기\">\n            <svg id=\"eyeIcon\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linecap=\"round\" stroke-linejoin=\"round\" width=\"17\" height=\"17\"><path d=\"M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z\"/><circle cx=\"12\" cy=\"12\" r=\"3\"/></svg>\n          </button>\n        </div>\n      </div>\n      <div class=\"login-modal__options\">\n        <label class=\"login-remember\">\n          <input type=\"checkbox\" />\n          로그인 상태 유지\n        </label>\n        <a href=\"#\" class=\"login-modal__forgot\">비밀번호를 잊으셨나요?</a>\n      </div>\n      <button type=\"submit\" class=\"login-modal__submit\">로그인</button>\n    </form>\n    <div class=\"login-modal__divider\"><span>또는</span></div>\n    <div class=\"login-modal__social\">\n      <button class=\"login-social-btn login-social-btn--google\">\n        <svg viewBox=\"0 0 24 24\" width=\"20\" height=\"20\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z\" fill=\"#4285F4\"/><path d=\"M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z\" fill=\"#34A853\"/><path d=\"M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z\" fill=\"#FBBC05\"/><path d=\"M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z\" fill=\"#EA4335\"/></svg>\n        Google로 가입하기\n      </button>\n      <button class=\"login-social-btn login-social-btn--kakao\">\n        <svg viewBox=\"0 0 24 24\" width=\"20\" height=\"20\" fill=\"currentColor\"><path d=\"M12 3C6.48 3 2 6.48 2 10.8c0 2.76 1.69 5.19 4.25 6.63L5.1 21l4.4-2.3c.81.15 1.64.23 2.5.23 5.52 0 10-3.48 10-7.8S17.52 3 12 3z\"/></svg>\n        카카오톡으로 가입하기\n      </button>\n    </div>\n    <p class=\"login-modal__join\">계정이 없으신가요? <a href=\"#\">회원가입</a></p>\n    <div class=\"login-modal__admin\">\n      <a href=\"#\" class=\"login-admin-link\">\n        <svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linecap=\"round\" stroke-linejoin=\"round\" width=\"13\" height=\"13\"><rect x=\"3\" y=\"11\" width=\"18\" height=\"11\" rx=\"2\"/><path d=\"M7 11V7a5 5 0 0 1 10 0v4\"/></svg>\n        관리자 로그인\n      </a>\n    </div>\n  </div>\n</div>"};
+const skip = `<a class="skip-link" href="#main-content">본문으로 이동</a>`;
+const header = `
+<header class="header header--light">
+  <div class="header__util">
+    <div class="wrap">       <div class="util-left">
+        <div class="util-dropdown">
+          <span class="util-dropdown__trigger">뷰티
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" width="10" height="10"><polyline points="6 9 12 15 18 9"/></svg>
+          </span>
+          <div class="util-dropdown__menu">
+            <a href="/procedure">시술 종류</a>
+            <a href="/skin-sol">나의 피부 솔루션 찾기</a>
+          </div>
+        </div>
+        <span class="util-sep" aria-hidden="true"></span>
+        <a href="/travel">투어</a>
+        <span class="util-sep" aria-hidden="true"></span>
+        <div class="util-dropdown">
+          <span class="util-dropdown__trigger">쇼핑
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" width="10" height="10"><polyline points="6 9 12 15 18 9"/></svg>
+          </span>
+          <div class="util-dropdown__menu">
+            <a href="/cosmetic">코스메틱 제품</a>
+
+          </div>
+        </div>
+        <span class="util-sep" aria-hidden="true"></span>
+        <div class="util-dropdown">
+          <span class="util-dropdown__trigger">휴그로센터
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" width="10" height="10"><polyline points="6 9 12 15 18 9"/></svg>
+          </span>
+          <div class="util-dropdown__menu">
+            <a href="/center">휴그로센터 소개</a>
+            <a href="/skin-analysis">피부분석 서비스</a>
+          </div>
+        </div>
+      </div>
+      <div class="util-right">
+        <a href="/about">회사소개</a>
+        <span class="util-sep" aria-hidden="true"></span>
+        <a href="/faq">FAQ</a>
+        <span class="util-sep" aria-hidden="true"></span>
+        <div class="lang-select">
+          <button class="lang-select__btn" aria-expanded="false" aria-haspopup="listbox" aria-label="언어 선택">
+            <span class="lang-flag"><img src="/assets/flag/flag_south korea.svg" width="22" height="16" alt="KR" /></span>
+            <span class="lang-code">KR</span>
+            <svg class="lang-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <ul class="lang-dropdown">
+            <li class="lang-option is-active"><span><img src="/assets/flag/flag_south korea.svg" width="22" height="16" alt="KR" /></span>KR</li>
+            <li class="lang-option"><span><img src="/assets/flag/flag_united states.svg" width="22" height="16" alt="US" /></span>EN</li>
+            <li class="lang-option"><span><img src="/assets/flag/flag_china.svg" width="22" height="16" alt="CN" /></span>CN</li>
+            <li class="lang-option"><span><img src="/assets/flag/flag_japan.svg" width="22" height="16" alt="JP" /></span>JP</li>
+            <li class="lang-option"><span><img src="/assets/flag/flag_vietnam.svg" width="22" height="16" alt="VN" /></span>VN</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="header__main">
+    <div class="wrap">
+      <div class="header__left">
+        <button class="header-lang-btn mbar-lang" aria-label="언어변경">
+          <svg class="header-lang-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          <span class="header-lang-code">KR</span>
+        </button>
+        <a href="/center" class="header-center-btn" aria-label="휴그로센터">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"/><path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"/><path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"/><path d="M10 6h4"/><path d="M10 10h4"/><path d="M10 14h4"/><path d="M10 18h4"/></svg>
+          <span class="header-center-label">휴그로센터</span>
+        </a>
+      </div>
+      <a href="/" class="brand">KMEDITOUR<small class="brand-sub-mobile">Premium Concierge in Korea</small></a>
+      <span class="header__tagline">프리미엄 컨시어지</span>
+      <nav class="gnb">
+        <a href="/">홈</a>
+        <a href="/#how">서비스 이용 방법</a>
+        <a href="/#services">서비스</a>
+        <a href="/#whyus">우리를 선택하는 이유</a>
+        <a href="/#treatments">하이라이트</a>
+        <a href="/#why">매거진</a>
+      </nav>
+      <div class="header__right">
+        <a href="/reservation" class="btn btn--primary2">상담 예약하기</a>
+        <button class="header-lang-btn header-right--v2 mbar-lang" aria-label="언어변경">
+          <svg class="header-lang-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          <span class="header-lang-code">KR</span>
+        </button>
+        <button class="header-mypage-btn header-right--v2" aria-label="마이 페이지">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+        </button>
+        <button class="menu-btn header-menu-btn" aria-label="메뉴">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+`.trim();
+const drawer = `
+
+
+<!-- ============================== GNB OVERLAY ============================== -->
+<div class="gnb-overlay gnb-overlay--dark" role="dialog" aria-modal="true" aria-label="사이트 내비게이션" aria-hidden="true">
+  <div class="wrap">
+    <div class="gnb-overlay__bar">
+      <a href="/" class="brand gnb-overlay__brand">KMEDITOUR<small>Premium Concierge in Korea</small></a>
+      <div class="gnb-overlay__actions">
+        <a href="#" class="gnb-login-btn">로그인 / 회원가입</a>
+      </div>
+      <button class="gnb-overlay__close" aria-label="닫기"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+    </div>
+    <div class="gnb-mobile-top">
+      <div class="gnb-contact-block">
+        <div class="gnb-contact-cta">
+          <a href="/reservation" class="gnb-cta-btn gnb-cta-btn--book">상담 예약하기</a>
+          <a href="mailto:contact@kmeditour.com" class="gnb-cta-btn gnb-cta-btn--mail">
+            contact@kmeditour.com
+          </a>
+        </div>
+      </div>
+      <div class="gnb-lang-tabs">
+        <button class="gnb-lang-tab is-active" data-lang="KR"><img src="/assets/flag/flag_south korea.svg" alt="KR" class="gnb-lang-flag" /><span class="gnb-lang-code">KR</span></button>
+        <button class="gnb-lang-tab" data-lang="EN"><img src="/assets/flag/flag_united states.svg" alt="EN" class="gnb-lang-flag" /><span class="gnb-lang-code">EN</span></button>
+        <button class="gnb-lang-tab" data-lang="CN"><img src="/assets/flag/flag_china.svg" alt="CN" class="gnb-lang-flag" /><span class="gnb-lang-code">CN</span></button>
+        <button class="gnb-lang-tab" data-lang="JP"><img src="/assets/flag/flag_japan.svg" alt="JP" class="gnb-lang-flag" /><span class="gnb-lang-code">JP</span></button>
+        <button class="gnb-lang-tab" data-lang="VN"><img src="/assets/flag/flag_vietnam.svg" alt="VN" class="gnb-lang-flag" /><span class="gnb-lang-code">VN</span></button>
+      </div>
+    </div>
+
+        <!-- 1행: 서비스, 스페이스, 쇼핑, 소식 -->
+    <div class="gnb-cols">
+      <div class="gnb-col gnb-col--mobile-only">
+        <h4 data-en="About">소개<svg class="gnb-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></h4>
+        <ul>
+          <li><a href="/about" data-en="Who We Are">회사소개</a></li>
+          <li><a href="/center" data-en="Hugro Center">휴그로센터</a></li>
+          <li><a href="/faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="gnb-col">
+        <h4 data-en="Our Services">서비스<svg class="gnb-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></h4>
+        <ul>
+          <li class="gnb-has-sub">
+            <div class="gnb-item-row">
+              <a href="#" data-en="Beauty Concierge">뷰티</a>
+              <button class="gnb-sub-toggle" aria-label="뷰티 하위 메뉴">
+                <svg class="gnb-sub-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+              </button>
+            </div>
+            <ul class="gnb-sub-list">
+              <li><a href="/skin-sol">나의 피부 솔루션 찾기</a></li>
+              <li class="gnb-has-sub">
+                <div class="gnb-item-row">
+                  <a href="/procedure" class="gnb-proc-trigger">시술 종류</a>
+                  <button class="gnb-sub-toggle" aria-label="시술 하위 메뉴">
+                    <svg class="gnb-sub-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                  </button>
+                </div>
+                <ul class="gnb-sub-list">
+                  <li><a href="/procedure">전체</a></li>
+                  <li><a href="#">필러</a></li>
+                  <li><a href="#">보톡스</a></li>
+                  <li><a href="#">실리프팅</a></li>
+                  <li><a href="#">레이저</a></li>
+                  <li><a href="#">스킨 부스터</a></li>
+                  <li><a href="#">피부관리</a></li>
+                  <li><a href="#">지방분해</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li><a href="/travel" data-en="Travel Concierge">투어</a></li>
+        </ul>
+      </div>
+      <div class="gnb-col">
+        <h4 data-en="Shopping">쇼핑<svg class="gnb-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></h4>
+        <ul>
+          <li><a href="/cosmetic">코스메틱 제품</a></li>
+
+        </ul>
+      </div>
+      <div class="gnb-col">
+        <h4 data-en="Space">스페이스<svg class="gnb-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></h4>
+        <ul>
+          <li><a href="/center">휴그로센터 소개</a></li>
+          <li><a href="/skin-analysis">피부분석 서비스</a></li>
+        </ul>
+      </div>
+      <div class="gnb-col">
+        <h4 data-en="News">소식<svg class="gnb-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></h4>
+        <ul>
+          <li><a href="#" data-en="Event" class="gnb-link--utility">이벤트</a></li>
+          <li><a href="/magazine" data-en="Magazine" class="gnb-link--utility">매거진</a></li>
+        </ul>
+      </div>
+      <div class="gnb-col gnb-col--about-desktop">
+        <h4 data-en="About">소개<svg class="gnb-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></h4>
+        <ul>
+          <li><a href="/about" data-en="Who We Are" class="gnb-link--utility">회사소개</a></li>
+          <li><a href="/center" data-en="Hugro Center">휴그로센터</a></li>
+          <li><a href="/faq" data-en="FAQ" class="gnb-link--utility">FAQ</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="gnb-banners">
+      <a href="/center" class="gnb-banner gnb-banner--hugro">
+        <div class="gnb-banner__inner">
+          <p class="gnb-banner__label">Premium Space</p>
+          <p class="gnb-banner__title">휴그로센터</p>
+          <p class="gnb-banner__sub">의료 뷰티 여행 토탈 케어 공간</p>
+        </div>
+        <svg class="gnb-banner__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </a>
+      <a href="/skin-sol" class="gnb-banner gnb-banner--skin">
+        <div class="gnb-banner__inner">
+          <p class="gnb-banner__label">Skin Solution</p>
+          <p class="gnb-banner__title">나의 피부 솔루션 찾기</p>
+          <p class="gnb-banner__sub">나만의 피부 타입 맞춤 케어</p>
+        </div>
+        <svg class="gnb-banner__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- 시술 팝업 시트 (모바일) -->
+<div class="proc-sheet" id="procSheet" aria-hidden="true">
+  <div class="proc-sheet__bar">
+    <span class="proc-sheet__title">시술 종류</span>
+    <button class="proc-sheet__close" aria-label="닫기">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+    </button>
+  </div>
+  <ul class="proc-sheet__list">
+    <li><a href="/procedure">전체</a></li>
+    <li><a href="#">필러</a></li>
+    <li><a href="#">보톡스</a></li>
+    <li><a href="#">실리프팅</a></li>
+    <li><a href="#">레이저</a></li>
+    <li><a href="#">스킨 부스터</a></li>
+    <li><a href="#">피부관리</a></li>
+    <li><a href="#">지방분해</a></li>
+  </ul>
+  <a href="/reservation" class="proc-sheet__banner">
+    <div class="proc-sheet__banner-inner">
+      <p class="proc-sheet__banner-label">Premium Beauty Concierge</p>
+      <p class="proc-sheet__banner-title">시술 상담 예약하기</p>
+      <p class="proc-sheet__banner-sub">전담 코디네이터가 맞춤 시술을 안내합니다</p>
+    </div>
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+  </a>
+</div>
+
+`.trim();
+const main = `
+<main id="main-content">
+<div class="pd-page">
+
+  <!-- ── 뒤로 ── -->
+  <div class="pd-back-wrap">
+    <button class="pd-back-btn" onclick="history.back()">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+      뒤로
+    </button>
+  </div>
+
+  <!-- ── 상품 메인 (이미지 + 정보) ── -->
+  <section class="pd-main">
+    <div class="pd-main-inner">
+
+      <!-- ★ [신규 기능] 갤러리 외부 래퍼: 좌측 추천 패널 + 메인 갤러리 가로 배치 -->
+      <div class="pd-gallery-outer">
+
+        <!-- ★ [신규 기능] 좌측 추천 상품 패널
+             - /cosmetic에서 전달받은 cosm_products(세션스토리지) 기준으로
+             - 현재 상품 제외 인기순 상위 3개를 세로로 나열
+             - 클릭 시 해당 상품 상세 페이지로 이동 (리로드) -->
+        <aside class="pd-rec-panel" id="pdRecPanel">
+          <p class="pd-rec-panel__label">추천</p>
+          <div class="pd-rec-items" id="pdRecItems"></div>
+        </aside>
+
+        <!-- 갤러리 -->
+        <div class="pd-gallery">
+          <div class="pd-gallery__main">
+            <img id="pdMainImg" class="pd-gallery__img" src="" alt="" />
+            <button class="pd-gallery__arrow pd-gallery__arrow--prev" id="pdPrev" aria-label="이전 이미지">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+            </button>
+            <button class="pd-gallery__arrow pd-gallery__arrow--next" id="pdNext" aria-label="다음 이미지">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+            </button>
+            <div class="pd-gallery__counter" id="pdCounter">1 / 1</div>
+            <div class="pd-gallery__tags" id="pdGalleryTags"></div>
+            <!-- ★ [신규 기능] 하단 썸네일 스트립: 이미지 내부 하단 오버레이로 제품 다중 사진 선택 -->
+            <div class="pd-gallery__thumbstrip" id="pdThumbStrip"></div>
+          </div>
+          <div class="pd-gallery__dots" id="pdGalleryDots" style="display:none"></div>
+        </div>
+
+      </div>
+
+      <!-- 상품 정보 -->
+      <div class="pd-info">
+        <span class="pd-category-tag" id="pdCategoryTag"></span>
+        <h1 class="pd-title" id="pdTitle"></h1>
+
+        <div class="pd-rating-row">
+          <span class="pd-rating-stars" id="pdRatingStars">★</span>
+          <span id="pdRatingVal"></span>
+          <span class="pd-rating-count" id="pdRatingCount"></span>
+        </div>
+
+        <!-- 옵션 -->
+        <div class="pd-option-section">
+          <div class="pd-option-label">옵션 선택</div>
+          <div class="pd-option-item is-selected">
+            <span class="pd-option-dot"></span>
+            <span class="pd-option-name">기본</span>
+            <span class="pd-option-price" id="pdOptionPrice"></span>
+          </div>
+        </div>
+
+        <!-- 가격 -->
+        <div class="pd-price-section">
+          <div class="pd-price-orig" id="pdPriceOrig" style="display:none"></div>
+          <div class="pd-price-row">
+            <span class="pd-discount" id="pdDiscount" style="display:none"></span>
+            <span class="pd-price" id="pdPrice"></span>
+          </div>
+        </div>
+
+        <!-- 설명 -->
+        <p class="pd-desc" id="pdDesc"></p>
+
+        <!-- 수량 -->
+        <div class="pd-qty-section">
+          <span class="pd-qty-label">수량</span>
+          <div class="pd-qty">
+            <button class="pd-qty-btn" id="pdQtyMinus">−</button>
+            <span class="pd-qty-val" id="pdQtyVal">1</span>
+            <button class="pd-qty-btn" id="pdQtyPlus">+</button>
+          </div>
+        </div>
+
+        <!-- 버튼 -->
+        <div class="pd-actions">
+          <button class="pd-btn pd-btn--cart">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-3px;margin-right:6px"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+            장바구니 담기
+          </button>
+          <button class="pd-btn pd-btn--buy">바로 구매</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── 상품정보 ── -->
+  <section class="pd-specs-section">
+    <div class="wrap" style="max-width:1230px;margin:0 auto;padding:0 var(--gutter);">
+      <div class="pd-specs-card">
+        <h2 class="pd-specs-heading">상품정보</h2>
+        <table class="pd-specs-table" id="pdSpecsTable"></table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── 상세 설명 ── -->
+  <section class="pd-detail-section">
+    <div class="wrap" style="max-width:1230px;margin:0 auto;padding:0 var(--gutter);">
+      <h2 class="pd-detail-heading">상세 설명</h2>
+      <div class="pd-detail-img-wrap">
+        <img id="pdDetailImg" src="" alt="" style="display:none" />
+        <div id="pdDetailPlaceholder" class="pd-detail-placeholder"></div>
+      </div>
+    </div>
+  </section>
+
+</div>
+</main>
+`.trim();
+const footer = `
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__top">
+      <a href="#">개인정보처리방침</a>
+      <a href="#">이용약관</a>
+      <a href="#">환불 정책</a>
+    </div>
+    <div class="footer__mid">
+      <div>
+        <a href="/" class="footer__brand">KMEDITOUR<small>Premium Concierge in Korea</small></a>
+        <p class="footer__tagline">한국의 앞선 의료와 서울의 품격을 잇는 프리미엄 컨시어지. 시술부터 머무름까지, 전담 코디네이터가 당신만의 여정을 섬세하게 완성합니다.</p>
+      </div>
+      <dl>
+        <dt>대표자</dt><dd>이석재</dd>
+        <dt>주소</dt><dd>서울특별시 강남구 압구정로14길 22, 4층(신사동)</dd>
+        <dt>대표전화</dt><dd>+82-2-514-0799</dd>
+        <dt>사업자등록번호</dt><dd>558-81-03752</dd>
+      </dl>
+      <dl>
+        <dt>상담 운영</dt><dd>연중무휴 09:00 — 21:00</dd>
+        <dt>카카오 상담</dt><dd>@KMEDITOUR</dd>
+        <dt>이메일</dt><dd>contact@kmeditour.com</dd>
+        <dt>전담 케어</dt><dd>1:1 코디네이터 배정</dd>
+      </dl>
+    </div>
+    <div class="footer__top-wrap">
+      <button class="footer__top-btn" aria-label="맨 위로">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
+        <span>TOP</span>
+      </button>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2026 KMEDITOUR. All rights reserved.</span>
+      <div class="footer__social">
+        <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+        <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 9h3V6h-3c-1.7 0-3 1.3-3 3v2H8v3h3v6h3v-6h2.5l.5-3H14V9z"/></svg></a>
+        <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="6" width="18" height="12" rx="3"/><path d="M11 9.5l4 2.5-4 2.5z" fill="currentColor"/></svg></a>
+      </div>
+    </div>
+  </div>
+</footer>
+`.trim();
+const modals = `
+<!-- 로그인 모달 (공통) -->
+<div class="login-modal" id="loginModal" aria-hidden="true">
+  <div class="login-modal__backdrop" id="loginBackdrop"></div>
+  <div class="login-modal__box" role="dialog" aria-modal="true" aria-label="로그인">
+    <button class="login-modal__close" id="loginClose" aria-label="닫기">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+    <div class="login-modal__brand">K<span>MEDI</span>TOUR</div>
+    <h2 class="login-modal__title">다시 오신 것을 환영합니다</h2>
+    <p class="login-modal__subtitle">KMEDITOUR 계정에 로그인하세요</p>
+    <form class="login-modal__form" onsubmit="return false;">
+      <div class="login-modal__label-group">
+        <label class="login-field-label" for="loginEmail">이메일</label>
+        <div class="login-modal__field">
+          <span class="login-field-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" width="17" height="17"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="2,4 12,13 22,4"/></svg>
+          </span>
+          <input id="loginEmail" type="email" class="login-modal__input" placeholder="email@example.com" autocomplete="email" />
+        </div>
+      </div>
+      <div class="login-modal__label-group">
+        <label class="login-field-label" for="loginPassword">비밀번호</label>
+        <div class="login-modal__field">
+          <span class="login-field-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" width="17" height="17"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+          </span>
+          <input type="password" id="loginPassword" class="login-modal__input" placeholder="••••••••" autocomplete="current-password" />
+          <button type="button" class="login-pwd-eye" id="loginPwdToggle" aria-label="비밀번호 보기">
+            <svg id="eyeIcon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" width="17" height="17"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+          </button>
+        </div>
+      </div>
+      <div class="login-modal__options">
+        <label class="login-remember">
+          <input type="checkbox" />
+          로그인 상태 유지
+        </label>
+        <a href="#" class="login-modal__forgot">비밀번호를 잊으셨나요?</a>
+      </div>
+      <button type="submit" class="login-modal__submit">로그인</button>
+    </form>
+    <div class="login-modal__divider"><span>또는</span></div>
+    <div class="login-modal__social">
+      <button class="login-social-btn login-social-btn--google">
+        <svg viewBox="0 0 24 24" width="20" height="20" xmlns="http://www.w3.org/2000/svg"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+        Google로 가입하기
+      </button>
+      <button class="login-social-btn login-social-btn--kakao">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 3C6.48 3 2 6.48 2 10.8c0 2.76 1.69 5.19 4.25 6.63L5.1 21l4.4-2.3c.81.15 1.64.23 2.5.23 5.52 0 10-3.48 10-7.8S17.52 3 12 3z"/></svg>
+        카카오톡으로 가입하기
+      </button>
+    </div>
+    <p class="login-modal__join">계정이 없으신가요? <a href="#">회원가입</a></p>
+    <div class="login-modal__admin">
+      <a href="#" class="login-admin-link">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" width="13" height="13"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+        관리자 로그인
+      </a>
+    </div>
+  </div>
+</div>
+`.trim();
+const f = { skip, header, drawer, main, footer, modals };
 export default f;
