@@ -6,17 +6,17 @@
 
   /* ── 상세 데이터: 이미지(언어 공통) ── */
   var DETAIL_IMG = {
-    'hotel-1': ['assets/img/hero/hero-11.png','assets/img/hero/hero-13.png','assets/img/hero/hero-14.png'],
-    'hotel-2': ['assets/img/hero/hero-13.png','assets/img/hero/hero-14.png','assets/img/hero/hero-15.png'],
-    'hotel-3': ['assets/img/hero/hero-14.png','assets/img/hero/hero-15.png','assets/img/hero/hero-11.png'],
-    'shop-1':  ['assets/img/hero/hero-15.png','assets/img/hero/hero-17.png','assets/img/hero/hero-2.png','assets/img/hero/hero-5.png','assets/img/hero/hero-7.png'],
-    'shop-2':  ['assets/img/hero/hero-17.png','assets/img/hero/hero-15.png','assets/img/hero/hero-2.png'],
-    'shop-3':  ['assets/img/hero/hero-2.png','assets/img/hero/hero-5.png','assets/img/hero/hero-7.png'],
-    'shop-4':  ['assets/img/hero/hero-5.png','assets/img/hero/hero-7.png','assets/img/hero/hero-2.png'],
-    'shop-5':  ['assets/img/hero/hero-7.png','assets/img/hero/hero-2.png','assets/img/hero/hero-5.png'],
-    'shop-6':  ['assets/img/hero/hero-16.png','assets/img/hero/hero-7.png','assets/img/hero/hero-15.png'],
-    'shop-7':  ['assets/img/hero/hero-gung.jpeg','assets/img/hero/hero-2.png','assets/img/hero/hero-5.png'],
-    'shop-8':  ['assets/img/hero/hero-17.png','assets/img/hero/hero-15.png','assets/img/hero/hero-2.png']
+    'hotel-1': ['assets/img/1-page-home/01_main_banner/hero-11.png','assets/img/1-page-home/01_main_banner/hero-13.png','assets/img/1-page-home/01_main_banner/hero-14.png'],
+    'hotel-2': ['assets/img/1-page-home/01_main_banner/hero-13.png','assets/img/1-page-home/01_main_banner/hero-14.png','assets/img/1-page-home/01_main_banner/hero-15.png'],
+    'hotel-3': ['assets/img/1-page-home/01_main_banner/hero-14.png','assets/img/1-page-home/01_main_banner/hero-15.png','assets/img/1-page-home/01_main_banner/hero-11.png'],
+    'shop-1':  ['assets/img/1-page-home/01_main_banner/hero-15.png','assets/img/1-page-home/01_main_banner/hero-17.png','assets/img/1-page-home/01_main_banner/hero-2.png','assets/img/1-page-home/01_main_banner/hero-5.png','assets/img/1-page-home/01_main_banner/hero-7.png'],
+    'shop-2':  ['assets/img/1-page-home/01_main_banner/hero-17.png','assets/img/1-page-home/01_main_banner/hero-15.png','assets/img/1-page-home/01_main_banner/hero-2.png'],
+    'shop-3':  ['assets/img/1-page-home/01_main_banner/hero-2.png','assets/img/1-page-home/01_main_banner/hero-5.png','assets/img/1-page-home/01_main_banner/hero-7.png'],
+    'shop-4':  ['assets/img/1-page-home/01_main_banner/hero-5.png','assets/img/1-page-home/01_main_banner/hero-7.png','assets/img/1-page-home/01_main_banner/hero-2.png'],
+    'shop-5':  ['assets/img/1-page-home/01_main_banner/hero-7.png','assets/img/1-page-home/01_main_banner/hero-2.png','assets/img/1-page-home/01_main_banner/hero-5.png'],
+    'shop-6':  ['assets/img/1-page-home/01_main_banner/hero-16.png','assets/img/1-page-home/01_main_banner/hero-7.png','assets/img/1-page-home/01_main_banner/hero-15.png'],
+    'shop-7':  ['assets/img/1-page-home/01_main_banner/hero-20.jpeg','assets/img/1-page-home/01_main_banner/hero-2.png','assets/img/1-page-home/01_main_banner/hero-5.png'],
+    'shop-8':  ['assets/img/1-page-home/01_main_banner/hero-17.png','assets/img/1-page-home/01_main_banner/hero-15.png','assets/img/1-page-home/01_main_banner/hero-2.png']
   };
 
   /* ── 상세 데이터: 언어별 텍스트 (cat/title/addr/desc/promo/cats) ── */
