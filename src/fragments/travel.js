@@ -259,7 +259,7 @@ const main = `
   <div class="wrap">
     <p class="eyebrow">Travel in Korea</p>
     <h1 class="page-hero__title">투어</h1>
-    <p class="page-hero__sub">서울의 프리미엄 호텔과 쇼핑 명소를<br/>KMEDITOUR가 엄선하여 안내합니다.</p>
+    <p class="page-hero__sub">럭셔리 호텔부터 대표 쇼핑 명소까지,<br/>서울의 프리미엄 라이프스타일을 경험해보세요.</p>
     <nav class="bc-nav" aria-label="현재 위치">
       <a href="/">홈</a>
       <span class="bc-sep" aria-hidden="true">/</span>
