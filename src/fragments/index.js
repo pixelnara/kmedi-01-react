@@ -261,7 +261,7 @@ const main = `
 <section class="hero">
   <div class="hero__slides">
     <!-- 1번 고정: 브랜드 메시지 -->
-    <div class="hero__slide" style="background-image:url('/assets/img/1-page-home/01_main_banner/hero-23.png')"
+    <div class="hero__slide" style="background-image:url('/assets/img/1-page-home/01_main_banner/hero-21.png')"
          data-title="의료부터 관광까지<br/>모든 케어"
          data-desc="체크인부터 귀국까지 퍼스널 컨시어지가 함께합니다."></div>
     <!-- 2.뷰티 -->
@@ -269,7 +269,7 @@ const main = `
          style="background-image:url('/assets/img/1-page-home/01_main_banner/hero-5.png')"
          data-title="당신만을 위한<br> 맞춤 K-뷰티 서비스"
          data-desc="검증된 의료 서비스와 프리미엄 케어를 경험하세요."></div>
-    <!-- 3.여행 -->
+    <!-- 3.여행
     <div class="hero__slide" style="background-image:url('/assets/img/1-page-home/01_main_banner/hero-15.png')"
          data-title="서울의 아름다움<br/>그 중심에서"
          data-desc="한국의 전통과 현대가 어우러진 특별한 시간"></div>
