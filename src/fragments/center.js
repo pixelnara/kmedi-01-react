@@ -261,7 +261,7 @@ const main = `
 <section class="center-hero" id="top" aria-label="휴그로 센터 소개">
   <div class="center-hero__bg">
     <img
-      src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=2400&q=85"
+      src="/assets/img/2-hugro/treatment-main.png"
       alt="Hugro Center — Premium Beauty & Wellness"
     />
   </div>
@@ -368,31 +368,31 @@ const main = `
 
             <!-- Slide 1 -->
             <figure class="treatment-carousel__slide">
-              <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=900&q=85" alt="딥 하이드레이션" loading="lazy" />
+              <img src="/assets/img/2-hugro/treatment-1.png" alt="딥 하이드레이션" loading="lazy" />
               <figcaption>딥 하이드레이션 — 수분 집중 트리트먼트 · 60분</figcaption>
             </figure>
 
             <!-- Slide 2 -->
             <figure class="treatment-carousel__slide">
-              <img src="https://images.unsplash.com/photo-1596755094514-f87e34085b2c?auto=format&fit=crop&w=900&q=85" alt="리프팅 & 탄력 케어" loading="lazy" />
+              <img src="/assets/img/2-hugro/treatment-2.png" alt="리프팅 & 탄력 케어" loading="lazy" />
               <figcaption>리프팅 & 탄력 — 피부 탄력 회복 케어 · 75분</figcaption>
             </figure>
 
             <!-- Slide 3 -->
             <figure class="treatment-carousel__slide">
-              <img src="https://images.unsplash.com/photo-1556228578-8c89e6adf883?auto=format&fit=crop&w=900&q=85" alt="브라이트닝 케어" loading="lazy" />
+              <img src="/assets/img/2-hugro/treatment-3.png" alt="브라이트닝 케어" loading="lazy" />
               <figcaption>브라이트닝 — 미백·광채 집중 케어 · 60분</figcaption>
             </figure>
 
             <!-- Slide 4 -->
             <figure class="treatment-carousel__slide">
-              <img src="https://images.unsplash.com/photo-1607006344380-b6775a0824a7?auto=format&fit=crop&w=900&q=85" alt="시카 진정 케어" loading="lazy" />
+              <img src="/assets/img/2-hugro/treatment-4.png" alt="시카 진정 케어" loading="lazy" />
               <figcaption>시카 진정 — 예민·트러블 피부 집중 케어 · 45분</figcaption>
             </figure>
 
             <!-- Slide 5 -->
             <figure class="treatment-carousel__slide">
-              <img src="https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?auto=format&fit=crop&w=900&q=85" alt="프리미엄 패키지" loading="lazy" />
+              <img src="/assets/img/2-hugro/treatment-5.png" alt="프리미엄 패키지" loading="lazy" />
               <figcaption>프리미엄 패키지 — 맞춤 복합 트리트먼트 · 120분</figcaption>
             </figure>
 
