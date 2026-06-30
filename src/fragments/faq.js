@@ -268,157 +268,146 @@ const main = `
 
     <!-- 카테고리 탭 -->
     <div class="faq-tabs" role="tablist" aria-label="FAQ 카테고리">
-      <button class="faq-tab is-active" role="tab" id="tab-booking" data-cat="booking" aria-selected="true" aria-controls="panel-booking">예약 · 결제</button>
-      <button class="faq-tab" role="tab" id="tab-service" data-cat="service" aria-selected="false" aria-controls="panel-service">서비스</button>
-      <button class="faq-tab" role="tab" id="tab-treatment" data-cat="treatment" aria-selected="false" aria-controls="panel-treatment">시술</button>
-      <button class="faq-tab" role="tab" id="tab-shopping" data-cat="shopping" aria-selected="false" aria-controls="panel-shopping">쇼핑</button>
-      <button class="faq-tab" role="tab" id="tab-etc" data-cat="etc" aria-selected="false" aria-controls="panel-etc">기타</button>
+      <button class="faq-tab is-active" role="tab" id="tab-booking" data-cat="booking" aria-selected="true" aria-controls="panel-booking">예약</button>
+      <button class="faq-tab" role="tab" id="tab-service" data-cat="service" aria-selected="false" aria-controls="panel-service">피부 시술</button>
+      <button class="faq-tab" role="tab" id="tab-treatment" data-cat="treatment" aria-selected="false" aria-controls="panel-treatment">호텔 &amp; 여행</button>
+      <button class="faq-tab" role="tab" id="tab-shopping" data-cat="shopping" aria-selected="false" aria-controls="panel-shopping">쇼핑 &amp; 혜택</button>
+      <button class="faq-tab" role="tab" id="tab-etc" data-cat="etc" aria-selected="false" aria-controls="panel-etc">결제</button>
     </div>
 
-    <!-- 예약 · 결제 -->
     <div class="faq-group" role="tabpanel" id="panel-booking" aria-labelledby="tab-booking" data-cat="booking">
-      <p class="faq-group__label">예약 · 결제</p>
+      <p class="faq-group__label">예약</p>
       <div class="acc">
         <div class="acc-item is-open">
-          <button class="acc-head" aria-expanded="true">예약은 어떻게 하나요?<span class="acc-icon" aria-hidden="true"></span></button>
+          <button class="acc-head" aria-expanded="true">한국 의료관광 온라인 상담은 무료인가요?<span class="acc-icon" aria-hidden="true"></span></button>
           <div class="acc-body">
-            <div class="acc-body__inner">홈페이지 상단의 '상담 예약하기' 버튼을 클릭하거나, 카카오톡 채널 @KMEDITOUR로 문의해 주세요. 원하시는 서비스와 일정을 알려주시면 전담 코디네이터가 배정되어 맞춤 플랜을 안내해 드립니다.</div>
+            <div class="acc-body__inner">네. KMEDITOUR의 온라인 상담 서비스는 무료로 제공됩니다.<br><br>전담 컨시어지는 고객이 한국 방문 전 시술 옵션, 예상 비용, 병원 정보, 여행 준비 사항 등을 보다 쉽게 이해할 수 있도록 안내해 드립니다. 따라서, 더욱 충분한 정보를 바탕으로 자신에게 적합한 K-Beauty 및 웰니스 프로그램을 계획할 수 있습니다.</div>
           </div>
         </div>
         <div class="acc-item">
-          <button class="acc-head" aria-expanded="false">예약 취소 및 변경은 어떻게 하나요?<span class="acc-icon" aria-hidden="true"></span></button>
+          <button class="acc-head" aria-expanded="false">외국인은 한국에서 피부 시술을 어떻게 예약할 수 있나요?<span class="acc-icon" aria-hidden="true"></span></button>
           <div class="acc-body">
-            <div class="acc-body__inner">예약 취소 또는 변경은 시술 예정일 72시간 전까지 가능합니다. 카카오톡 채널 또는 이메일(contact@kmeditour.com)로 요청해 주세요. 72시간 이내 취소 시 취소 수수료가 발생할 수 있습니다.</div>
+            <div class="acc-body__inner">해외 고객은 KMEDITOUR 홈페이지 또는 이메일, 전화를 통해 상담을 신청할 수 있습니다.<br><br>전담 컨시어지가 고객의 피부 상태와 니즈를 바탕으로 적합한 피부과 및 스킨케어 프로그램을 추천해 드리며, 상담부터 예약까지 전 과정을 편리하게 지원합니다. 이를 통해 보다 쉽고 편안하게 한국의 전문적인 K-Beauty 서비스를 경험하실 수 있습니다.</div>
           </div>
         </div>
         <div class="acc-item">
-          <button class="acc-head" aria-expanded="false">결제 방법은 무엇인가요?<span class="acc-icon" aria-hidden="true"></span></button>
+          <button class="acc-head" aria-expanded="false">KMEDITOUR는 어떤 서비스인가요?<span class="acc-icon" aria-hidden="true"></span></button>
           <div class="acc-body">
-            <div class="acc-body__inner">신용카드(VISA, Mastercard, UnionPay), 계좌이체, 카카오페이, 네이버페이 등 다양한 결제 수단을 지원합니다. 외국 카드의 경우 일부 시술 패키지는 사전 입금으로 진행될 수 있습니다.</div>
+            <div class="acc-body__inner">KMEDITOUR는 해외 고객이 신뢰할 수 있는 한국의 피부과, 에스테틱 클리닉, 웰니스 센터 및 다양한 뷰티·의료 서비스를 보다 편리하게 이용할 수 있도록 연결하는 한국 메디컬 컨시어지 플랫폼입니다.<br><br>서울을 중심으로 검증된 파트너 기관과 연계하여 상담, 예약, 통역 지원, 여행 정보 제공 등 고객의 한국 방문 전 과정에 걸쳐 맞춤형 서비스를 제공합니다.</div>
           </div>
         </div>
         <div class="acc-item">
-          <button class="acc-head" aria-expanded="false">환불 정책은 어떻게 되나요?<span class="acc-icon" aria-hidden="true"></span></button>
+          <button class="acc-head" aria-expanded="false">KMEDITOUR에 어떻게 문의할 수 있나요?<span class="acc-icon" aria-hidden="true"></span></button>
           <div class="acc-body">
-            <div class="acc-body__inner">시술 전 취소의 경우 결제 금액의 전액 환불이 가능합니다(시술 72시간 전까지). 시술 당일 취소 또는 노쇼의 경우 환불이 어려울 수 있으며, 코스메틱 제품은 미개봉 상태에서 수령 후 7일 이내 반품·환불이 가능합니다.</div>
+            <div class="acc-body__inner"><p>해외 고객은 다음과 같은 방법으로 KMEDITOUR에 문의하실 수 있습니다.</p><ul class='faq-list'><li>홈페이지 문의</li><li>이메일</li><li>전화 상담</li></ul><p>문의 내용 접수 후 전담 컨시어지가 상담, 예약, 피부 시술, 호텔, 쇼핑, 웰니스 프로그램 등 고객의 K-Beauty 여정 전반에 대해 안내해 드립니다.</p></div>
+          </div>
+        </div>
+        <div class="acc-item">
+          <button class="acc-head" aria-expanded="false">왜 많은 해외 고객들이 KMEDITOUR를 선택하나요?<span class="acc-icon" aria-hidden="true"></span></button>
+          <div class="acc-body">
+            <div class="acc-body__inner"><p>많은 해외 고객들이 다음과 같은 이유로 KMEDITOUR를 선택하고 있습니다.</p><ul class='faq-list'><li>개인 맞춤형 피부 분석 및 뷰티 플랜 제안</li><li>전담 컨시어지를 통한 상담 및 예약 지원</li><li>검증된 피부과, 에스테틱 및 웰니스 파트너 네트워크</li><li>호텔, 쇼핑, 여행까지 연결되는 원스톱 서비스</li><li>영어 지원 및 해외 고객 맞춤 케어</li><li>편리하고 신뢰할 수 있는 K-Beauty 여정 설계</li></ul><p>KMEDITOUR는 단순한 예약 플랫폼이 아닌, 한국의 우수한 피부과 및 스킨케어 서비스와 호텔, 쇼핑, 웰니스 경험을 하나로 연결하는 프리미엄 메디컬 컨시어지 서비스입니다. 고객의 상담부터 예약, 방문, 그리고 한국 체류 경험까지 더욱 편안하고 만족스러운 K-Beauty Journey를 지원합니다.</p></div>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- 서비스 -->
     <div class="faq-group" role="tabpanel" id="panel-service" aria-labelledby="tab-service" data-cat="service">
-      <p class="faq-group__label">서비스</p>
+      <p class="faq-group__label">피부 시술</p>
       <div class="acc">
         <div class="acc-item">
-          <button class="acc-head" aria-expanded="false">어떤 서비스를 제공하나요?<span class="acc-icon" aria-hidden="true"></span></button>
+          <button class="acc-head" aria-expanded="false">어떤 피부 시술 및 뷰티 서비스를 이용할 수 있나요?<span class="acc-icon" aria-hidden="true"></span></button>
           <div class="acc-body">
-            <div class="acc-body__inner">KMEDITOUR는 뷰티(피부 시술·성형), 투어(서울 관광·숙박), 코스메틱 쇼핑, 휴그로센터 방문 등 한국 방문에 필요한 전방위 프리미엄 케어를 제공합니다.</div>
+            <div class="acc-body__inner"><p>KMEDITOUR는 해외 고객이 다양한 피부 시술, 뷰티 케어 및 웰니스 서비스를 보다 편리하게 이용할 수 있도록 지원합니다.<br>제공 가능한 서비스 예시는 다음과 같습니다.</p><ul class='faq-list'><li>피부 분석 및 맞춤 상담</li><li>피부과 시술</li><li>레이저 피부 관리</li><li>안티에이징 프로그램</li><li>여드름 치료 및 피부 개선</li><li>스킨케어 및 에스테틱 관리</li><li>웰니스 프로그램</li></ul><p>고객의 피부 상태와 목적에 따라 적합한 프로그램을 추천해 드리며, 제공 가능한 서비스는 의료기관 및 클리닉에 따라 달라질 수 있습니다.</p></div>
           </div>
         </div>
         <div class="acc-item">
-          <button class="acc-head" aria-expanded="false">전담 코디네이터는 어떤 역할을 하나요?<span class="acc-icon" aria-hidden="true"></span></button>
+          <button class="acc-head" aria-expanded="false">한국의 피부 시술 비용은 얼마인가요?<span class="acc-icon" aria-hidden="true"></span></button>
           <div class="acc-body">
-            <div class="acc-body__inner">1:1 전담 코디네이터가 배정되어 상담 예약, 클리닉 동행, 통역, 사후 관리 상담, 숙박·관광 안내까지 체류 전 기간을 밀착 지원합니다. 궁금한 점은 언제든 카카오톡으로 연락하실 수 있습니다.</div>
+            <div class="acc-body__inner">한국의 피부 시술 비용은 의료기관, 시술 종류, 그리고 개인의 피부 상태에 따라 달라질 수 있습니다.<br><br>KMEDITOUR는 상담을 통해 고객의 피부 고민과 목표를 파악한 후, 적합한 시술과 의료기관을 추천해 드리며 예상 비용 정보를 안내해 드립니다. 이를 통해 고객은 한국 방문 전 시술 계획과 예산을 보다 편리하게 준비할 수 있습니다.</div>
           </div>
         </div>
         <div class="acc-item">
-          <button class="acc-head" aria-expanded="false">외국어 지원이 되나요?<span class="acc-icon" aria-hidden="true"></span></button>
+          <button class="acc-head" aria-expanded="false">외국인도 한국에서 안전하게 피부 시술을 받을 수 있나요?<span class="acc-icon" aria-hidden="true"></span></button>
           <div class="acc-body">
-            <div class="acc-body__inner">영어, 중국어, 일본어, 베트남어 코디네이터가 상주합니다. 언어별 전담 코디네이터 배정을 원하시면 예약 시 희망 언어를 알려주세요.</div>
+            <div class="acc-body__inner">네. 한국의 피부과 및 에스테틱 클리닉은 첨단 의료 기술, 엄격한 의료 기준, 그리고 숙련된 전문 의료진을 바탕으로 전 세계적으로 높은 신뢰를 받고 있습니다.<br><br>KMEDITOUR는 엄선된 의료기관 및 파트너 클리닉과 협력하여 해외 고객이 보다 안전하고 편안하게 시술을 받을 수 있도록 지원합니다. 또한 상담부터 예약, 방문 안내까지 전 과정을 함께하여 더욱 만족스러운 K-Beauty 경험을 제공합니다.</div>
           </div>
         </div>
         <div class="acc-item">
-          <button class="acc-head" aria-expanded="false">서울 이외 지역에서도 서비스가 가능한가요?<span class="acc-icon" aria-hidden="true"></span></button>
+          <button class="acc-head" aria-expanded="false">피부 시술을 받으려면 한국에 얼마나 머물러야 하나요?<span class="acc-icon" aria-hidden="true"></span></button>
           <div class="acc-body">
-            <div class="acc-body__inner">현재는 서울 강남·신사 지역을 중심으로 서비스를 운영하고 있습니다. 제주도 방문 패키지 및 일부 지방 연계 서비스는 별도 상담을 통해 안내해 드리고 있습니다.</div>
+            <div class="acc-body__inner">권장 체류 기간은 시술 종류와 개인의 피부 상태에 따라 달라질 수 있습니다.<br><br>일부 피부 시술 및 스킨케어 프로그램은 하루 내 진행이 가능하지만, 보다 전문적인 시술의 경우 회복 기간 또는 경과 확인을 위한 추가 방문이 필요할 수 있습니다. KMEDITOUR는 고객의 일정과 시술 계획에 맞춰 적절한 체류 기간을 안내하여 보다 편안한 여정을 지원합니다.</div>
+          </div>
+        </div>
+        <div class="acc-item">
+          <button class="acc-head" aria-expanded="false">한국에서 개인 맞춤형 피부 분석을 받을 수 있나요?<span class="acc-icon" aria-hidden="true"></span></button>
+          <div class="acc-body">
+            <div class="acc-body__inner">네. 개인 맞춤형 AI 피부 분석 및 스킨케어 상담은 휴그로센터(HUGRO Center)를 통해 체계적으로 진행될 수 있습니다.<br><br>전문 피부 분석 장비를 활용하여 피부 상태를 보다 세밀하게 진단하고, 분석 결과를 바탕으로 고객의 피부 고민과 뷰티 목표에 맞는 맞춤형 케어 및 시술 계획을 제안합니다. 또한 KMEDITOUR는 고객의 니즈에 맞는 피부과 및 스킨케어 프로그램을 연결하여 보다 개인화된 K-Beauty 경험을 지원합니다.</div>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- 시술 -->
     <div class="faq-group" role="tabpanel" id="panel-treatment" aria-labelledby="tab-treatment" data-cat="treatment">
-      <p class="faq-group__label">시술</p>
+      <p class="faq-group__label">호텔 &amp; 여행</p>
       <div class="acc">
         <div class="acc-item">
-          <button class="acc-head" aria-expanded="false">어떤 시술을 받을 수 있나요?<span class="acc-icon" aria-hidden="true"></span></button>
+          <button class="acc-head" aria-expanded="false">한국 여행과 피부 시술을 함께 경험할 수 있나요?<span class="acc-icon" aria-hidden="true"></span></button>
           <div class="acc-body">
-            <div class="acc-body__inner">필러, 보톡스, 실리프팅, 레이저, 스킨 부스터, 피부관리, 지방분해 등 다양한 뷰티 시술을 연결해 드립니다. 모든 파트너 클리닉은 검증된 의료진과 시설을 갖추고 있습니다.</div>
+            <div class="acc-body__inner">네. 많은 해외 고객들이 피부 시술과 함께 쇼핑, K-컬처 체험, 웰니스 프로그램, 관광 등 다양한 한국 여행을 함께 즐기고 있습니다.<br><br>KMEDITOUR는 피부 시술뿐만 아니라 호텔 예약, 쇼핑 혜택, 웰니스 경험까지 연결하여 보다 편안하고 특별한 K-Beauty 여정을 제공합니다.</div>
           </div>
         </div>
         <div class="acc-item">
-          <button class="acc-head" aria-expanded="false">시술 전 상담은 어떻게 진행되나요?<span class="acc-icon" aria-hidden="true"></span></button>
+          <button class="acc-head" aria-expanded="false">한국 의료관광을 위해 비자가 필요한가요?<span class="acc-icon" aria-hidden="true"></span></button>
           <div class="acc-body">
-            <div class="acc-body__inner">온라인 또는 방문 사전 상담을 통해 피부 상태와 원하는 결과를 공유해 주시면, 코디네이터가 적합한 시술 및 클리닉을 추천해 드립니다. 클리닉 방문 시 의료진 상담이 추가로 진행됩니다.</div>
+            <div class="acc-body__inner">한국 의료관광을 위한 비자 필요 여부는 방문객의 국적과 체류 기간에 따라 달라질 수 있습니다.<br><br>한국 방문 전 해당 국가의 한국 대사관 또는 공식 출입국·비자 안내 채널을 통해 최신 비자 요건을 확인하시기를 권장합니다. 필요한 경우 KMEDITOUR는 고객이 보다 원활하게 여행을 준비할 수 있도록 사전 방문 준비 사항에 대한 안내를 제공해 드립니다.</div>
           </div>
         </div>
         <div class="acc-item">
-          <button class="acc-head" aria-expanded="false">시술 후 사후 관리는 어떻게 하나요?<span class="acc-icon" aria-hidden="true"></span></button>
+          <button class="acc-head" aria-expanded="false">KMEDITOUR는 영어 지원 및 통역 서비스를 제공하나요?<span class="acc-icon" aria-hidden="true"></span></button>
           <div class="acc-body">
-            <div class="acc-body__inner">시술 후 48시간 내에 코디네이터가 상태를 확인하고 관리 방법을 안내합니다. 귀국 후에도 온라인 사후 상담이 가능하며, 필요 시 제휴 클리닉과의 원격 상담을 연결해 드립니다.</div>
+            <div class="acc-body__inner">네. KMEDITOUR는 해외 고객이 보다 편리하게 서비스를 이용할 수 있도록 상담, 예약, 시술 일정 조율 과정에서 영어 지원 서비스를 제공합니다. 또한 제휴 의료기관 및 클리닉의 운영 환경에 따라 통역 지원이 가능할 수 있으며, 보다 원활한 의사소통을 위해 필요한 지원을 안내해 드립니다.<br><br>KMEDITOUR는 고객이 언어 장벽에 대한 부담 없이 편안하게 K-Beauty 여정을 경험할 수 있도록 돕고 있습니다.</div>
           </div>
         </div>
         <div class="acc-item">
-          <button class="acc-head" aria-expanded="false">외국인도 한국에서 시술을 받을 수 있나요?<span class="acc-icon" aria-hidden="true"></span></button>
+          <button class="acc-head" aria-expanded="false">KMEDITOUR는 호텔 예약 및 교통 안내를 지원하나요?<span class="acc-icon" aria-hidden="true"></span></button>
           <div class="acc-body">
-            <div class="acc-body__inner">외국인도 합법적으로 한국 의료기관에서 미용 시술을 받을 수 있습니다. KMEDITOUR는 의료관광 공식 에이전시로, 비자 및 필요 서류 안내부터 클리닉 예약·동행까지 전 과정을 지원합니다.</div>
+            <div class="acc-body__inner">네. KMEDITOUR는 해외 고객이 보다 편안하게 한국을 방문할 수 있도록 호텔 예약, 교통 정보, 공항 이동 서비스, 그리고 방문 예정 의료기관 및 클리닉 위치에 대한 안내를 제공합니다.<br><br>또한 고객의 일정과 여행 계획에 맞춰 시술, 숙박, 이동 동선을 보다 효율적으로 준비할 수 있도록 지원합니다.</div>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- 쇼핑 -->
     <div class="faq-group" role="tabpanel" id="panel-shopping" aria-labelledby="tab-shopping" data-cat="shopping">
-      <p class="faq-group__label">코스메틱 쇼핑</p>
+      <p class="faq-group__label">쇼핑 &amp; 혜택</p>
       <div class="acc">
         <div class="acc-item">
-          <button class="acc-head" aria-expanded="false">코스메틱 제품은 어디서 구매하나요?<span class="acc-icon" aria-hidden="true"></span></button>
+          <button class="acc-head" aria-expanded="false">한국에서 쇼핑 혜택과 세금 환급(Tax Refund)은 어떻게 받을 수 있나요?<span class="acc-icon" aria-hidden="true"></span></button>
           <div class="acc-body">
-            <div class="acc-body__inner">홈페이지 상단 '쇼핑' 또는 코스메틱 페이지에서 주문하실 수 있습니다. 휴그로센터 방문 시 현장 구매도 가능합니다.</div>
+            <div class="acc-body__inner">한국에서는 일부 매장에서 구매한 상품에 대해 세금 환급(Tax Refund)을 받을 수 있습니다.<br><br>Tax Refund 가맹점의 경우 구매 시 여권을 제시하거나 환급 영수증을 발급받은 후, 출국 전 공항 내 환급 창구 또는 무인 환급 시스템을 통해 환급 절차를 진행할 수 있습니다.<br><br>또한 외국인 방문객은 주요 면세점에서 다양한 상품을 면세 가격으로 구매할 수 있으며, KMEDITOUR 고객은 제휴 파트너를 통해 쇼핑 프로모션 및 특별 혜택에 대한 안내를 받을 수 있습니다.<br><br>세금 환급 및 쇼핑 혜택의 적용 여부는 구매 금액, 참여 매장, 방문객 자격 요건 및 정부 정책에 따라 달라질 수 있습니다.</div>
           </div>
         </div>
         <div class="acc-item">
-          <button class="acc-head" aria-expanded="false">해외 배송이 가능한가요?<span class="acc-icon" aria-hidden="true"></span></button>
+          <button class="acc-head" aria-expanded="false">KMEDITOUR 고객 전용 쇼핑 및 제휴 혜택은 무엇인가요?<span class="acc-icon" aria-hidden="true"></span></button>
           <div class="acc-body">
-            <div class="acc-body__inner">현재 국내 배송 및 방문 수령만 가능합니다. 해외 배송은 준비 중이며, 향후 지원 예정입니다. 한국 체류 중 숙소로 배송 신청이 가능합니다.</div>
-          </div>
-        </div>
-        <div class="acc-item">
-          <button class="acc-head" aria-expanded="false">제품 교환 및 반품은 어떻게 하나요?<span class="acc-icon" aria-hidden="true"></span></button>
-          <div class="acc-body">
-            <div class="acc-body__inner">미개봉·미사용 제품에 한해 수령 후 7일 이내 교환 및 반품이 가능합니다. 피부 트러블 등 특별한 사유가 있을 경우 별도 상담을 통해 처리해 드립니다. 이메일(contact@kmeditour.com)로 문의해 주세요.</div>
+            <div class="acc-body__inner">KMEDITOUR는 고객의 한국 방문을 더욱 편리하고 특별하게 만들기 위해 다양한 제휴 혜택을 제공하고 있습니다.<br><br>고객은 제휴 호텔 특가, 쇼핑 프로모션, 면세점 혜택, 웰니스 프로그램 등 다양한 서비스를 안내받을 수 있으며, 이용 가능한 혜택은 제휴사 및 프로모션 기간에 따라 달라질 수 있습니다.<br><br>KMEDITOUR는 피부 시술뿐만 아니라 숙박, 쇼핑, 웰니스 경험까지 하나로 연결하여 더욱 만족스러운 K-Beauty 여정을 지원합니다.</div>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- 기타 -->
     <div class="faq-group" role="tabpanel" id="panel-etc" aria-labelledby="tab-etc" data-cat="etc">
-      <p class="faq-group__label">기타</p>
+      <p class="faq-group__label">결제</p>
       <div class="acc">
         <div class="acc-item">
-          <button class="acc-head" aria-expanded="false">휴그로센터는 어디에 있나요?<span class="acc-icon" aria-hidden="true"></span></button>
+          <button class="acc-head" aria-expanded="false">한국에서 어떤 결제 수단을 사용할 수 있나요?<span class="acc-icon" aria-hidden="true"></span></button>
           <div class="acc-body">
-            <div class="acc-body__inner">서울특별시 강남구 압구정로14길 22, 4층(신사동)에 위치합니다. 지하철 3호선 압구정역 2번 출구에서 도보 5분 거리입니다. 방문 예약은 카카오톡 또는 이메일로 가능합니다.</div>
+            <div class="acc-body__inner">한국에서는 다양한 결제 수단을 이용할 수 있습니다.<br><br>대부분의 병·의원, 클리닉, 호텔, 쇼핑 시설에서는 신용카드 및 체크카드 결제가 가능하며, 일부 기관에서는 현금 결제도 가능합니다.<br><br>이용 가능한 결제 수단은 기관 및 서비스에 따라 다를 수 있으므로 예약 또는 방문 전 확인하시기를 권장합니다.<br><br>KMEDITOUR는 고객이 보다 편리하게 서비스를 이용할 수 있도록 결제 관련 안내를 지원해 드립니다.</div>
           </div>
         </div>
         <div class="acc-item">
-          <button class="acc-head" aria-expanded="false">고객센터 운영 시간은 어떻게 되나요?<span class="acc-icon" aria-hidden="true"></span></button>
+          <button class="acc-head" aria-expanded="false">예약 및 시술 비용은 언제 결제하나요?<span class="acc-icon" aria-hidden="true"></span></button>
           <div class="acc-body">
-            <div class="acc-body__inner">연중무휴 09:00 — 21:00(KST) 운영합니다. 카카오톡 채널(@KMEDITOUR) 또는 이메일(contact@kmeditour.com)로 문의해 주세요. 운영 시간 외 접수된 문의는 다음 영업 시간 내에 답변드립니다.</div>
-          </div>
-        </div>
-        <div class="acc-item">
-          <button class="acc-head" aria-expanded="false">개인정보는 어떻게 보호되나요?<span class="acc-icon" aria-hidden="true"></span></button>
-          <div class="acc-body">
-            <div class="acc-body__inner">KMEDITOUR는 개인정보보호법을 준수하며, 수집된 고객 정보는 서비스 제공 목적으로만 사용됩니다. 제3자 제공 시 사전 동의를 받으며, 서비스 종료 후 즉시 파기합니다. 자세한 내용은 개인정보처리방침을 참고해 주세요.</div>
-          </div>
-        </div>
-        <div class="acc-item">
-          <button class="acc-head" aria-expanded="false">추가 문의는 어떻게 하나요?<span class="acc-icon" aria-hidden="true"></span></button>
-          <div class="acc-body">
-            <div class="acc-body__inner">카카오톡 채널 @KMEDITOUR 또는 이메일 contact@kmeditour.com으로 문의해 주세요. 전담 상담사가 빠르게 답변드립니다.</div>
+            <div class="acc-body__inner">KMEDITOUR의 상담 서비스는 무료로 제공됩니다.<br><br>시술 예약이 확정되는 경우, 병·의원 및 시술 프로그램에 따라 예약금이 발생합니다. 예약금은 예약 일정 확보를 위해 사전에 결제되며, 실제 시술 진행 시 총 시술 비용에서 예약금 금액이 차감되어 나머지 금액만 결제하시면 됩니다.<br><br>또한 상담 과정에서 시술 예약 절차, 예약금, 예상 비용 등 관련 내용을 사전에 상세히 안내해 드리고 있습니다.</div>
           </div>
         </div>
       </div>

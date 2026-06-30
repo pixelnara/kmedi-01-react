@@ -1,4 +1,4 @@
-import RawHtml from './RawHtml';
+import RawHtml from "./RawHtml";
 
 // 공통 푸터
 export default function Footer({ html }) {

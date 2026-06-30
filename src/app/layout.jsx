@@ -2,34 +2,34 @@
 // subpage.css: .gnb { display:none } 포함 → 홈 페이지에서 GNB 숨겨지므로 공통 제외, 각 서브페이지에서 개별 로드
 // topbar.css: @media(max-width:900px) .header { display:none } 포함 → topbar 없는 페이지에서 모바일 헤더 숨겨지므로 공통 제외
 const SHARED_CSS = [
-  '/css/font.css',
-  '/css/reset.css',
-  '/css/theme.css',
-  '/css/components/button.css',
-  '/css/components/accordion.css',
-  '/css/components/modal.css',
-  '/css/components/card.css',
-  '/css/components/tab.css',
-  '/css/components/breadcrumb.css',
-  '/css/components/header.css',
-  '/css/components/footer.css',
-  '/css/components/mag-card.css',
-  '/css/components/travel-card.css',
-  '/css/common.css',
+  "/css/font.css",
+  "/css/reset.css",
+  "/css/theme.css",
+  "/css/components/button.css",
+  "/css/components/accordion.css",
+  "/css/components/modal.css",
+  "/css/components/card.css",
+  "/css/components/tab.css",
+  "/css/components/breadcrumb.css",
+  "/css/components/header.css",
+  "/css/components/footer.css",
+  "/css/components/mag-card.css",
+  "/css/components/travel-card.css",
+  "/css/common.css",
 ];
 
 export const metadata = {
-  title: 'KMEDITOUR — 프리미엄 컨시어지 인 코리아 | Premium Concierge in Korea',
+  title: "KMEDITOUR — 프리미엄 컨시어지 인 코리아 | Premium Concierge in Korea",
   description:
-    'KMEDITOUR는 한국 뷰티·의료·관광을 아우르는 프리미엄 컨시어지 서비스입니다.',
+    "KMEDITOUR는 한국 뷰티·의료·관광을 아우르는 프리미엄 컨시어지 서비스입니다.",
 };
 
 export const viewport = {
-  width: 'device-width',
+  width: "device-width",
   initialScale: 1,
   maximumScale: 1,
   userScalable: false,
-  viewportFit: 'cover',
+  viewportFit: "cover",
 };
 
 export default function RootLayout({ children }) {
@@ -37,7 +37,11 @@ export default function RootLayout({ children }) {
     <html lang="ko">
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin=""
+        />
         <link rel="preconnect" href="https://unpkg.com" />
         {SHARED_CSS.map((href) => (
           <link key={href} rel="stylesheet" href={href} />

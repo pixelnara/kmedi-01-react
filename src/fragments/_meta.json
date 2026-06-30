@@ -1,12 +1,8 @@
 {
   "about": {
     "route": "/about",
-    "pageCss": [
-      "css/about.css"
-    ],
-    "pageScripts": [
-      "js/about.js"
-    ],
+    "pageCss": ["css/about.css"],
+    "pageScripts": ["js/about.js"],
     "hasMobileBar": true,
     "hasImageSlot": true,
     "title": "About — KMEDITOUR · 프리미엄 컨시어지 인 코리아 | Premium Concierge in Korea",
@@ -14,12 +10,8 @@
   },
   "center": {
     "route": "/center",
-    "pageCss": [
-      "css/center.css"
-    ],
-    "pageScripts": [
-      "js/center.js"
-    ],
+    "pageCss": ["css/center.css"],
+    "pageScripts": ["js/center.js"],
     "hasMobileBar": true,
     "hasImageSlot": true,
     "title": "휴그로 센터 — 프리미엄 뷰티 & 웰니스 | Hugro Center · KMEDITOUR",
@@ -27,12 +19,8 @@
   },
   "cosmetic": {
     "route": "/cosmetic",
-    "pageCss": [
-      "css/cosmetic.css"
-    ],
-    "pageScripts": [
-      "js/cosmetic.js"
-    ],
+    "pageCss": ["css/cosmetic.css"],
+    "pageScripts": ["js/cosmetic.js"],
     "hasMobileBar": true,
     "hasImageSlot": true,
     "title": "코스메틱 — KMEDITOUR · 프리미엄 K-뷰티 화장품 | Premium Concierge in Korea",
@@ -40,12 +28,8 @@
   },
   "faq": {
     "route": "/faq",
-    "pageCss": [
-      "css/faq.css"
-    ],
-    "pageScripts": [
-      "js/faq.js"
-    ],
+    "pageCss": ["css/faq.css"],
+    "pageScripts": ["js/faq.js"],
     "hasMobileBar": true,
     "hasImageSlot": true,
     "title": "FAQ — KMEDITOUR · 프리미엄 컨시어지 인 코리아",
@@ -53,12 +37,8 @@
   },
   "index": {
     "route": "/",
-    "pageCss": [
-      "css/home.css"
-    ],
-    "pageScripts": [
-      "js/index.js"
-    ],
+    "pageCss": ["css/home.css"],
+    "pageScripts": ["js/index.js"],
     "hasMobileBar": true,
     "hasImageSlot": true,
     "title": "KMEDITOUR — 프리미엄 컨시어지 인 코리아 | Premium Concierge in Korea",
@@ -66,9 +46,7 @@
   },
   "magazine-detail": {
     "route": "/magazine-detail",
-    "pageCss": [
-      "css/magazine.css"
-    ],
+    "pageCss": ["css/magazine.css"],
     "pageScripts": [],
     "hasMobileBar": true,
     "hasImageSlot": false,
@@ -77,12 +55,8 @@
   },
   "magazine": {
     "route": "/magazine",
-    "pageCss": [
-      "css/magazine.css"
-    ],
-    "pageScripts": [
-      "js/magazine.js"
-    ],
+    "pageCss": ["css/magazine.css"],
+    "pageScripts": ["js/magazine.js"],
     "hasMobileBar": true,
     "hasImageSlot": false,
     "title": "매거진 — 뷰티·의료·여행 인사이트 | KMEDITOUR",
@@ -90,12 +64,8 @@
   },
   "procedure-detail": {
     "route": "/procedure-detail",
-    "pageCss": [
-      "css/procedure-detail.css"
-    ],
-    "pageScripts": [
-      "js/procedure-detail.js"
-    ],
+    "pageCss": ["css/procedure-detail.css"],
+    "pageScripts": ["js/procedure-detail.js"],
     "hasMobileBar": true,
     "hasImageSlot": true,
     "title": "필러 | K-MEDI TOUR",
@@ -103,12 +73,8 @@
   },
   "procedure": {
     "route": "/procedure",
-    "pageCss": [
-      "css/procedure.css"
-    ],
-    "pageScripts": [
-      "js/procedure.js"
-    ],
+    "pageCss": ["css/procedure.css"],
+    "pageScripts": ["js/procedure.js"],
     "hasMobileBar": true,
     "hasImageSlot": true,
     "title": "프리미엄 시술 — 필러·보톡스·리프팅·레이저 | KMEDITOUR",
@@ -116,12 +82,8 @@
   },
   "product": {
     "route": "/product",
-    "pageCss": [
-      "css/product.css"
-    ],
-    "pageScripts": [
-      "js/product.js"
-    ],
+    "pageCss": ["css/product.css"],
+    "pageScripts": ["js/product.js"],
     "hasMobileBar": true,
     "hasImageSlot": false,
     "title": "상품 상세 — KMEDITOUR 코스메틱",
@@ -129,12 +91,8 @@
   },
   "reservation": {
     "route": "/reservation",
-    "pageCss": [
-      "css/reservation.css"
-    ],
-    "pageScripts": [
-      "js/reservation.js"
-    ],
+    "pageCss": ["css/reservation.css"],
+    "pageScripts": ["js/reservation.js"],
     "hasMobileBar": true,
     "hasImageSlot": true,
     "title": "상담 예약 — KMEDITOUR · 프리미엄 컨시어지 인 코리아",
@@ -142,12 +100,8 @@
   },
   "skin-analysis": {
     "route": "/skin-analysis",
-    "pageCss": [
-      "css/skin-analysis.css"
-    ],
-    "pageScripts": [
-      "js/skin-analysis.js"
-    ],
+    "pageCss": ["css/skin-analysis.css"],
+    "pageScripts": ["js/skin-analysis.js"],
     "hasMobileBar": false,
     "hasImageSlot": true,
     "title": "피부 분석 시스템 — AI 피부 진단 & 케어 플랜 | KMEDITOUR",
@@ -155,13 +109,8 @@
   },
   "skin-sol": {
     "route": "/skin-sol",
-    "pageCss": [
-      "css/skin-sol.css"
-    ],
-    "pageScripts": [
-      "js/pss-state.js",
-      "js/skin-sol.js"
-    ],
+    "pageCss": ["css/skin-sol.css"],
+    "pageScripts": ["js/pss-state.js", "js/skin-sol.js"],
     "hasMobileBar": true,
     "hasImageSlot": true,
     "title": "나의 피부 솔루션 찾기 — 나의 피부 솔루션 찾기 | KMEDITOUR",
@@ -169,12 +118,8 @@
   },
   "travel": {
     "route": "/travel",
-    "pageCss": [
-      "css/travel.css"
-    ],
-    "pageScripts": [
-      "js/travel.js"
-    ],
+    "pageCss": ["css/travel.css"],
+    "pageScripts": ["js/travel.js"],
     "hasMobileBar": true,
     "hasImageSlot": true,
     "title": "투어 — 호텔 & 쇼핑 | KMEDITOUR",

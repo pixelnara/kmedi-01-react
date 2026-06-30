@@ -1,5 +1,5 @@
-import Page from '@/components/Page';
-import fragment from '@/fragments/product';
+import Page from "@/components/Page";
+import fragment from "@/fragments/product";
 
 export const metadata = {
   title: "상품 상세 — KMEDITOUR 코스메틱",

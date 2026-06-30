@@ -1,5 +1,5 @@
-import Page from '@/components/Page';
-import fragment from '@/fragments/travel';
+import Page from "@/components/Page";
+import fragment from "@/fragments/travel";
 
 export const metadata = {
   title: "투어 — 호텔 & 쇼핑 | KMEDITOUR",

@@ -267,8 +267,8 @@ const main = `
     <!-- 2.뷰티 -->
     <div class="hero__slide hero__slide--event"
          style="background-image:url('/assets/img/1-page-home/01_main_banner/hero-5.png')"
-         data-title="여름 K-뷰티<br/>스페셜 이벤트"
-         data-desc="첫 방문 고객 10% 할인 · 지금 신청하세요"></div>
+         data-title="당신만을 위한<br> 맞춤 K-뷰티 서비스"
+         data-desc="검증된 의료 서비스와 프리미엄 케어를 경험하세요."></div>
     <!-- 3.여행 -->
     <div class="hero__slide" style="background-image:url('/assets/img/1-page-home/01_main_banner/hero-15.png')"
          data-title="서울의 아름다움<br/>그 중심에서"
