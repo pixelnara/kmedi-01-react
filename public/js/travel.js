@@ -238,17 +238,19 @@
   document.querySelectorAll('.tv-card').forEach(function (card) {
     card.addEventListener('click', function () { openDetail(card.dataset.detail); });
   });
-  backdrop.addEventListener('click', closeDetail);
-  backBtn.addEventListener('click', closeDetail);
+  if (backdrop) backdrop.addEventListener('click', closeDetail);
+  if (backBtn)  backBtn.addEventListener('click', closeDetail);
   document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeDetail(); });
 
   /* 스와이프 */
   var startX2 = 0;
-  detImgs.parentElement.addEventListener('touchstart', function (e) { startX2 = e.touches[0].clientX; }, { passive: true });
-  detImgs.parentElement.addEventListener('touchend', function (e) {
-    var diff = startX2 - e.changedTouches[0].clientX;
-    if (Math.abs(diff) > 40) diff > 0 ? goImg(detCur + 1) : goImg(detCur - 1);
-  }, { passive: true });
+  if (detImgs && detImgs.parentElement) {
+    detImgs.parentElement.addEventListener('touchstart', function (e) { startX2 = e.touches[0].clientX; }, { passive: true });
+    detImgs.parentElement.addEventListener('touchend', function (e) {
+      var diff = startX2 - e.changedTouches[0].clientX;
+      if (Math.abs(diff) > 40) diff > 0 ? goImg(detCur + 1) : goImg(detCur - 1);
+    }, { passive: true });
+  }
 
   /* ── 로그인 모달 ── */
   (function () {
