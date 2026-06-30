@@ -308,7 +308,7 @@ const main = `
 
       <div class="tv-card" data-name="롯데호텔 서울 (소공동)" data-order="1"
            data-detail="hotel-1">
-        <img class="tv-card__img" src="/assets/img/6-page-tour/hotel/1.webp" alt="롯데호텔 서울" />
+        <img class="tv-card__img" src="/assets/img/6-page-tour/1-stay/1-lotte.png" alt="롯데호텔 서울" />
         <div class="tv-card__body">
           <h3 class="tv-card__title">롯데호텔 서울 (소공동)</h3>
           <p class="tv-card__desc">1979년부터 서울의 중심을 지켜온 롯데호텔 서울은 럭셔리 비즈니스 호텔입니다. 최상의 숙면을 위한…</p>
@@ -321,7 +321,7 @@ const main = `
 
       <div class="tv-card" data-name="더 플라자 서울" data-order="2"
            data-detail="hotel-2">
-        <img class="tv-card__img" src="/assets/img/6-page-tour/hotel/2.png" alt="더 플라자 서울" />
+        <img class="tv-card__img" src="/assets/img/6-page-tour/1-stay/2-plaza.png" alt="더 플라자 서울" />
         <div class="tv-card__body">
           <h3 class="tv-card__title">더 플라자 서울</h3>
           <p class="tv-card__desc">더 플라자 서울, 오토그래프 컬렉션에서 럭셔리한 휴가를 만끽해 보세요. 고품격 어메니티와 최상의 맞춤…</p>
@@ -334,7 +334,7 @@ const main = `
 
       <div class="tv-card" data-name="JW 메리어트 호텔 서울" data-order="3"
            data-detail="hotel-3">
-        <img class="tv-card__img" src="/assets/img/6-page-tour/hotel/3.png" alt="JW 메리어트 호텔 서울" />
+        <img class="tv-card__img" src="/assets/img/6-page-tour/1-stay/3-marriott.png" alt="JW 메리어트 호텔 서울" />
         <div class="tv-card__body">
           <h3 class="tv-card__title">JW 메리어트 호텔 서울</h3>
           <p class="tv-card__desc">유명 관광지와 가까운 강남 소재 JW 메리어트 호텔 서울은 5성급 호텔 경험을 제공하는 특급 호텔입니다.</p>
@@ -384,7 +384,7 @@ const main = `
     <div class="tv-grid" id="grid-shopping">
 
       <div class="tv-card" data-name="롯데면세점 명동점" data-order="1" data-cat="면세점" data-detail="shop-1">
-        <img class="tv-card__img" src="/assets/img/6-page-tour/shopping/1.png" alt="롯데면세점 명동점" />
+        <img class="tv-card__img" src="/assets/img/6-page-tour/2-tax/1-lotte.png" alt="롯데면세점 명동점" />
         <div class="tv-card__body">
           <div class="tv-card__tags"><span class="tv-card__tag">면세점</span></div>
           <h3 class="tv-card__title">롯데면세점 명동점</h3>
@@ -397,7 +397,7 @@ const main = `
       </div>
 
       <div class="tv-card" data-name="신세계면세점 명동점" data-order="2" data-cat="면세점" data-detail="shop-2">
-        <img class="tv-card__img" src="/assets/img/6-page-tour/shopping/2.png" alt="신세계면세점 명동점" />
+        <img class="tv-card__img" src="/assets/img/6-page-tour/2-tax/3-shinsegae.png" alt="신세계면세점 명동점" />
         <div class="tv-card__body">
           <div class="tv-card__tags"><span class="tv-card__tag">면세점</span></div>
           <h3 class="tv-card__title">신세계면세점 명동점</h3>
@@ -410,7 +410,7 @@ const main = `
       </div>
 
       <div class="tv-card" data-name="남대문시장" data-order="3" data-cat="시장" data-detail="shop-3">
-        <img class="tv-card__img" src="/assets/img/6-page-tour/shopping/3.png" alt="남대문시장" />
+        <img class="tv-card__img" src="/assets/img/6-page-tour/4-market/1-namdaemun.png" alt="남대문시장" />
         <div class="tv-card__body">
           <div class="tv-card__tags"><span class="tv-card__tag">갈치조림 골목</span><span class="tv-card__tag">호떡 노점</span><span class="tv-card__tag">칼국수 골목</span></div>
           <h3 class="tv-card__title">남대문시장</h3>
@@ -423,7 +423,7 @@ const main = `
       </div>
 
       <div class="tv-card" data-name="동대문시장" data-order="4" data-cat="시장" data-detail="shop-4">
-        <img class="tv-card__img" src="/assets/img/6-page-tour/shopping/4.png" alt="동대문시장" />
+        <img class="tv-card__img" src="/assets/img/6-page-tour/4-market/2-dongdaemun.png" alt="동대문시장" />
         <div class="tv-card__body">
           <div class="tv-card__tags"><span class="tv-card__tag">닭한마리 골목</span><span class="tv-card__tag">아시장 포장마차</span><span class="tv-card__tag">떡볶이 타운</span></div>
           <h3 class="tv-card__title">동대문시장</h3>
@@ -436,7 +436,7 @@ const main = `
       </div>
 
       <div class="tv-card" data-name="성수동 연무장길" data-order="5" data-cat="쇼핑몰" data-detail="shop-5">
-        <img class="tv-card__img" src="/assets/img/6-page-tour/shopping/5.png" alt="성수동 연무장길" />
+        <img class="tv-card__img" src="/assets/img/6-page-tour/3-shop/1-seongsu.png" alt="성수동 연무장길" />
         <div class="tv-card__body">
           <div class="tv-card__tags"><span class="tv-card__tag">성수 베이커리</span><span class="tv-card__tag">스페셜티 커피</span><span class="tv-card__tag">수제 버거</span></div>
           <h3 class="tv-card__title">성수동 연무장길</h3>
@@ -449,7 +449,7 @@ const main = `
       </div>
 
       <div class="tv-card" data-name="가로수길" data-order="6" data-cat="쇼핑몰" data-detail="shop-6">
-        <img class="tv-card__img" src="/assets/img/1-page-home/01_main_banner/hero-16.png" alt="가로수길" />
+        <img class="tv-card__img" src="/assets/img/6-page-tour/3-shop/2-garosugil.png" alt="가로수길" />
         <div class="tv-card__body">
           <div class="tv-card__tags"><span class="tv-card__tag">디자이너 편집숍</span><span class="tv-card__tag">플래그십 스토어</span><span class="tv-card__tag">브런치 카페</span></div>
           <h3 class="tv-card__title">가로수길</h3>
@@ -462,7 +462,7 @@ const main = `
       </div>
 
       <div class="tv-card" data-name="광장시장" data-order="7" data-cat="시장" data-detail="shop-7">
-        <img class="tv-card__img" src="/assets/img/1-page-home/01_main_banner/hero-20.jpeg" alt="광장시장" />
+        <img class="tv-card__img" src="/assets/img/6-page-tour/4-market/3-gwangjang.png" alt="광장시장" />
         <div class="tv-card__body">
           <div class="tv-card__tags"><span class="tv-card__tag">빈대떡</span><span class="tv-card__tag">마약김밥</span><span class="tv-card__tag">육회 골목</span></div>
           <h3 class="tv-card__title">광장시장</h3>
@@ -475,7 +475,7 @@ const main = `
       </div>
 
       <div class="tv-card" data-name="신라면세점 서울점" data-order="8" data-cat="면세점" data-detail="shop-8">
-        <img class="tv-card__img" src="/assets/img/1-page-home/01_main_banner/hero-17.png" alt="신라면세점 서울점" />
+        <img class="tv-card__img" src="/assets/img/6-page-tour/2-tax/2-shilla.png" alt="신라면세점 서울점" />
         <div class="tv-card__body">
           <div class="tv-card__tags"><span class="tv-card__tag">럭셔리 부티크</span><span class="tv-card__tag">K-뷰티</span><span class="tv-card__tag">멤버십 혜택</span></div>
           <h3 class="tv-card__title">신라면세점 서울점</h3>
@@ -507,6 +507,18 @@ const main = `
 </main>
 `.trim();
 const footer = `
+<section class="foot-contact">
+  <div class="wrap foot-contact__inner">
+    <div class="foot-contact__text">
+      <h2 class="foot-contact__title">궁금한 점이 있으신가요?</h2>
+      <p class="foot-contact__desc">이메일을 남겨주시면 전담 코디네이터가 빠르게 답변드립니다.</p>
+    </div>
+    <form class="foot-contact__form" onsubmit="return false;">
+      <input type="email" class="foot-contact__input" placeholder="이메일 주소를 입력하세요" aria-label="이메일 주소" />
+      <button type="submit" class="btn btn--primary foot-contact__btn">문의하기</button>
+    </form>
+  </div>
+</section>
 <footer class="footer">
   <div class="wrap">
     <div class="footer__top"><a href="#">개인정보처리방침</a><a href="#">이용약관</a><a href="#">환불 정책</a></div>
