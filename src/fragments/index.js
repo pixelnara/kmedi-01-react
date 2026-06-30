@@ -264,41 +264,34 @@ const main = `
     <div class="hero__slide" style="background-image:url('/assets/img/1-page-home/01_main_banner/hero-21.png')"
          data-title="의료부터 관광까지<br/>모든 케어"
          data-desc="체크인부터 귀국까지 퍼스널 컨시어지가 함께합니다."></div>
-    <div class="hero__slide" style="background-image:url('/assets/img/1-page-home/01_main_banner/hero-23.png')"
-         data-title="의료부터 관광까지<br/>모든 케어"
-         data-desc="체크인부터 귀국까지 퍼스널 컨시어지가 함께합니다."></div>
     <!-- 2.뷰티 -->
     <div class="hero__slide hero__slide--event"
          style="background-image:url('/assets/img/1-page-home/01_main_banner/hero-5.png')"
          data-title="여름 K-뷰티<br/>스페셜 이벤트"
-         data-desc="첫 방문 고객 10% 할인 · 지금 신청하세요">
-    </div>
-    <!-- 4.여행 -->
+         data-desc="첫 방문 고객 10% 할인 · 지금 신청하세요"></div>
+    <!-- 3.여행 -->
     <div class="hero__slide" style="background-image:url('/assets/img/1-page-home/01_main_banner/hero-15.png')"
          data-title="서울의 아름다움<br/>그 중심에서"
          data-desc="한국의 전통과 현대가 어우러진 특별한 시간"></div>
     <div class="hero__slide" style="background-image:url('/assets/img/1-page-home/01_main_banner/hero-20.jpeg')"
          data-title="천년의 역사<br/>고궁 투어"
          data-desc="조선의 아름다움을 간직한 고궁에서의 특별한 경험"></div>
-    <div class="hero__slide hero__slide--mobile-only" style="background-image:url('/assets/img/1-page-home/06_others/main1.png')"
+    <div class="hero__slide" style="background-image:url('/assets/img/1-page-home/01_main_banner/hero-23.png')"
          data-title="특별한 당신을 위한<br/>프리미엄 혜택"
          data-desc="호텔과 면세점, 모두 특별한 우대 혜택으로 더 럭셔리하게"></div>
-    <div class="hero__overlay"></div>
-        <div class="hero__inner wrap">
-        <h1 class="hero__title">의료부터 관광까지<br/>모든 케어</h1>
-        <p class="hero__desc"></p>
-        <button class="hero__down-btn" aria-label="아래로 스크롤" onclick="document.querySelector('#how,main,section:not(.hero)')?.scrollIntoView({behavior:'smooth'})">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" width="24" height="24"><polyline points="6 9 12 15 18 9"/></svg>
-        </button>
-    <div class="hero__counter" aria-live="polite">
-        <span class="hero__counter-cur">01</span>
-        <span class="hero__counter-sep"> / </span>
-        <span class="hero__counter-tot">03</span>
-    </div>
-    <a href="#how" class="hero__scroll" aria-label="아래로 스크롤">
-        <span>SCROLL</span>
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
-    </a>
+  </div>
+  <div class="hero__overlay"></div>
+  <div class="hero__inner wrap">
+    <h1 class="hero__title">의료부터 관광까지<br/>모든 케어</h1>
+    <p class="hero__desc"></p>
+    <button class="hero__down-btn" aria-label="아래로 스크롤" onclick="document.querySelector('#how,main,section:not(.hero)')?.scrollIntoView({behavior:'smooth'})">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" width="24" height="24"><polyline points="6 9 12 15 18 9"/></svg>
+    </button>
+  </div>
+  <div class="hero__counter" aria-live="polite">
+    <span class="hero__counter-cur">01</span>
+    <span class="hero__counter-sep"> / </span>
+    <span class="hero__counter-tot">05</span>
   </div>
   <button class="hero__nav hero__nav--prev" aria-label="이전 슬라이드">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><polyline points="15 18 9 12 15 6"/></svg>
