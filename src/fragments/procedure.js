@@ -333,7 +333,7 @@ const main = `
       <div class="proc-slide" role="group" aria-label="보톡스">
         <div class="proc-slide__card">
           <div class="proc-slide__img-wrap">
-            <img class="proc-slide__img" src="/assets/img/1-page-home/01_main_banner/hero-13.png" alt="보톡스 시술" />
+            <img class="proc-slide__img" src="/assets/img/2-hugro/treatment-main.png" alt="보톡스 시술" />
           </div>
           <div class="proc-slide__content">
             <span class="proc-slide__num">02</span>
@@ -364,7 +364,7 @@ const main = `
       <div class="proc-slide" role="group" aria-label="실리프팅">
         <div class="proc-slide__card">
           <div class="proc-slide__img-wrap">
-            <img class="proc-slide__img" src="/assets/img/1-page-home/01_main_banner/hero-14.png" alt="실리프팅 시술" />
+            <img class="proc-slide__img" src="/assets/img/2-hugro/treatment-2.png" alt="실리프팅 시술" />
           </div>
           <div class="proc-slide__content">
             <span class="proc-slide__num">03</span>
@@ -393,7 +393,7 @@ const main = `
       <div class="proc-slide" role="group" aria-label="레이저">
         <div class="proc-slide__card">
           <div class="proc-slide__img-wrap">
-            <img class="proc-slide__img" src="/assets/img/1-page-home/01_main_banner/hero-15.png" alt="레이저 시술" />
+            <img class="proc-slide__img" src="/assets/img/2-hugro/treatment-3.png" alt="레이저 시술" />
           </div>
           <div class="proc-slide__content">
             <span class="proc-slide__num">04</span>
@@ -422,7 +422,7 @@ const main = `
       <div class="proc-slide" role="group" aria-label="스킨부스터">
         <div class="proc-slide__card">
           <div class="proc-slide__img-wrap">
-            <img class="proc-slide__img" src="/assets/img/1-page-home/01_main_banner/hero-17.png" alt="스킨부스터 시술" />
+            <img class="proc-slide__img" src="/assets/img/2-hugro/treatment-4.png" alt="스킨부스터 시술" />
           </div>
           <div class="proc-slide__content">
             <span class="proc-slide__num">05</span>
@@ -449,7 +449,7 @@ const main = `
       <div class="proc-slide" role="group" aria-label="피부관리">
         <div class="proc-slide__card">
           <div class="proc-slide__img-wrap">
-            <img class="proc-slide__img" src="/assets/img/1-page-home/01_main_banner/hero-2.png" alt="피부관리 시술" />
+            <img class="proc-slide__img" src="/assets/img/2-hugro/treatment-1.png" alt="피부관리 시술" />
           </div>
           <div class="proc-slide__content">
             <span class="proc-slide__num">06</span>
@@ -476,7 +476,7 @@ const main = `
       <div class="proc-slide" role="group" aria-label="지방분해">
         <div class="proc-slide__card">
           <div class="proc-slide__img-wrap">
-            <img class="proc-slide__img" src="/assets/img/1-page-home/01_main_banner/hero-5.png" alt="지방분해 시술" />
+            <img class="proc-slide__img" src="/assets/img/2-hugro/treatment-5.png" alt="지방분해 시술" />
           </div>
           <div class="proc-slide__content">
             <span class="proc-slide__num">07</span>
