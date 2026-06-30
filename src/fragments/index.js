@@ -390,27 +390,27 @@ const main = `
       <h2 class="ed-head__title">서비스</h2>
       <!-- <a href="#" class="ed-head__more">SEE ALL</a> -->
     </div>
-    <p class="sec-intro" data-reveal>지방흡입, 미용 시술, 모발 이식, 건강검진부터<br class="mo-br"/> 프리미엄 서울 관광까지 —<br/>분야별 최고의 전문가를 찾아 연결합니다.</p>
+    <p class="sec-intro" data-reveal>한국 최고의 뷰티, 메디컬, 웰니스 그리고 라이프스타일까지.<br/>당신만을 위한 프리미엄 원스톱 컨시어지 서비스를 경험해 보세요.</p>
     <div class="acc" data-reveal>
       <div class="acc-item is-open">
         <button class="acc-head" aria-expanded="false">휴그로센터<span class="acc-icon" aria-hidden="true"></span></button>
         <div class="acc-body">
           <img src="/assets/img/2-hugro/center-1.png" alt="휴그로센터" class="acc-img" />
-          <div class="acc-body__inner"><span><span class="acc-em">신사동에 위치한 KMEDITOUR 전용 공간.</span><br/> <span class="acc-desc">상담·피부분석·코스메틱 쇼핑·라운지를 한 곳에서 경험할 수 있는 프리미엄 케어 베이스캠프입니다.</span></span><a href="/center" class="acc-detail-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="14" height="14"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a></div>
+          <div class="acc-body__inner"><span><span class="acc-em">신사동에 위치한 KMEDITOUR 프라이빗 웰니스 허브</span><br/> <span class="acc-desc">전문 컨설팅, 피부 분석, 프리미엄 에스테틱, 코스메틱 쇼룸, 라운지까지. 고객의 모든 여정을 하나의 공간에서 완성하는 시그니처 웰니스 센터입니다.</span></span><a href="/center" class="acc-detail-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="14" height="14"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a></div>
         </div>
       </div>
       <div class="acc-item">
-        <button class="acc-head" aria-expanded="true">뷰티<span class="acc-icon" aria-hidden="true"></span></button>
+        <button class="acc-head" aria-expanded="true">뷰티/메디컬<span class="acc-icon" aria-hidden="true"></span></button>
         <div class="acc-body">
           <img src="/assets/img/1-page-home/01_main_banner/hero-5.png" alt="뷰티" class="acc-img" />
-          <div class="acc-body__inner"><span><span class="acc-em">필러·보톡스·리프팅·레이저까지</span><br/> <span class="acc-desc">검증된 강남 클리닉과 전담 코디네이터가 당신에게 맞는 뷰티 시술을 안전하게 연결합니다.</span></span><a href="/procedure" class="acc-detail-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="14" height="14"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a></div>
+          <div class="acc-body__inner"><span><span class="acc-em">당신만을 위한 프리미엄 뷰티 솔루션</span><br/> <span class="acc-desc">피부 분석부터 맞춤 상담, 시술, 사후 케어까지. 엄선된 의료진과 전담 컨시어지가 고객에게 가장 적합한 메디컬 뷰티 경험을 제공합니다.</span></span><a href="/procedure" class="acc-detail-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="14" height="14"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a></div>
         </div>
       </div>
       <div class="acc-item">
         <button class="acc-head" aria-expanded="false">투어<span class="acc-icon" aria-hidden="true"></span></button>
         <div class="acc-body">
           <img src="/assets/img/1-page-home/06_others/tour.png" alt="투어" class="acc-img" />
-          <div class="acc-body__inner"><span><span class="acc-em">서울의 품격 있는 숙소·쇼핑·미식 코스를 코디네이터가 직접 큐레이션합니다.</span> <br/><span class="acc-desc">치료 전후의 여정도 특별하게 완성해 드립니다.</span></span><a href="/travel" class="acc-detail-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="14" height="14"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a></div>
+          <div class="acc-body__inner"><span><span class="acc-em">서울을 가장 품격 있게 경험하는 방법</span> <br/><span class="acc-desc">쇼핑, 미식, 문화, 웰니스까지. 전담 컨시어지가 고객의 취향과 일정에 맞는 프리미엄 서울 여정을 큐레이션합니다.</span></span><a href="/travel" class="acc-detail-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="14" height="14"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a></div>
         </div>
       </div>
     </div>
